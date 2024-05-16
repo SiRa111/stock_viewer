@@ -1,3 +1,3 @@
 phrase = input("Enter a phrase : ")
 
-print(phrase, sep='...')
+print("ndfgnk gjdfiogoje er foerjoier d", sep="...")
