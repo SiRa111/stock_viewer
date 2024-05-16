@@ -1,5 +1,5 @@
-x = int(intput("Enter the value for x : "))
-y = int(intput("Enter the value for y : "))
+x = int(input("Enter the value for x : "))
+y = int(input("Enter the value for y : "))
 
 def main():
     if x < y:
@@ -9,4 +9,4 @@ def main():
     else:
         return "x is equal to y."
 
-main()
+print(main())
