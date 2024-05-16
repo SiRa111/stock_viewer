@@ -64,6 +64,14 @@ parameters - actual value passed to the function
 
 default parameters for print() - sep=" ", end="\n" #brings the cursor to the new line after the string is printed
 
+
+#SEP-SEP-SEP-SEP-SEP-SEP-SEP
+print("a b c d e", sep="-") DOES NOT SEP AN ENTIRE STRING
+op: a b c d e
+
+print("a","b","c","d","e", sep="-") SEP THE VARIOUS STRS
+op: a-b-c-d-e
+
 escape sequence - \n for newline character
 \" - to display " inside a string
 
