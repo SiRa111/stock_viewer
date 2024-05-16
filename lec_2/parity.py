@@ -4,7 +4,6 @@ def main():
         print(f"{x} is even")
     else:
         print(f"{x} is odd")
-main()
 
 def is_even(n):
     if n % 2 == 0:
@@ -12,6 +11,6 @@ def is_even(n):
     else :
         return False
 
-
+main()
 
 
