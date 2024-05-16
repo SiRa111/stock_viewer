@@ -14,5 +14,5 @@ match name:
         print("Gryffindor")
     case "Draco" :
         print("Slytherin")
-    case _:
+    case _:  #matches with any input
         print("BRUH. Who ?")
