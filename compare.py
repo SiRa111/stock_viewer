@@ -9,4 +9,13 @@ def main():
     else:
         return "x is equal to y."
 
-print(main())
+a = main()
+
+def main1():
+    if x > y or x < y:
+        return "x is not equal to y"
+    else:
+        return "x is equal to y"
+
+b = main1()
+print(b)
