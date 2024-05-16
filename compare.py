@@ -12,7 +12,7 @@ def main():
 a = main()
 
 def main1():
-    if x > y or x < y:
+    if x != y:
         return "x is not equal to y"
     else:
         return "x is equal to y"
