@@ -7,7 +7,8 @@ def main():
 
 def is_even(n):
     #return True if n % 2 == 0 else False
-    
+    return n % 2 == 0
+    #this gives either True or False value directly
 
 main()
 
