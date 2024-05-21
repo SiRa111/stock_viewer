@@ -1,7 +1,10 @@
 g = input("Greeting : ")
-g1 = g.lower()
+g1 = g.strip().lower()
 match g1 :
-    case "hello" in g1 :
+    case g1.startswith("hello") :
         print("$0")
-    case "h" in g1:
+    case g1.startswith("h"):
+        print("$20")
+    case _ :
+        print("$100")
 
