@@ -1,0 +1,7 @@
+g = input("Greeting : ")
+g1 = g.lower()
+match g1 :
+    case "hello" :
+        print("$0")
+    case 
+
