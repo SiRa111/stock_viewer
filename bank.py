@@ -1,7 +1,7 @@
 g = input("Greeting : ")
 g1 = g.lower()
-match g1.find() :
-    case "hello" :
+match g1 :
+    case "hello" in g1 :
         print("$0")
-    case
+    case "h" in g1:
 
