@@ -92,6 +92,9 @@ print(f"hello, {name}")
 print('We are the {} who say "{}!"'.format('knights', 'Ni'))
 print('{0} and {1}'.format('spam', 'eggs'))
 
+op: We are the knights who say Ni
+op: spam and eggs
+
 name.lstrip() : removes the spaces on the left side of the string
 name.rstrip() : removes the spaces on the right side of the strip
 
@@ -99,7 +102,7 @@ name.rstrip() : removes the spaces on the right side of the strip
 simran rawat '-->' Simran rawat
 
 0 name = name.title()
-simran rawat '->' Simran rawat
+simran rawat '->' Simran Rawat
 
 0 CONCISE CODE
 name = name.strip().title()
@@ -165,3 +168,5 @@ any code after return is not considered
 [FLOW](hello.py)
 
 '''
+#EMOJIS ARE JUST CHARACTERS !!
+' You can save emojis as characters in python '
