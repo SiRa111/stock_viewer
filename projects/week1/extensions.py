@@ -10,7 +10,11 @@ def main():
     elif f_name.endswith(".png"):
         return "image/png"
     elif f_name.endswith("pdf"):
-        return "appliaction/"
+        return "appliaction/pdf"
+    elif f_name.endswith(".txt"):
+        return "text/plain"
+    elif f_name.endswith(".zip"):
+        return "application/zip"
     else:
         return "application/octet-stream"
 
