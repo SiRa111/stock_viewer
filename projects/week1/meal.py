@@ -7,11 +7,10 @@ def convert(time):
 
     def c(t):
         t = t.split(" ")
-        t1, t2 = t.split(":")
-        print(t1)
-        print(t2)
+        t = t[0]
 
-        '''
+        t1, t2 = t.split(":")
+
         t1 = t1.float(0)
         t2 = t2.float(2)
         if t1 > 12:
@@ -27,7 +26,7 @@ def convert(time):
         elif tf >= 16 and tf <= 17:
             return "dinner time"
 
-        '''
+        
 
     if time.endswith("a.m." or "p.m."):
         c(time)
