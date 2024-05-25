@@ -22,11 +22,15 @@ def convert(time):
             return "lunch time"
         elif tf >= 16 and tf <= 17:
             return "dinner time"
+
     if time.endswith("a.m" or "p.m."):
         c(time)
     else:
         pass
-    t1, t2 = t.split(":")
+
+    t1, t2 = time.split(":")
+    print(t1)
+    print(t2)
     t1 = t1.float(0)
     t2 = t2.float(2)
     t2 = t2 * 0.016
