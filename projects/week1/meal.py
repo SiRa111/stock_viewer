@@ -6,7 +6,7 @@ def main():
 def convert(time):
 
     def c(t):
-        t = t.rstrip(" ")
+        t = t.split(" ")
         t1, t2 = t.split(":")
         print(t1)
         print(t2)
