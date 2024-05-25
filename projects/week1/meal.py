@@ -12,7 +12,7 @@ def convert(time):
         t1, t2 = t.split(":")
 
         t1 = float(t1)
-        t2 = float(t2) * 0.1
+        t2 = float(t2) * 0.01
         print(t1,t2)
         if t1 > 12:
             t1 = t1 + 12
