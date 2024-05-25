@@ -8,6 +8,10 @@ def convert(time):
     def c(t):
         t = t.rstrip(" ")
         t1, t2 = t.split(":")
+        print(t1)
+        print(t2)
+
+        '''
         t1 = t1.float(0)
         t2 = t2.float(2)
         if t1 > 12:
@@ -23,12 +27,12 @@ def convert(time):
         elif tf >= 16 and tf <= 17:
             return "dinner time"
 
+        '''
+
     if time.endswith("a.m." or "p.m."):
         c(time)
     else:
         pass
-
-
 
 
 if __name__ == "__main__":
