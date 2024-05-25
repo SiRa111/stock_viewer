@@ -4,11 +4,12 @@ def main():
 
 
 def convert(time):
-    time1, time2 = time.strip(":")
-    if time1 >= 13 :
-
-
-    time1 = time1.float()
+    def c(t):
+        t = t.rstrip(" ")
+        t1, t2 = t.split(":")
+        
+    if time.endswith("a.m" or "p.m."):
+        c(time)
 
 if __name__ == "__main__":
     main()
