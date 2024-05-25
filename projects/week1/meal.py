@@ -23,7 +23,7 @@ def convert(time):
         elif tf >= 16 and tf <= 17:
             return "dinner time"
 
-    if time.endswith("a.m" ):
+    if time.endswith("a.m." or ):
         c(time)
     else:
         pass
