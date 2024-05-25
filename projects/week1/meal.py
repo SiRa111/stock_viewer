@@ -5,7 +5,8 @@ def main():
 
 
 def convert(time):
-    time = time.float(":")
+    time1, time2 = time.strip(":")
+    time1 = time1.float()
 
 if __name__ == "__main__":
     main()
