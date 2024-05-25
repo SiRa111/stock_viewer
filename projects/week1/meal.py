@@ -29,10 +29,6 @@ def convert(time):
     t1, t2 = t.split(":")
         t1 = t1.float(0)
         t2 = t2.float(2)
-        if t1 > 12:
-            t1 = t1 + 12
-        else:
-            pass
         t2 = t2 * 0.016
         tf = t1 + t2
         if tf >= 7 and tf <= 8:
