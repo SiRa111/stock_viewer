@@ -4,9 +4,9 @@ def main():
     if f_name.endswith(".gif"):
         return "image/gif"
     elif f_name.endswith(".jpg"):
-        return "image/jpg"
+        return "image/jpeg"
     elif f_name.endswith(".jpeg"):
-        return "image/jpg"
+        return "image/jpeg"
     elif f_name.endswith(".png"):
         return "image/png"
     elif f_name.endswith("pdf"):
