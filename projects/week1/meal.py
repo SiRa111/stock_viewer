@@ -29,8 +29,6 @@ def convert(time):
         pass
 
     t1, t2 = time.split(":")
-    print(t1)
-    print(t2)
     t1 = t1.float(0)
     t2 = t2.float(2)
     t2 = t2 * 0.016
