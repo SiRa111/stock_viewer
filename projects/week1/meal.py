@@ -1,6 +1,6 @@
 def main():
     t = input("Enter the time in 24hr format or 12 hr format : ")
-    convert(t1)
+    convert(t)
 
 
 def convert(time):
