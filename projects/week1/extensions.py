@@ -9,7 +9,8 @@ def main():
         return "image/jpg"
     elif f_name.endswith(".png"):
         return "image/png"
-    elif f_name.endswith("pdf")
+    elif f_name.endswith("pdf"):
+        return "appliaction/"
     else:
         return "application/octet-stream"
 
