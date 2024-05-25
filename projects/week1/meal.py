@@ -5,7 +5,7 @@ def main():
 
 
 def convert(time):
-    
+    time = time.float(":")
 
 if __name__ == "__main__":
     main()
