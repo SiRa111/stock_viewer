@@ -1,5 +1,5 @@
-f_name = input("Enter the file name with extension : ")
-
+f_name1 = input("Enter the file name with extension : ")
+f_name = f_name1.lower().strip()
 def main():
     if f_name.endswith(".gif"):
         return "image/gif"
