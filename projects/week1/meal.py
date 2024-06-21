@@ -5,6 +5,9 @@ def main():
 
 def convert(time):
     a,b = time.split(":")
+    print(a,b)
+    print(type(a))
+    print(type(b))
     float(b)
     b = b * 0.0167  #coverts b to string
     float(a)
