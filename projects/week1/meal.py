@@ -11,7 +11,7 @@ def convert(time):
     a = a + b
     a = "{:.2f}".format(a) #gives two decimal points to a and turns it to a string as this is a f string
     a = float(a)
-    print(a)
+    
 
 
     if 7.00 <= a <= 8.00:
