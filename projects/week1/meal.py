@@ -5,10 +5,9 @@ def main():
 
 def convert(time):
     a,b = split.time(":")
-    b = b * 0.0167
-    a = a + b
-    
-
+    float(b) = b * 0.0167
+    float(a.:2f) = a + b
+    print(a)
 
 
 if __name__ == "__main__":
