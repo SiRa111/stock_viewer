@@ -21,4 +21,16 @@ else :                  s3
     print("x == y ")
 
 now if statement one is true the rest are ignored. the execution only proceeds if the statement is false.
+
+0 OR
+you can enter more than one condtion to check
+if x < y or x > y:
+we are checking both. if either is true, the code will run
+
+more efficient way :
+if x != y:
+
+0 AND
+
+
 '''
