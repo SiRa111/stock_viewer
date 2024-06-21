@@ -5,7 +5,9 @@ def main():
 
 def convert(time):
     a,b = split.time(":")
-    b = b * 
+    b = b * 0.0167
+    a = a + b
+    
 
 
 
