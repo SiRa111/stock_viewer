@@ -1,5 +1,7 @@
 
 '''
+TERMINAL COMMANDS
+_______________________________________________________________________________________________________________________________________________________
 ls - lists all the files
 
 cp - copies a file
@@ -58,7 +60,7 @@ comments : #
 Pseudocode - explain each block of code for clarity
 
 
-str - a sequence of text in python
+str - a sequence of text/ characters in python
 arguments - factors that can influence the behaviour of the function
 parameters - actual value passed to the function
 
@@ -120,7 +122,7 @@ name = input("What's your name? ").strip().title()
 a,b = name.split(" ")
 split : divides the code into multiple strings based on the argument provided and saves in diff variables
 
-0 typing - code file_name.py will automatically create that file
+0 typing - code file_name.py will automatically create that file  __term
 pressing tab after writing the code in interpreter. It autocompletes itself
 
 0 INT
@@ -161,9 +163,7 @@ ends the execution of the fxn call
 any code after return is not considered
  [RETURN](calculator.py)
 
-
-
-
+ 
 
 [FLOW](hello.py)
 
