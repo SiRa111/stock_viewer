@@ -7,12 +7,12 @@ def convert(time):
     a,b = time.split(":")  #splits time in hours and minutes
     print(a,b)
     b = float(b)
-    b = b * 0.0167  #coverts b to string
+    b = b * 0.0167
     a = float(a)
-    a = a + b       #coverts a to string
+    a = a + b
     a = "{:.2f}".format(a) #gives two decimal points to a
+    a = float(a)
 
-    print(type(a))
 
 '''
     if 7.00 <= a <= 8.00:
