@@ -3,7 +3,7 @@ def main():
     t = input("Enter the time in 24hr format: ")
     convert(t)
 
-    
+
     if 7.00 <= a <= 8.00:
         print("breakfast time")
     elif 12.00 <= a <= 13.00:
