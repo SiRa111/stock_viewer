@@ -37,4 +37,8 @@ if score >= 90 and score <= 100:
 more efficient :
 90 <= score <= 100:
 
+0 parity refers to whether a number is either even or odd.
+
+
+
 '''
