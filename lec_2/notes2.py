@@ -39,6 +39,16 @@ more efficient :
 
 0 parity refers to whether a number is either even or odd.
 
+0 MATCH
+ name = input("What's your name? ")
+
+  match name:
+      case "Harry" | "Hermione" | "Ron":
+          print("Gryffindor")
+      case "Draco":
+          print("Slytherin")
+      case _:
+          print("Who?")
 
 
 '''
