@@ -31,6 +31,10 @@ more efficient way :
 if x != y:
 
 0 AND
+it checks more than two statements simultaneously. code is only executed if all the conditions are met
+if score >= 90 and score <= 100:
 
+more efficient :
+90 <= score <= 100:
 
 '''
