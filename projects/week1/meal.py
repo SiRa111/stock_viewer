@@ -4,7 +4,8 @@ def main():
 
 
 def convert(time):
-    time
+    a,b = split.time(":")
+    
 
 
 
