@@ -1,3 +1,5 @@
+str(a)
+str(b)
 def main():
     t = input("Enter the time in 24hr format: ")
     convert(t)
@@ -18,9 +20,6 @@ def convert(time):
     a = "{:.2f}".format(a) #gives two decimal points to a and turns it to a string as this is a f string
     a = float(a)
     return a
-
-
-
 
 if __name__ == "__main__":
     main()
