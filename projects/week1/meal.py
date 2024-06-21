@@ -4,7 +4,7 @@ def main():
 
 
 def convert(time):
-    a,b = split.time(":")
+    a,b = time.split(":")
     float(b)
     b = b * 0.0167  #coverts b to string
     float(a)
