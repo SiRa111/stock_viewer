@@ -1,6 +1,6 @@
 
 def main():
-    t = input("Enter the time in 24hr format: ")
+    t = input("Enter the time in 24hr or 12hr format: ")
     a = convert(t)
 
     if 7.00 <= a <= 8.00:
@@ -11,7 +11,9 @@ def main():
         print("dinner time")
 
 
-def convert(time):
+def convert(t):
+    time= t.split(" ")
+    print(time)
     a,b = time.split(":")  #splits time in hours and minutes
     b = float(b)
     b = b * 0.0167
