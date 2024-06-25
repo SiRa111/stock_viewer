@@ -49,4 +49,5 @@ while i <= 3:      #going upto and through 3
 
 
 '___FOR LOOP___'
-
+'''
+for loop lets you iterate through a list of items
