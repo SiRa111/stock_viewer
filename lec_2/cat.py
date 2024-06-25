@@ -26,7 +26,19 @@ while i != 0:
 #decerementing the value  of i
 
 
+'''
 i = 0
-while i < 3:
+while i < 3:       #going upto 3 but not through 3
     print("meow")
     i = i + 1
+'''
+#increment with i = 0
+
+
+'''
+i = 1
+while i <= 3:      #going upto and through 3
+    print("meow")
+    i = i + 1
+'''
+#increment with i = 1
