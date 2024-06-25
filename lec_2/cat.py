@@ -51,3 +51,7 @@ while i <= 3:      #going upto and through 3
 '___FOR LOOP___'
 '''
 for loop lets you iterate through a list of items
+use for loop when you know the termination number
+'''
+for i in [0, 1, 2]:
+    print("meow")
