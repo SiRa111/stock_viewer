@@ -61,7 +61,7 @@ for i in range(3):   #we use range fxn here
     print("meow")
 
 ALSO we have i here but we are not using it. better code :
-for _ in range(3):      #replace i with _ 
+for _ in range(3):      #replace i with _
     print("meow")
 '''
 
@@ -69,3 +69,17 @@ for _ in range(3):      #replace i with _
 range(3) means loop will execute 3 times.
 values : 0 1 2
 '''
+
+'''
+print("meow\n" * 3)
+meow
+meow
+meow
+
+___this is the output. we dont want the last space.
+
+print("meow\n" * 3, end="")
+meow
+meow
+meow
+___the string ends without any space.
