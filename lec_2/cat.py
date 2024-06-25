@@ -59,6 +59,10 @@ for i in [0, 1, 2]: #but what if there were a million values
 '''
 for i in range(3):   #we use range fxn here
     print("meow")
+
+ALSO we have i here but we are not using it. better code :
+for _ in range(3):      #replace i with _ 
+    print("meow")
 '''
 
 '''
