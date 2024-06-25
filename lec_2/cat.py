@@ -5,7 +5,7 @@ print("meow")
 '''
 # to print meow 3 times but what if 1000 times
 
-
+'_____WHILE LOOP______'
 '''
 i = 3                               1
 while i != 0:                       2
@@ -42,3 +42,11 @@ while i <= 3:      #going upto and through 3
     i = i + 1    |  i += 1
 '''
 #increment with i = 1
+
+
+'___LIST___'
+
+
+
+'___FOR LOOP___'
+
