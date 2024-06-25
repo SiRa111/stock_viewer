@@ -50,5 +50,8 @@ more efficient :
       case _:
           print("Who?")
 
+STRINGS ARE IMMUTABLE
+ANY CHANGES MADE IN STRINGS ARE TRANSIENT
+
 
 '''
