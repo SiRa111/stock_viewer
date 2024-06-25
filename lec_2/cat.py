@@ -21,7 +21,7 @@ while i != 0:                       2
 i = 3
 while i != 0:
     print("meow")
-    i = i - 1
+    i = i - 1   | i -= 1
 '''
 #decerementing the value  of i
 
@@ -30,7 +30,7 @@ while i != 0:
 i = 0
 while i < 3:       #going upto 3 but not through 3
     print("meow")
-    i = i + 1
+    i = i + 1    |  i += 1
 '''
 #increment with i = 0
 
@@ -39,6 +39,6 @@ while i < 3:       #going upto 3 but not through 3
 i = 1
 while i <= 3:      #going upto and through 3
     print("meow")
-    i = i + 1
+    i = i + 1    |  i += 1
 '''
 #increment with i = 1
