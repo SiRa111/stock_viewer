@@ -17,6 +17,6 @@ while i != 0:                       2
 
 i = 3
 while i != 0:
-    i = i - 1
     print("meow")
+    i = i - 1
      #decerementing the value  of i
