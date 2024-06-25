@@ -56,5 +56,12 @@ for i in [0, 1, 2]: #but what if there were a million values
     print("meow")
 '''
 
-for i in range():   #we use range fxn here
+'''
+for i in range(3):   #we use range fxn here
     print("meow")
+'''
+
+'''
+range(3) means loop will execute 3 times.
+values : 0 1 2
+'''
