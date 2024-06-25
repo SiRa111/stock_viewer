@@ -5,6 +5,7 @@ print("meow")
 '''
 # to print meow 3 times but what if 1000 times
 
+
 '''
 i = 3                               1
 while i != 0:                       2
@@ -15,8 +16,17 @@ while i != 0:                       2
 #flow : 2 > 3 > 2 > 3 > 2 > 3 ...
 #happens because we are not altering the value of i
 
+
+'''
 i = 3
 while i != 0:
     print("meow")
     i = i - 1
-     #decerementing the value  of i
+'''
+#decerementing the value  of i
+
+
+i = 0
+while i < 3:
+    print("meow")
+    i = i + 1
