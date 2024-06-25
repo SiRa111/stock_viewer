@@ -49,9 +49,12 @@ while i <= 3:      #going upto and through 3
 
 
 '___FOR LOOP___'
+#for loop lets you iterate through a list of items
+#use for loop when you know the termination number
 '''
-for loop lets you iterate through a list of items
-use for loop when you know the termination number
+for i in [0, 1, 2]: #but what if there were a million values
+    print("meow")
 '''
-for i in [0, 1, 2]:
+
+for i in range():   #we use range fxn here
     print("meow")
