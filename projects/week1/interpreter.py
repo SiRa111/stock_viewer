@@ -17,7 +17,9 @@ def operate(a,b,c):
             final = a / c
         case '*':
             final = a*c
-        
+    return final
+
+main()
 
 
 
