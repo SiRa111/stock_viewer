@@ -27,3 +27,5 @@ students = {
     "Ron" : "Gryffindor",
     "Draco" : "Slytherin"
 }
+
+print(students)
