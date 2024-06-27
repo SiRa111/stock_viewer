@@ -34,7 +34,7 @@ print(students["Hermionie"]) --> Gryffindor
 print(students["Harry"])     --> Gryffindor
 print(students["Ron"])      --> Gryffindor
 print(students["Draco"])     --> Slytherin
-'''
+
 
 
 
@@ -44,7 +44,7 @@ for key in students:
     print(key, students[key], sep=", ")
          #key  value
 
-'''
+
 OP
 Hermionie
 Harry
@@ -54,15 +54,19 @@ Draco
 
 #********************************************************
 #for loop iterates over the index in a list
+'''
+
 l = ["Hermionie", "Harry", "Ron", "Draco"]
 
 for i in range(len(l)):
     print(i, l[i])
-    #
+    #iterates over the index
 
 for i in l:
     print(i)
+    #iterates over the elements
 
 #it iterates over the key in dictionary
 
 
+'''
