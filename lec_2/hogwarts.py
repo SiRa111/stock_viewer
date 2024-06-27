@@ -36,6 +36,8 @@ print(students["Ron"])      --> Gryffindor
 print(students["Draco"])     --> Slytherin
 '''
 
+
+
 #BY DEFAULT - FOR LOOP ITERATES ONLY THE KEYS
 
 for key in students:
