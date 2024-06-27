@@ -1,6 +1,8 @@
+'''
+
 students = ["Hermionie", "Harry", "Ron"]
 
-'''
+
 print(students[0])
 print(students[1])
 print(students[2])
@@ -18,7 +20,7 @@ print("-----")
 
 for i in range(len(students)):
     print(i + 1, students[i])
-'''
+
 
 #_________DICTIONARY___________
 students = {
@@ -28,13 +30,12 @@ students = {
     "Draco" : "Slytherin"
 }
 
-'''
+
 Printing the values wrt their keys - HARDCODED
 print(students["Hermionie"]) --> Gryffindor
 print(students["Harry"])     --> Gryffindor
 print(students["Ron"])      --> Gryffindor
 print(students["Draco"])     --> Slytherin
-
 
 
 
