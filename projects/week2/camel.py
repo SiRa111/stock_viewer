@@ -9,6 +9,6 @@ def snake(string):
             i = "_" + i.lower()
         else:
             pass
-        print(i, end="")
+        print(i)
 
 main()
