@@ -20,7 +20,7 @@ def print_square(size):
      #to print row in sqaure
      for i in range(size):
 
-          #to print column in square
+          #to print each brick in row
           for j in range(size):
                print("#", end="")
 
