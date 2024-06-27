@@ -69,5 +69,10 @@ for i in l:
 
 #it iterates over the key in dictionary
 
-
 '''
+students = [
+    {"name":"Hermionie", "house":"Gryffindor", "patronus":"Otter"}
+    {"name":"Harry", "house":"Gryffindor ", "patronus":"Stag"}
+    {"name":"Ron", "house":"Gryffindor", "patronus" : "Jack Russesl terrier"}
+    {"name":"Draco ", "house": "Slytherin", "patronus" : None}
+]
