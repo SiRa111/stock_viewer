@@ -3,7 +3,7 @@ def main():
     z = int(input("Enter second number : "))
     y = input("Enter the operator : ")
     result = operate(x,y,z)
-    result = {":.1f"}.format(result)
+    result = "{:.1f}".format(result)
     result = float(result)
     print(result)
 
