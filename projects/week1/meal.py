@@ -13,11 +13,10 @@ def main():
         t = convert(t)
         t = final(t)
 
-    print(t)
 
 def final(k):
     if 7.00 <= k <= 8.00:
-        print("breakfast time
+        print("breakfast time")
     elif 12.00 <= k <= 13.00:
         print("lunch time")
     elif 18.00 <= k <= 19.00:
