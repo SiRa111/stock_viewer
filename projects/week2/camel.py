@@ -5,12 +5,12 @@ def main():
 
 def snake(string):
     for i in string:
-        '''
+        a = ""
         if "A" <= i <= "Z":
             i = "_" + i.lower()
         else:
             pass
-        '''
-        print(i)
 
+        a += i
+        return a
 main()
