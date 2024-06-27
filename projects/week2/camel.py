@@ -3,5 +3,6 @@ def main():
     final = snake(str)
     print(final)
 
-
+def snake(string):
+    
 
