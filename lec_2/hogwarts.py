@@ -31,4 +31,4 @@ students = {
 print(students)
 
 for i in range(len(students)):
-    print(i + 1, students[0])
+    print(i + 1, students[i])
