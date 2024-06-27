@@ -71,8 +71,19 @@ for i in l:
 
 '''
 students = [
-    {"name":"Hermionie", "house":"Gryffindor", "patronus":"Otter"}
-    {"name":"Harry", "house":"Gryffindor ", "patronus":"Stag"}
-    {"name":"Ron", "house":"Gryffindor", "patronus" : "Jack Russesl terrier"}
+    {"name":"Hermionie", "house":"Gryffindor", "patronus":"Otter"},
+    {"name":"Harry", "house":"Gryffindor ", "patronus":"Stag"},
+    {"name":"Ron", "house":"Gryffindor", "patronus" : "Jack Russesl terrier"},
     {"name":"Draco ", "house": "Slytherin", "patronus" : None}
 ]
+
+#here the loop iterates over each dictionary
+
+for i in students:
+    print(i)
+    #prints all dictionaries. d1 d2 d3  d4
+
+for i in students:
+    print(i["name"])
+    #prints the value of the specified key
+    #d1 value > d2 value > d3 ...
