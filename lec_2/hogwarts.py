@@ -51,3 +51,17 @@ Harry
 Ron
 Draco
 '''
+
+#********************************************************
+#for loop iterates over the index in a list
+l = ["Hermionie", "Harry", "Ron", "Draco"]
+
+for i in range(len(l)):
+    print(i, l[i])
+
+for i in l:
+    print(i)
+
+#it iterates over the key in dictionary
+
+
