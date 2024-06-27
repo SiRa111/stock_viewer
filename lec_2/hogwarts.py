@@ -22,13 +22,12 @@ for i in range(len(students)):
 
 #_________DICTIONARY___________
 students = {
-    "Hermionie" : "Gryffindor",
+    "Hermionie" : "Gryffindor",  #key : value pair
     "Harry" : "Gryffindor",
     "Ron" : "Gryffindor",
     "Draco" : "Slytherin"
 }
 
-print(students)
+print(students["Hermionie"])
 
-for i in range(len(students)):
-    print(i + 1, students[i])
+
