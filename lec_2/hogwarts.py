@@ -28,6 +28,11 @@ students = {
     "Draco" : "Slytherin"
 }
 
-print(students["Hermionie"])
-
+'''
+Printing the values wrt their keys - HARDCODED
+print(students["Hermionie"]) --> Gryffindor
+print(students["Harry"])     --> Gryffindor
+print(students["Ron"])      --> Gryffindor
+print(students["Draco"])     --> Slytherin
+'''
 
