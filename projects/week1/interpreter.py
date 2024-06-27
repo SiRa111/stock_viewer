@@ -1,7 +1,6 @@
 def main():
-    x = int(input("Enter first number : "))
-    z = int(input("Enter second number : "))
-    y = input("Enter the operator : ")
+    expression = input("Enter the expression : ")
+    x,y,z = expression.split(" ")
     result = operate(x,y,z)
     result = "{:.1f}".format(result)
     result = float(result)
