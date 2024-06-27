@@ -29,14 +29,12 @@ def time(t):
     d = float(d)
     d = d * 0.0167
 
-
     c = 12 + c
     c = c + d
     c = "{:.2f}".format(c)
     c = float(c)
 
     return c
-
 
 def convert(t):
     m = t.rstrip(' ')
@@ -46,13 +44,11 @@ def convert(t):
     b = b * 0.0167
     a = float(a)
 
-
     a = a + b
     a = "{:.2f}".format(a) #gives two decimal points to a and turns it to a string as this is a f string
     a = float(a)
 
     return a
-
 
 
 if __name__ == "__main__":
