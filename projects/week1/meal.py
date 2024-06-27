@@ -13,6 +13,8 @@ def main():
         t = convert(t)
         t = final(t)
 
+    print(t)
+
 def final(k):
     if 7.00 <= k <= 8.00:
         print("breakfast time
