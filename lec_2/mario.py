@@ -26,6 +26,6 @@ def print_square(size):
                print("#", end="")
            '''
            #to bring hash to the next line after col prnt
-           print(end="\n")
+           print(end="")
 
 main()
