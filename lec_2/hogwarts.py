@@ -22,7 +22,7 @@ for i in range(len(students)):
 
 #_________DICTIONARY___________
 students = {
-    "Hermionie" : "Gryffindor",  #key : value pair
+    "Hermionie" : "Gryffindor",,  #key : value pair
     "Harry" : "Gryffindor",
     "Ron" : "Gryffindor",
     "Draco" : "Slytherin"
@@ -38,8 +38,9 @@ print(students["Draco"])     --> Slytherin
 
 #BY DEFAULT - FOR LOOP ITERATES ONLY THE KEYS
 
-for student in students:
-    print(student)
+for i in students:
+    print(i, students[i])
+         #key  value
 
 '''
 OP
