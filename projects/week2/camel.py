@@ -8,7 +8,7 @@ def snake(string):
         if "A" <= i <= "Z":
             i = "_" + i.lower()
         else:
-            continue
+            pass
         print(i, end="")
 
 main()
