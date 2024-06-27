@@ -84,6 +84,6 @@ for i in students:
     #prints all dictionaries. d1 d2 d3  d4
 
 for i in students:
-    print(i["name"])
+    print(i["name"], i["house"], sep=", ")
     #prints the value of the specified key
     #d1 value > d2 value > d3 ...
