@@ -12,6 +12,6 @@ def snake(string):
         else:
             pass
 
-        a += i
+        a = a + i
     return a
 main()
