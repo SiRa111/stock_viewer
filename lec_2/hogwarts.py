@@ -38,8 +38,8 @@ print(students["Draco"])     --> Slytherin
 
 #BY DEFAULT - FOR LOOP ITERATES ONLY THE KEYS
 
-for i in students:
-    print(i, students[i])
+for key in students:
+    print(key, students[key])
          #key  value
 
 '''
