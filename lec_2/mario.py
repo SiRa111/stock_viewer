@@ -19,12 +19,13 @@ def print_square(size):
 
      #to print row in sqaure
      for i in range(size):
-
+           print("#" * size, sep="")
+           '''
           #to print each brick in row
           for j in range(size):
                print("#", end="")
-
-          #to bring hash to the next line after col prnt
-          print(end="\n")
+           '''
+           #to bring hash to the next line after col prnt
+           print(end="\n")
 
 main()
