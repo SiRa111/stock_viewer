@@ -6,7 +6,10 @@ def main():
     result = float(result)
     print(result)
 
+
 def operate(a,b,c):
+    a = int(a)
+    b = int(c)
     match b:
         case '+':
             final = a + c
