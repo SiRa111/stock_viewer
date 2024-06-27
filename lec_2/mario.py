@@ -17,6 +17,7 @@ def print_row(width):
 
 def print_square(size):
      for i in range(size):
-          print("#" * size)
+          for j in range(size):
+               print("#", sep="")
 
 main()
