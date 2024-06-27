@@ -4,8 +4,9 @@ def main():
     print(final)
 
 def snake(string):
+    a = ""
     for i in string:
-        a = ""
+
         if "A" <= i <= "Z":
             i = "_" + i.lower()
         else:
