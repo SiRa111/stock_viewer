@@ -16,9 +16,15 @@ def print_row(width):
         print("?" * width, end="\n")
 
 def print_square(size):
+
+     #to print row in sqaure
      for i in range(size):
-          print(end="\n")
+
+          #to print column in square
           for j in range(size):
                print("#", end="")
+
+          #to bring hash to the next line after col prnt
+          print(end="\n")
 
 main()
