@@ -9,5 +9,15 @@ def main():
 
 def operate(a,b,c):
     match b:
-        case b == '+':
+        case '+':
+            final = a + c
+        case '-':
+            final = a - c
+        case '/':
+            final = a / c
+        case '*':
+            final = a*c
+        
+
+
 
