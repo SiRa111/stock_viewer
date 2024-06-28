@@ -9,6 +9,7 @@ def main():
             if total < cent :
                 change = cent - total
                 print("Change owed : ", change)
+            elif 
         else :
             print("Amount Due : ",  total)
             pass
