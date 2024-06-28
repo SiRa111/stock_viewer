@@ -3,7 +3,7 @@ def main():
     total = 50
     while total != 0:
         cent = int(input("Insert Coin : "))
-        if cent == 25 or cent == 10 or cent == 5 and total > cent:
+        if cent == 25 or cent == 10 or cent == 5 :
             total = total - cent
             print("Amount Due : ",  total)
         elif total < cent :
