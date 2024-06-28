@@ -7,15 +7,14 @@ def main():
             total = total + cent
             due = 50 - total
             print("Amount Due : ", due)
-            if total > cent :
-                change = cent + total
+            if due < cent :
+                change = cent - due
                 print("Change owed : ", change)
 
         else :
             due = 50 - total
             print("Amount Due : ", due)
             pass
-    change = 50 - total
-    print("Change owed : ", change)
+    
 
 main()
