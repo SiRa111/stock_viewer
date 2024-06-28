@@ -7,6 +7,7 @@ def main():
             total = total + cent
             print("Amount Due : ", 50 - total)
         else :
+            print("Amount Due : ", 50 - total)
             pass
 
 
