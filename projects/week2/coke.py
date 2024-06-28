@@ -1,6 +1,6 @@
 def main():
     cent = int(input("Amount Due : 50\nInsert Coin : "))
-    final = due(cent)
+    due(cent)
 
 def due(value):
     total= 50
