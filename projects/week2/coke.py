@@ -9,7 +9,11 @@ def main():
                 total = total + cent
                 print("Amount Due : ",50 - total)
                 continue
-    elif
+        elif :
+            pass
+        
+
+
 
 
 main()
