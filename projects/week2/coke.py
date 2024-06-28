@@ -9,7 +9,7 @@ def main():
         else :
             print("Amount Due : ",  total)
             pass
-    change = cent - total
+    change = 50 + total
     print("Change owed : ", change)
 
 main()
