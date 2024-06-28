@@ -10,6 +10,7 @@ def due(value):
             total = total - value
             print("Amount Due : ",total)
             continue
+    elif
 
 
 main()
