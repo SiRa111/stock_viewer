@@ -7,13 +7,8 @@ def main():
 
 
 def is_valid(s):
-    c1(s)
-    c2(s)
-    c3(s)
-    c4(s)
+    for i in range(len(str))
 
-def c1(string):
-    
 
 
 main()
