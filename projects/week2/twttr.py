@@ -3,8 +3,9 @@ def main():
     process(str)
 
 def process(string):
-    l = []
+    l = [' ']
     for i in range(len(string)):
-        print(string[i])
+        l[i] = string[i]
+        print(l)
 
 main()
