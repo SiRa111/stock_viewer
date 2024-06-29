@@ -1,8 +1,9 @@
 def main():
     print("Amount Due: 50")
     total = 0
-    cent = int(input("Insert Coin: "))
+   
     while total != 50:
+        cent = int(input("Insert Coin: "))
 
         if cent == 5 or cent == 10 or cent == 25:
             total = total + cent
