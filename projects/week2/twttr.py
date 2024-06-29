@@ -13,6 +13,6 @@ def process(string):
 
     for i in l:
         print(i, end='')
-    print('\n')
+    
 
 main()
