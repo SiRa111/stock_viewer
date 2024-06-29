@@ -21,9 +21,11 @@ def is_valid(s):
 
     d = 0
     for i in range(len(l)):
-        while 2 <= d <= 6:
+        if 2 <= d <= 6:
             d += 1
             return True
+        else:
+            return False
 
 
 
