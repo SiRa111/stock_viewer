@@ -19,6 +19,10 @@ def is_valid(s):
         else:
             return False
 
+    d = 0
+    while 2 <= d <= 6:
+        d += 1
+        return True
     
 
 
