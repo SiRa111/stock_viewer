@@ -10,6 +10,7 @@ def main():
                 print("Amount Due: ", 50 - total)
                 if 50 - total == 0:
                     print("Change Owed: ", 0)
+                    break
             elif total > 50:
                 print("Change Owed: ", total - 50 )
                 break
