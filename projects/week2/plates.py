@@ -13,7 +13,12 @@ def is_valid(s):
 
     for i in 2:
         if i.isalpha() :
-            
+            return True
+        else:
+            return False
+
+    
+
 
 
 
