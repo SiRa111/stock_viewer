@@ -17,5 +17,5 @@ def main():
         else:
             print("Amount Due : ", 50 - total)
             pass
-
+    print("Change Owed : ", 0)
 main()
