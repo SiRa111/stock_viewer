@@ -8,10 +8,9 @@ def process(string):
         l.append(string[i])
 
     for i in l:
-        if i == 'a' or  'e' :
+        if i == 'a' or  i == 'e' :
             l.remove(i)
             print(l)
-    for i in l:
-        print(i, sep="", end='')
+
 
 main()
