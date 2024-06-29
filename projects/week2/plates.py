@@ -13,6 +13,7 @@ def is_valid(s):
 
     for i in range(2):
         if l[i].isalpha() :
+            print(l[i])
             return True
         else:
             return False
