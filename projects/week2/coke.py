@@ -5,11 +5,9 @@ def main():
         cent = int(input("Insert Coin : "))
         total = total + cent
         if total <= 50 :
-            prod(cent)
+            print("Amount Due : ", 50 - total)
         elif total > 50:
-            change(cent)
+            print("Change Owed : ", total - 50 )
 
-def prod(a):
-    
 
 main()
