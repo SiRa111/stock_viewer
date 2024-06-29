@@ -7,5 +7,8 @@ def process(string):
     for i in range(len(string)):
         l.append(string[i])
         print(l)
+    for i in l:
+        if i == 'a' or 'e' :
+            
 
 main()
