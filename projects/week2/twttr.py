@@ -5,11 +5,6 @@ def main():
 def process(string):
     l = []
     for i in range(len(string)):
+        print(string[i])
 
-        if i == 'a' or 'A' or 'e' or 'E' or 'i' or 'I' or 'o' or 'O' or 'u' or 'U':
-            pass
-        l = string[i]
-
-    for i in l:
-        print(i, sep="", end="")
 main()
