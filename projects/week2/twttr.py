@@ -3,9 +3,9 @@ def main():
     process(str)
 
 def process(string):
-    l = [' ']
+    l = []
     for i in range(len(string)):
-        l[i] = string[i]
+        l.append(string[i])
         print(l)
 
 main()
