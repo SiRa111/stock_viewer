@@ -11,7 +11,7 @@ def is_valid(s):
     for i in range(len(s)):
         l.append(s[i])
 
-    for i in range(2):
+    for i in l:
         if i.isalpha() :
             return True
         else:
