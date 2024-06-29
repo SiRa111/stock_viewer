@@ -8,6 +8,8 @@ def main():
             total = total + cent
             if total < 50 :
                 print("Amount Due: ", 50 - total)
+                if 50 - total == 0:
+                    print("Change Owed: ", 0)
             elif total > 50:
                 print("Change Owed: ", total - 50 )
                 break
@@ -17,5 +19,5 @@ def main():
         else:
             print("Amount Due: ", 50 - total)
             pass
-    print("Change Owed: ", 0)
+
 main()
