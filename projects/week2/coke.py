@@ -5,6 +5,7 @@ def main():
         cent = int(input("Insert Coin : "))
         total = total + cent
         if cent == 5 or cent == 10 or cent == 25:
+            total = total + cent
             if total < 50 :
                 print("Amount Due : ", 50 - total)
             elif total > 50:
