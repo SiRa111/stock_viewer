@@ -14,7 +14,6 @@ def main():
                 print("Amount Due : 0")
                 break
         else:
-            print("Amount Due : ", 50 - total)
             pass
 
 main()
