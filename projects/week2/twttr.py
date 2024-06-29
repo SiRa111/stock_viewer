@@ -8,7 +8,7 @@ def process(string):
 
         if i == 'a' or 'A' or 'e' or 'E' or 'i' or 'I' or 'o' or 'O' or 'u' or 'U':
             pass
-        string[i] = l[i]
+        l = string[i]
 
     for i in l:
         print(i, sep="", end="")
