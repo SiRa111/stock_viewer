@@ -12,6 +12,7 @@ def process(string):
             l.remove(i)
 
     for i in l:
-        print(i, sep="", end="")
-        
+        print(i, end='')
+    print('\n')
+
 main()
