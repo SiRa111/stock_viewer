@@ -7,7 +7,14 @@ def main():
 
 
 def is_valid(s):
-    for i in range(len(str))
+    l = []
+    for i in range(len(s)):
+        l.append(s[i])
+
+    for i in 2:
+        if i.isalpha() :
+            
+
 
 
 
