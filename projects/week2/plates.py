@@ -7,34 +7,23 @@ def main():
 
 
 def is_valid(s):
+    c1(s)
+
+
+def c1(s):
     l = []
     for i in range(len(s)):
         l.append(s[i])
-
-    for i in range(2):
-        print(i)
-        if l[i].isalpha():
-            continue
-        else:
-            return False
+    if len(l) >= 2:
+        for i in range(2):
+            if l[i].isalpha():
+                continue
+            else:
+                return False
+    else:
+        return False
     return True
-    '''
-    c2(s)
-    c3(s)
-    c4(s)
-    '''
 
-def c1(string):
-    l = []
-    for i in range(len(string)):
-        l.append(string[i])
-
-    for i in range(len(l)):
-        if l[i].isalpha() :
-            print(l[i])
-            continue
-        else:
-            return False
 
 
 
