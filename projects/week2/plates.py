@@ -29,12 +29,20 @@ def is_valid(s):
     else:
         return False
 
+    #makes sure only digits and letters are entered
+    for i in range(len(l)):
+        if l[i].isalnum():
+            continue
+        else:
+            return False
+
     e = []
     for i in range(len(l)):
         if l[i].isnumeric():
             e.append(l[i])
     print(e)
 
+    #the first digit cannot be zero
     for i in range(len(e)):
         if l[0] == '0' :
             return False
