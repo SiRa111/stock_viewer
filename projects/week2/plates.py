@@ -10,10 +10,10 @@ def is_valid(s):
     l = []
     for i in range(len(s)):
         l.append(s[i])
-    for i in range(len(l)):
-        c = 0
-        while c < 3:
-            c += 1
+    c = 0
+    while c < 3:
+        c += 1
+        for i in range(len(l)):
             if l[i].isalpha() :
                 print(l[i])
                 continue
