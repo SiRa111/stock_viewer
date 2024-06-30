@@ -20,18 +20,19 @@ def is_valid(s):
             return False
 
     print(l)
-    
+    print(s)
+    '''
     d = 0
     for i in range(len(l)):
         print(i)
 
-        '''
+
         d += 1
         if 2 <= d <= 6:
             return True
         else:
             return False
-        '''
+    '''
 
 
 
