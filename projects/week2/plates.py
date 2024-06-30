@@ -18,13 +18,13 @@ def c1(string):
     l = []
     for i in range(len(string)):
         l.append(string[i])
-    c = 0
-    while c < 2:
+    for i in range(2):
         if l[i].isalpha() :
-            c += 1
-            return True
+            print(l[i])
+            continue
         else:
             return False
+
 
 def c2(string):
     l = []
