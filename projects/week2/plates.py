@@ -35,6 +35,10 @@ def is_valid(s):
             e.append(l[i])
     print(e)
 
+    for i in range(len(e)):
+        if l[0] == '0' :
+            return False
+
     return True
 
 
