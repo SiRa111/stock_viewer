@@ -18,7 +18,7 @@ def c1(string):
     l = []
     for i in range(len(string)):
         l.append(string[i])
-    for i in range(2):
+    for i in range(len(l)):
         if l[i].isalpha() :
             print(l[i])
             continue
