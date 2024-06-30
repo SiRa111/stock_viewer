@@ -19,8 +19,6 @@ def is_valid(s):
         else:
             return False
 
-    print(l)
-    print(s)
     '''
     d = 0
     for i in range(len(l)):
@@ -34,7 +32,7 @@ def is_valid(s):
             return False
     '''
 
-
+def c1
 
 
 
