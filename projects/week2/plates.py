@@ -18,7 +18,7 @@ def is_valid(s):
                 continue
             else:
                 return False
-        return True
+            return True
     '''
     c2(s)
     c3(s)
