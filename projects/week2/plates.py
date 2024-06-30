@@ -10,7 +10,12 @@ def is_valid(s):
     l = []
     for i in range(len(s)):
         l.append(s[i])
-    
+    for i in range(len(l)):
+        a = 0
+        while a < 2:
+            a += 1
+            if l[i].isalpha():
+                
     '''
     c2(s)
     c3(s)
