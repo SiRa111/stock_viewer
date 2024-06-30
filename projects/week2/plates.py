@@ -31,7 +31,7 @@ def is_valid(s):
 
     e = []
     for i in range(len(l)):
-        if l[i].isnum():
+        if l[i].isnumeric():
             e.append(l[i])
     print(e)
 
