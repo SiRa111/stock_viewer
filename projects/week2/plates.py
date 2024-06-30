@@ -35,12 +35,7 @@ def is_valid(s):
             continue
         else:
             return False
-
-    e = []
-    for i in range(len(l)):
-        if l[i].isnumeric():
-            e.append(l[i])
-    print(e)
+    for i in range(len(l), -1,)
 
     #the first digit cannot be zero
     for i in range(len(e)):
