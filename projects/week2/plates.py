@@ -12,7 +12,7 @@ def is_valid(s):
         l.append(s[i])
 
     for i in range(len(l)):
-        if i < 2 :
+        if i < 2 and i < :
             if l[i].isalpha() :
                 print(l[i])
                 continue
