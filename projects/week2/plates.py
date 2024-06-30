@@ -40,12 +40,4 @@ def c2(string):
             return False
 
 
-
-
-
-
-
-
-
-
 main()
