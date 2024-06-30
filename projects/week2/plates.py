@@ -15,7 +15,10 @@ def is_valid(s):
         while a < 2:
             a += 1
             if l[i].isalpha():
-                
+                continue
+            else:
+                return False
+        return True
     '''
     c2(s)
     c3(s)
