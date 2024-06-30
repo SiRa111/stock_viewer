@@ -10,7 +10,10 @@ def is_valid(s):
     l = []
     for i in range(len(s)):
         l.append(s[i])
-    
+
+    for i in range(len(l)):
+        for i in 
+    return True
     '''
     c2(s)
     c3(s)
@@ -21,6 +24,7 @@ def c1(string):
     l = []
     for i in range(len(string)):
         l.append(string[i])
+
     for i in range(len(l)):
         if l[i].isalpha() :
             print(l[i])
