@@ -14,10 +14,11 @@ def is_valid(s):
     for i in range(len(l)):
         a = 0
         while a < 2:
-            a += 1
+            a = a + 1
+            print(a)
             s = ""
             s = s + l[i]
-        print(s)
+            print(s)
         if s.isalpha():
             return True
         else:
