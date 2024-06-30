@@ -8,8 +8,8 @@ def main():
 
 def is_valid(s):
     c1(s)
-    c2(s)
     '''
+    c2(s)
     c3(s)
     c4(s)
     '''
