@@ -11,19 +11,13 @@ def is_valid(s):
     for i in range(len(s)):
         l.append(s[i])
 
-    for i in range(len(l)):
-        a = 0
-        while a < 2:
-            a = a + 1
-            print(a)
-            s = ""
-            s = s + l[i]
-            print(s)
-        if s.isalpha():
-            return True
+    for i in range(2):
+        print(i)
+        if l[i].isalpha():
+            continue
         else:
             return False
-
+    return True
     '''
     c2(s)
     c3(s)
