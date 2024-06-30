@@ -8,7 +8,7 @@ def main():
 
 def is_valid(s):
     c1(s)
-
+    c2(s)
     '''
     d = 0
     for i in range(len(l)):
@@ -33,6 +33,20 @@ def c1(string):
             return True
         else:
             return False
+
+def c2(string):
+    l = []
+    for i in range(len(string)):
+        l.append(string[i])
+    d = 0
+    for i in range(len(l)):
+        print(i)
+        d += 1
+        if 2 <= d <= 6:
+            return True
+        else:
+            return False
+
 
 
 
