@@ -9,18 +9,8 @@ def main():
 def is_valid(s):
     c1(s)
     c2(s)
-    '''
-    d = 0
-    for i in range(len(l)):
-        print(i)
-
-
-        d += 1
-        if 2 <= d <= 6:
-            return True
-        else:
-            return False
-    '''
+    c3(s)
+    c4(s)
 
 def c1(string):
     l = []
