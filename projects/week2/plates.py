@@ -22,8 +22,7 @@ def c1(string):
         if l[i].isalpha() :
             print(l[i])
             continue
-        else:
-            return False
+    return True
 
 
 def c2(string):
