@@ -12,7 +12,13 @@ def is_valid(s):
         l.append(s[i])
 
     for i in range(len(l)):
-        if i < 2 and i < :
+        if i == 0:
+            if l[i].isalpha() :
+                print(l[i])
+                continue
+            else:
+                return False
+        elif i == 1:
             if l[i].isalpha() :
                 print(l[i])
                 continue
