@@ -28,7 +28,13 @@ def is_valid(s):
         pass
     else:
         return False
-    
+
+    e = []
+    for i in range(len(l)):
+        if l[i].isnum():
+            e.append(l[i])
+    print(e)
+
     return True
 
 
