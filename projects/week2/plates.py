@@ -35,7 +35,7 @@ def is_valid(s):
             continue
         else:
             return False
-    for i in range(len(l), -1,)
+    for i in range(len(l), -1, -1)
 
     #the first digit cannot be zero
     for i in range(len(e)):
