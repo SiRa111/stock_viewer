@@ -43,7 +43,7 @@ def is_valid(s):
                 return False
 
     #numbers are only at the end of the plate
-    for i in a:
+    for i in range(len(l)):
         print(l[i])
     return True
 
