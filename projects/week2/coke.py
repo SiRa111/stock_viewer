@@ -13,7 +13,6 @@ def main():
             elif total > 50:
                 print("Change Owed: ", total - 50 )
                 break
-
         else:
             print("Amount Due: ", 50 - total)
             pass
