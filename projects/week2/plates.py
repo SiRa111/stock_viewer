@@ -36,6 +36,7 @@ def is_valid(s):
         else:
             return False
 
+    e=[]
     #the first digit cannot be zero
     for i in range(len(e)):
         if l[0] == '0' :
