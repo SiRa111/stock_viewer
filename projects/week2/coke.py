@@ -23,6 +23,7 @@ main(c)
 
 while input():
     if input() == int():
+        
         main(input())
     else:
         break
