@@ -20,8 +20,10 @@ def main(cent):
         return total
 
 main(c)
-num = int()
+
 while input():
-    if input() == num:
-        main(num)
+    if input() == int():
+        main(input())
+    else:
+        break
 
