@@ -21,13 +21,12 @@ def main(cent):
         return True
 
 main(c)
-num = int()
+
 while input():
-    print("______________")
-    if input() == num:
-        print(input())
-    else:
-        break
+    print(input())
+    print("________")
+    main(input())
+
 
 
 
