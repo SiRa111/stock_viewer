@@ -43,11 +43,11 @@ def is_valid(s):
                 return False
 
     #numbers are only at the end of the plate
-    valid_index = 2,3,4,5
-    for i in range(len(l)):
-        while i == valid_index:
-            if l[i].isnumeric():
-                
+    u = []
+    for i in range(len(l)+1)[::-1]:
+        u.append(l[i])
+
+    print(u)
 
     return True
 
