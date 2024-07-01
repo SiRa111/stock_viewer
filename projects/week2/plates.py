@@ -47,7 +47,7 @@ def is_valid(s):
         if l[i].isnumeric():
             if l[i+1].isalpha():
                 return False
-
+    
     return True
 
 
