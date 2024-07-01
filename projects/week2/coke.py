@@ -19,7 +19,8 @@ def main(cent):
         return True
 
 main(c)
-
+while input().isnumeric():
+    
 
 
 
