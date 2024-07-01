@@ -44,9 +44,8 @@ def is_valid(s):
 
     print(e)
 
-    for i in range(len(e)):
-        if l[0] == '0' :
-            return False
+    if l[0] == '0' :
+        return False
 
     return True
 
