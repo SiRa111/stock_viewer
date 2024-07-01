@@ -42,6 +42,10 @@ def is_valid(s):
             if e[0] == '0':
                 return False
 
+    #numbers are only at the end of the plate
+    for i in l:
+        
+
     return True
 
 
