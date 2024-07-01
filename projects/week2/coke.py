@@ -21,9 +21,7 @@ def main(cent):
 
 main(c)
 
-while input():
-    if input() == int():
-        main(input())
-    else:
-        break
+if input():
+    print("Insert Coin : ")
+    
 
