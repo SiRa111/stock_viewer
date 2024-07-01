@@ -16,7 +16,7 @@ def main(cent):
         elif cent != 5 or cent != 10 or cent != 25:
             print(f"Amount Due: {50 - total}\n")
             pass
-        return True
+        
 
 main(c)
 
