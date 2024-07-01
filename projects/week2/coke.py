@@ -22,10 +22,6 @@ def main(cent):
 
 main(c)
 
-while input():
-    print(input())
-    print("________")
-    main(input())
 
 
 
