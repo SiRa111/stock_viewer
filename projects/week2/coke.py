@@ -4,6 +4,7 @@ c = int(input("Insert Coin : "))
 
 def main(cent):
     total = int()
+    print(cent)
     while total != 50:
 
         if cent == 5 or cent == 10 or cent == 25:
@@ -17,11 +18,15 @@ def main(cent):
         elif cent != 5 or cent != 10 or cent != 25:
             print("Amount Due: ", 50 - total)
             pass
-        return total
+        return True
 
 main(c)
 
-if input():
-    print("Insert Coin : ")
-    
+while input():
+    if input() == int():
+        print(input())
+    else:
+        break
+
+
 
