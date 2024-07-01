@@ -41,7 +41,9 @@ def is_valid(s):
     for i in range(len(l)):
         if l[i].isnumeric():
             e.append(l[i])
-            
+
+    print(e)
+
     for i in range(len(e)):
         if l[0] == '0' :
             return False
