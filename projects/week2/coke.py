@@ -22,7 +22,6 @@ def main(cent):
 main(c)
 
 while input():
-    print("insert coin : ")
     if input() == int():
         main(input())
     else:
