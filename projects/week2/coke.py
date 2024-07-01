@@ -22,6 +22,7 @@ def main(cent):
 
 main(c)
 num = int()
-while input() == num:
-    main(num)
+while True:
+    if input() == num:
+        main(num)
 
