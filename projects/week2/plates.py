@@ -46,7 +46,8 @@ def is_valid(s):
     u = []
     for i in range(len(l)+1)[:0:-1]:
         if l[i-1].isnumeric():
-            
+            print(i-1, l[i-1])
+
 
     return True
 
