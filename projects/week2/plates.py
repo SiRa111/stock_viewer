@@ -47,7 +47,7 @@ def is_valid(s):
     for i in range(len(l)+1)[:0:-1]:
         u.append(l[i-1])
 
-    print(u)
+    for i in
 
     return True
 
