@@ -11,7 +11,7 @@ def main():
             if total < 50 :
                 print(f"Amount Due: {50 - total}\n" )
 
-            elif total > 50:
+            elif total >= 50:
                 print(f"Change Owed: {total - 50}\n" )
                 break
         elif cent != 5 or cent != 10 or cent != 25:
