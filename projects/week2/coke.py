@@ -21,7 +21,7 @@ def main(cent):
         break
 
 main(c)
-
-if input():
-    main(c)
+num = int()
+while input() == num:
+    main(num)
 
