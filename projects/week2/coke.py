@@ -3,11 +3,7 @@ def main():
     total = 0
 
     while total != 50:
-        i = 0
-        while i == 0:
-            cent = int(input("Insert Coin: "))
-            i += 1
-        cent = int(input(""))
+        cent = int(input("Insert Coin : "))
 
         if cent == 5 or cent == 10 or cent == 25:
             total = total + cent
@@ -17,7 +13,7 @@ def main():
             elif total > 50:
                 print("Change Owed: ", total - 50 )
                 break
-        else:
+        elif cent != 5 or cent != 10 or cent != 25:
             print("Amount Due: ", 50 - total)
             pass
 
