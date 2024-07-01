@@ -45,8 +45,8 @@ def is_valid(s):
     #numbers are only at the end of the plate
     u = []
     for i in range(len(l)+1)[:0:-1]:
-        if l[i].isnumeric():
-            print('h')
+        if l[i-1].isnumeric():
+            
 
     return True
 
