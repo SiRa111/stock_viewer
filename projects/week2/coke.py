@@ -23,6 +23,7 @@ def main(cent):
 main(c)
 
 while input():
+    print("______________")
     if input() == int():
         print(input())
     else:
