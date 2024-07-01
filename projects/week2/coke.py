@@ -18,7 +18,7 @@ def main(cent):
         elif cent != 5 or cent != 10 or cent != 25:
             print("Amount Due: ", 50 - total)
             pass
-        break
+        return total
 
 main(c)
 num = int()
