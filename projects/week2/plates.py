@@ -44,7 +44,8 @@ def is_valid(s):
 
     #numbers are only at the end of the plate
     for i in l:
-        
+        if i.isnumeric():
+            
 
     return True
 
