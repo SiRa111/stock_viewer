@@ -56,7 +56,9 @@ def is_valid(s):
         if i.isalpha():
             return False
 
-    
+    #end must be a number
+    if l[len(l) - 1].isalpha():
+        return False
 
     return True
 
