@@ -1,9 +1,10 @@
 def main():
     fruit = input("Item: ")
     fruit = fruit.lower().strip()
-  
-    print(dict[fruit])
-
+    if dict[fruit] == True:
+        print(dict[fruit])
+    else:
+        print("")
 
 dict = {"apple":"130",
         "avocado":"50",
