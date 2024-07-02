@@ -1,7 +1,7 @@
 def main():
     fruit = input("Item: ")
     fruit = fruit.lower().strip()
-    if dict[fruit] == True:
+    if fruit == dict[fruit]:
         print(dict[fruit])
     else:
         print("")
