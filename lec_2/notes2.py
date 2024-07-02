@@ -169,9 +169,6 @@ __________________________________________________
 print(function_name)
 
 
-
-'''
-
 dic = {"name":"name1", "id":"001"}
 dic["address"] = "ghar"
 
@@ -182,4 +179,10 @@ print(dic["address"])
 #to handle that we give a default value
 dic["address"] = "ghar"
  #paste this before calling it
+
+'''
+#OTHER DICT METHODS
+print(f"random shit :{dict["key_name"]}")
+print(f"random shit : {dict.get("key_name", "default_value")}")
+#if the key does not exist the default value will be printed
 
