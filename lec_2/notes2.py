@@ -154,7 +154,7 @@ def meow(n):
         print(i + 1, "meow")
 
 main()
-'''
+
 you can print multiline text by:
 
 def function_name():
@@ -167,3 +167,12 @@ __________________________________________________
 """
 
 print(function_name)
+
+
+
+'''
+
+dic = {"name":"name1", "id":"001"}
+
+print(dic["name"])
+print(dic["id"])
