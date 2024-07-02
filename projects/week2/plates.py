@@ -57,7 +57,7 @@ def is_valid(s):
     digits = l[num_index:]
     print(num_index)
     print(digits)
-    pritn(letters)
+    print(letters)
     for i in digits:
         if i.isalpha():
             return False
