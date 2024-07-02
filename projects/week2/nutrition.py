@@ -1,7 +1,9 @@
 def main():
     fruit = input("Item: ")
     fruit = fruit.lower().strip()
+  
     print(dict[fruit])
+
 
 dict = {"apple":"130",
         "avocado":"50",
