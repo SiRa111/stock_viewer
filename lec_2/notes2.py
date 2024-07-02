@@ -168,6 +168,9 @@ __________________________________________________
 
 print(function_name)
 
+
+USE SINGLE BRACKETS INSIDE F STRING TO AVOID CONFUSTION
+print(f"he said his name was 'roy' ")
 '''
 dic = {"name":"name1", "id":"001"}
 dic["address"] = "ghar"
@@ -181,7 +184,8 @@ print(dic["address"])
 
 
 #OTHER DICT METHODS
-print(f"random shit :{dict["name"]}")
-print(f"random shit : {dict.get('UWU', 'default_value')}")
+print(f"random shit :{dic["name"]}")
+print(f"random shit : {dic.get('UWU', 'default_value')}")
 #if the key does not exist the default value will be printed
-dict.update({"mother_name":"maa ka naam", "fathers name" : "sperm donour"})
+dic.update({"mother_name":"maa ka naam", "fathers name" : "sperm donour"})
+#the dict will be updated with these new keys
