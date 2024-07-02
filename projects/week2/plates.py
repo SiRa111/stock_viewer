@@ -47,21 +47,17 @@ def is_valid(s):
     digits=[]
     num_index = int()
     for i in range(len(l)):
-        if l[i].isnumeric():
-            print(l[i])
-            i = num_index
-            break
-        else:
+        if l[i].isalpha():
             continue
+        elif l[i].isnumeric():
+            num_index = i
+            break
 
-    
     letters = l[0:num_index]
     digits = l[num_index:]
-    print(digits)
 
     for i in digits:
         if i.isalpha():
-            print("-1000 aura")
             return False
 
     return True
