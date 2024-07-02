@@ -48,8 +48,11 @@ def is_valid(s):
     num_index = int()
     for i in range(len(l)):
         if l[i].isnumeric():
+            print(l[i])
             i = num_index
-            print(i)
+            break
+        else:
+            continue
 
     letters = l[0:num_index]
     digits = l[num_index:]
