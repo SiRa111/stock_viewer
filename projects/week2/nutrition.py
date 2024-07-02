@@ -1,10 +1,7 @@
 def main():
     fruit = input("Item: ")
     fruit = fruit.lower().strip()
-    if fruit == dict[fruit]:
-        print(dict[fruit])
-    else:
-        print("")
+    print(f"{dict.get(fruit, '')}")
 
 dict = {"apple":"130",
         "avocado":"50",
