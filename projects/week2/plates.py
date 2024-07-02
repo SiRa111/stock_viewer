@@ -43,7 +43,21 @@ def is_valid(s):
                 return False
 
     #numbers are only at the end of the plate
-    
+    letters=[]
+    digits=[]
+    num_index = int()
+    for i in range(len(l)):
+        if l[i].isdigit():
+            i = num_index
+
+    letters = l[:num_index]
+    digits = l[num_index:]
+
+    for i in digits:
+        if i.isalpha():
+            print("-1000 aura")
+            return False
+
     return True
 
 
