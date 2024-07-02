@@ -13,7 +13,6 @@ def is_valid(s):
 
     #maximum six and minimum two characters
     if 2 <= len(l) <= 6:
-        print(len(l))
         pass
     else:
         return False
