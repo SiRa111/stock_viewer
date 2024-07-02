@@ -45,14 +45,14 @@ def is_valid(s):
     #numbers are only at the end of the plate
 
     digits=[]
-
+    letters=[]
     num_index = int()
     for i in range(len(l)):
         if l[i].isnumeric():
             num_index = i
             break
         elif l[i].isalpha():
-            continue
+            letters.append(l[i])
 
     digits = l[num_index:]
     print(num_index)
@@ -60,6 +60,9 @@ def is_valid(s):
     for i in digits:
         if i.isalpha():
             return False
+    for i in letters:
+        if i.isalpha():
+            return True
 
     return True
 
