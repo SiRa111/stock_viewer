@@ -58,7 +58,7 @@ def is_valid(s):
 
     if num_index == 0:
         digits = []
-    
+
     for i in digits:
         if i.isalpha():
             return False
