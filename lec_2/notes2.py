@@ -173,6 +173,13 @@ print(function_name)
 '''
 
 dic = {"name":"name1", "id":"001"}
+dic["address"] = "ghar"
 
 print(dic["name"])
 print(dic["id"])
+print(dic["address"])
+# KeyError : address
+#to handle that we give a default value
+dic["address"] = "ghar"
+ #paste this before calling it
+
