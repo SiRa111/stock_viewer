@@ -1,5 +1,6 @@
 def main():
     fruit = input("Item: ")
+    fruit = fruit.strip().lowercase()
     print(dict[fruit])
 
 dict = {"apple":130,
