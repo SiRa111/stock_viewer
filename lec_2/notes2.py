@@ -155,5 +155,14 @@ def meow(n):
 
 main()
 '''
+you can print multiline text by:
 
+def function_name():
+    return f"""
+--------------------------------------
+ANY TEXT WITHIN THIS WILL GIVE THE MULTILINE OUTPUT
+
+__________________________________________________
+
+"""
 
