@@ -41,6 +41,7 @@ def is_valid(s):
                 return False
 
     #numbers are only at the end of the plate
+    letters = []
     digits=[]
     num_index = int()
     for i in range(len(l)):
@@ -50,15 +51,18 @@ def is_valid(s):
             num_index = i
             break
 
+    letters = l[:num_index]
     digits = l[num_index:]
 
     for i in digits:
         if i.isalpha():
             return False
 
-    #end must be a number
-    if l[len(l) - 1].isalpha():
-        return False
+    for i in letters:
+        if i.isalpha():
+            return True
+        elif i.isnumeric():
+            return False
 
     return True
 
