@@ -9,4 +9,5 @@ distances = {
 def main():
     for name in distances.keys():
         print(f"{name} is the key -->{distances[name]} is the value")
+        #this loop iterates over the KEYS of the dictionary
 main()
