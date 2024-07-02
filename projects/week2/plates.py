@@ -47,12 +47,12 @@ def is_valid(s):
     digits=[]
     letters=[]
     num_index = int()
-    for i in range(len(l)):
-        if l[i].isnumeric():
+    for i in l:
+        if i.isdigit():
             num_index = i
             break
-        elif l[i].isalpha():
-            letters.append(l[i])
+        elif i.isalpha():
+            letters.append(i)
 
     digits = l[num_index:]
     print(num_index)
