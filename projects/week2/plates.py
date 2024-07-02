@@ -53,7 +53,8 @@ def is_valid(s):
             break
         else:
             continue
-
+        
+    print(num_index)
     letters = l[0:num_index]
     digits = l[num_index:]
     print(digits)
