@@ -182,6 +182,6 @@ print(dic["address"])
 
 #OTHER DICT METHODS
 print(f"random shit :{dict["name"]}")
-print(f"random shit : {dict.get("UWU", "default_value")}")
+print(f"random shit : {dict.get('UWU', 'default_value')}")
 #if the key does not exist the default value will be printed
 dict.update({"mother_name":"maa ka naam", "fathers name" : "sperm donour"})
