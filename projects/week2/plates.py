@@ -17,6 +17,8 @@ def is_valid(s):
     else:
         return False
 
+
+
     #checks if first two letters are alphabets.
     if len(l) >= 2:
         for i in range(2):
@@ -41,27 +43,22 @@ def is_valid(s):
                 return False
 
     #numbers are only at the end of the plate
-    letters = []
+
     digits=[]
+
     num_index = int()
     for i in range(len(l)):
-        if l[i].isalpha():
-            continue
-        elif l[i].isnumeric():
+        if l[i].isnumeric():
             num_index = i
             break
+        elif l[i].isalpha():
+            continue
 
-    letters = l[:num_index]
     digits = l[num_index:]
-
+    print(num_index)
+    print(digits)
     for i in digits:
         if i.isalpha():
-            return False
-
-    for i in letters:
-        if i.isalpha():
-            return True
-        elif i.isnumeric():
             return False
 
     return True
