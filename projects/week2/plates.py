@@ -55,6 +55,9 @@ def is_valid(s):
             letters.append(i)
 
     digits = l[num_index:]
+
+    if num_index == None:
+        digits = []
     print(num_index)
     print(digits)
     print(letters)
