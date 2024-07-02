@@ -168,8 +168,9 @@ __________________________________________________
 
 print(function_name)
 
-
+'''
 dic = {"name":"name1", "id":"001"}
+dic["address"] = "ghar"
 dic["address"] = "ghar"
 
 print(dic["name"])
@@ -177,12 +178,10 @@ print(dic["id"])
 print(dic["address"])
 # KeyError : address
 #to handle that we give a default value
-dic["address"] = "ghar"
- #paste this before calling it
 
-'''
+
 #OTHER DICT METHODS
-print(f"random shit :{dict["key_name"]}")
-print(f"random shit : {dict.get("key_name", "default_value")}")
+print(f"random shit :{dict["name"]}")
+print(f"random shit : {dict.get("UWU", "default_value")}")
 #if the key does not exist the default value will be printed
-
+dict.update({"mother_name":"maa ka naam", "fathers name" : "sperm donour"})
