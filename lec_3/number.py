@@ -31,7 +31,7 @@ input: 67  --> 1 2 5 6. as no error was raised. the else statement gets executed
 
 alternate code with lesser lines:
 
-while True: 
+while True:
     try:
         x = int(input("Enter value for x : "))
         break
@@ -39,3 +39,21 @@ while True:
         print("Your entered value is not an integer.")
 
 print(f"x is {x}")
+
+
+#############################################################
+even better code :
+
+def main():
+    x = get_int()
+    print(f"x is {x}")
+
+def get_int():
+    while True:
+        try:
+            return int(input("Enter the value of x : "))
+        except ValueError :
+            pass
+            #the loop will keep on running till we get an int value
+
+main()
