@@ -25,5 +25,9 @@ try and except are ways of testing out user input before something goes wrong.
 __________DEBUGGING_____________
 )breakpoint : a point set in your code around which you debug by oen by one execution of your code.
 
+"Step In" will enter the function that you're about to call, allowing you to debug it line by line.
+
+"Step Over", on the other hand, executes the entire function you're about to call without entering it, effectively treating it as a single step. This is useful when you know a function is working correctly and you don't want to debug inside of it.
+
 
 https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/block-v1:HarvardX+CS50P+Python+type@sequential+block@bd6e4b312f2b4e8d9e89ec63708a367a/block-v1:HarvardX+CS50P+Python+type@vertical+block@623a0c3f8ee941baa7ceeef4204f94e8
