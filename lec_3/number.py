@@ -21,3 +21,8 @@ except ValueError:
     print("Your entered value is not an integer.") #if the specified error is raised. execute this statement
 else:
     print(f"x is {x}") #if no error is raised. execute the else block
+'''
+flow of code :
+input: cat --> 1 2 3 4. as cat would raise a valueError
+input: 67  --> 1 2 5 6. as no error was raised. the else statement gets executed
+'''
