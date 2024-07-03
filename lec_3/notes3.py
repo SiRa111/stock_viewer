@@ -8,4 +8,5 @@ input: "cat" , 78.90
 both these are not int so we get ValueError
 -->fix : use try except in code
 
-)NameError : 
+)NameError :
+-->fix : 
