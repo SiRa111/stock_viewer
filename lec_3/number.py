@@ -57,3 +57,18 @@ def get_int():
             #the loop will keep on running till we get an int value
 
 main()
+
+
+__MORE REUSABLE CODE__
+def main():
+    x = get_int("Enter the value of x : ")
+    print(f"x is {x}")
+
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError :
+            pass
+
+main()
