@@ -9,4 +9,4 @@ both these are not int so we get ValueError
 -->fix : use try except in code
 
 )NameError :
--->fix : 
+-->fix : else can be used
