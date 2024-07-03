@@ -1,9 +1,14 @@
-)SyntaxError : error in the written code
+Exceptions are things that go wrong within our coding.
+print("hello, world)
+SyntaxError : error in the written code
 eg: incomplete string
 -->fix : do it manually by rereading the code
 
-)ValueError : another value type was entered than the one anticipated
-eg: int(input("enter Input here: "))
+
+Runtime errors refer to those created by unexpected behavior within your code. For example, perhaps you intended for a user to input a number, but they input a character instead. Your program may throw an error because of this unexpected input from the user.
+x = int(input("What's x? "))
+print(f"x is {x}")
+ValueError : another value type was entered than the one anticipated
 input: "cat" , 78.90
 both these are not int so we get ValueError
 -->fix : use try except in code
