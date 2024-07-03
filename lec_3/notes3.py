@@ -10,3 +10,5 @@ both these are not int so we get ValueError
 
 )NameError :
 -->fix : else can be used
+
+)break : used to break out of any loop
