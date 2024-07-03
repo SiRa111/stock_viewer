@@ -14,3 +14,6 @@ both these are not int so we get ValueError
 )break : used to break out of any loop
 
 ****>> "we try to minimize the number of lines in the code in order to catch errors easily. less code. easier to catch errors"
+
+__________DEBUGGING_____________
+)breakpoint :
