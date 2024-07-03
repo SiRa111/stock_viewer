@@ -13,6 +13,8 @@ input: "cat" , 78.90
 both these are not int so we get ValueError
 -->fix : use try except in code
 
+try and except are ways of testing out user input before something goes wrong.
+
 )NameError :
 -->fix : else can be used
 
