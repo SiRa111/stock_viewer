@@ -67,7 +67,8 @@ def main():
 def get_int(prompt):
     while True:
         try:
-            return int(input(prompt))
+            return int(input(prompt)),
+        #once the int is entred return, breaks the loop and returns a value to the fuction
         except ValueError :
             pass
 
