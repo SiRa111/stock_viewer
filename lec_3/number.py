@@ -28,3 +28,14 @@ flow of code :
 input: cat --> 1 2 3 4. as cat would raise a valueError
 input: 67  --> 1 2 5 6. as no error was raised. the else statement gets executed
 '''
+
+alternate code with lesser lines:
+
+while True: 
+    try:
+        x = int(input("Enter value for x : "))
+        break
+    except ValueError:
+        print("Your entered value is not an integer.")
+
+print(f"x is {x}")
