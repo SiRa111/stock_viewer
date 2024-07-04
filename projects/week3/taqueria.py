@@ -19,9 +19,9 @@ def main():
                 total = total + menu[item]
             else:
                 pass
-        return total
+        
     except EOFError:
-        return True
+        return total
 
 
 a = main()
