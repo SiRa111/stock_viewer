@@ -8,7 +8,8 @@ distances = {
 
 def main():
     spacecraft = input("Enter a spacecraft: ")
-    m = convert(distances[spacecraft])
+    au = float(distances[spacecraft])
+    m = convert(au)
     print(f"{m} m away")
 
 def convert(au):
