@@ -12,7 +12,11 @@ def main():
             "Tortilla Salad": 8.00
             }
     while True:
-      item = input("Item")
+      item = input("Item: ")
+      if item in menu:
+        total = total + menu[item]
+        print(total)
+        
 
 
 main()
