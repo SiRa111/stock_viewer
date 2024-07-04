@@ -20,5 +20,6 @@ def main():
             print(f"Total: ${total}")
         else:
             pass
+        return True
 
 main()
