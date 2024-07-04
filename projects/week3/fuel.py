@@ -18,6 +18,7 @@ def run(str):
         n = int(n)
         d = int(d)
         s = float((n/d))
+        s = int(s)
         return s*100
 
     except (ValueError, ZeroDivisionError):
