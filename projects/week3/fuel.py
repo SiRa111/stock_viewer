@@ -14,7 +14,7 @@ def main():
 def run(a,b):
     try:
         return int(a/b)
-    except ZeroDivisonError:
+    except ZeroDivisionError:
         main()
         return
     except ValueError:
