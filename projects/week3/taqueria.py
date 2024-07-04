@@ -1,5 +1,5 @@
 def main():
-    item = print("Item: ").title()
+    item = input("Item: ").title()
     order(item)
 
 def order(dish):
