@@ -1,8 +1,5 @@
 def main():
     item = input("Item: ").title()
-    order(item)
-
-def order(dish):
     menu = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
@@ -16,11 +13,11 @@ def order(dish):
     }
     total = 0
     while True:
-        if dish in menu:
-            total = total + menu[dish]
+        if item in menu:
+            total = total + menu[item]
             print(total)
-            
+            main()
         else:
-            pass
+            break
 
 main()
