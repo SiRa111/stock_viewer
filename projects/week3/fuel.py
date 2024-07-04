@@ -7,7 +7,7 @@ def main():
         return
     elif 90 < final <= 100:
         print("F")
-    elif 0.01 <= final <= 10:
+    elif 0.01 <= final <= 10 or final == 0:
         print("E")
     else:
         print(f"{final}%")
