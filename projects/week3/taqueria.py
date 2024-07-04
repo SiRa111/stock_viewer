@@ -17,6 +17,7 @@ def main():
             item = item.title()
             if item in menu:
                 total = total + menu[item]
+
             else:
                 pass
 
