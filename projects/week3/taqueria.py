@@ -16,7 +16,7 @@ def main():
       if item in menu:
         total = total + menu[item]
         print(total)
-        
+    
 
 
 main()
