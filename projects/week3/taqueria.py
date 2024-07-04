@@ -17,6 +17,7 @@ def order(dish):
     total = 0
     while True:
         if dish == menu:
+            print(dish)
             total = total + menu[dish]
             print(total)
         break
