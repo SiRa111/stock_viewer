@@ -13,8 +13,8 @@ def main():
         print(f"{final}%")
 
 def run(str):
-
     try:
+        n,d = str.split('/')
         n = int(n)
         d = int(d)
         s = float((n/d))
