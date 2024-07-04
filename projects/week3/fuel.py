@@ -5,9 +5,9 @@ def main():
     if final > 100:
         main()
         return
-    elif final == 100:
+    elif 90 < final <= 100:
         print("F")
-    elif final == 0:
+    elif 0.01 <= final <= 10:
         print("E")
     else:
         print(f"{final}%")
