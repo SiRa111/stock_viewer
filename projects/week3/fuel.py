@@ -1,11 +1,12 @@
 def main():
     fuel = input("Fraction: ")
     n,d = fuel.split('/')
+    final = run(n,d)
+    print(final)
 
-    if type(n) == type(d) == "int":
-        final
-
-
+def run(a,b):
+    try:
+        
 
 
 main()
