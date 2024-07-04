@@ -22,3 +22,6 @@ def convert(au):
     return au * 149597870700
 
 main()
+
+'''
+as you write code, try to anticipate the error and except cases to handle those errors'''
