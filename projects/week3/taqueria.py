@@ -19,8 +19,10 @@ def main():
                 total = total + menu[item]
             else:
                 pass
-            print(f"Total: ${total}")
+        return total
     except EOFError:
         return True
 
-main()
+
+a = main()
+print(a)
