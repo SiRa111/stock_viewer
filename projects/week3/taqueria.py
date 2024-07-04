@@ -17,9 +17,9 @@ def main():
             item = item.title()
             if item in menu:
                 total = total + menu[item]
-                print(f"Total: ${total}")
             else:
                 pass
+        print(f"Total: ${total}")
     except EOFError:
         return True
 
