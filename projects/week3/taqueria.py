@@ -1,5 +1,5 @@
 def main():
-    item = print("Item: ")
+    item = print("Item: ").title()
     order(item)
 
 def order(dish):
@@ -16,7 +16,8 @@ def order(dish):
     }
     total = 0
     while True:
-        
-
+        if dish == menu:
+            total = total + menu[dish]
+            print(total)
 
 main()
