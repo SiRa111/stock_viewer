@@ -1,5 +1,5 @@
 def main():
-    item = input("Item: ").title()
+
     menu = {
     "Baja Taco": 4.25,
     "Burrito": 7.50,
@@ -13,10 +13,10 @@ def main():
     }
     total = 0
     while True:
+        item = input("Item: ").title()
         if item in menu:
             total = total + menu[item]
-            print(total)
-            main()
+            print(f"Total: ${total}")
         else:
             break
 
