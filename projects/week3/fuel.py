@@ -6,7 +6,9 @@ def main():
 
 def run(a,b):
     try:
-        
-
+        return int(a/b)
+    except (ValueError, ZeroDivisionError):
+        main()
+        return
 
 main()
