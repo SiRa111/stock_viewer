@@ -13,7 +13,8 @@ def main():
     }
     total = 0
     while True:
-        item = input("Item: ").title()
+        item = input("Item: ")
+        item = item.title()
         if item in menu:
             total = total + menu[item]
             print(f"Total: ${total}")
