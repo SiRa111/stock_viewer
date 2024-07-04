@@ -19,7 +19,7 @@ def order(dish):
         if dish in menu:
             total = total + menu[dish]
             print(total)
-            main()
+            return total
         else:
             pass
 
