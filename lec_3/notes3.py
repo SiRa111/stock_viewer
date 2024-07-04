@@ -34,3 +34,7 @@ https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/block-v1:Harvard
 
 
 always write the error which the except block will handle. if w edo not specify the error, it will handle all errors which make debugging difficult job
+
+to round a number to nearest int
+round(0.6) = 1
+int(0.6) = 0
