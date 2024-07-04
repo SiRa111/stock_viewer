@@ -1,9 +1,6 @@
 def main():
     fuel = input("Fraction: ")
-    n,d = fuel.split('/')
-    n = int(n)
-    d = int(d)
-    final = run(n,d)
+    final = run(fuel)
 
     if final > 1:
         main()
@@ -15,9 +12,12 @@ def main():
     else:
         print(final)
 
-def run(a,b):
+def run(str):
+    n,d = str.split('/')
     try:
-        return int(a/b)
+        n = int(n)
+        d = int(d)
+        return int(n/d)
     except (ValueError, ZeroDivisionError):
         main()
         return
