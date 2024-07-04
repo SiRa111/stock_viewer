@@ -15,10 +15,5 @@ def order(dish):
     "Tortilla Salad": 8.00
     }
     total = 0
-    while True:
-        for dish in menu:
-            print(dish)
-            total = total + menu[dish]
-            print(total)
-        break
+    
 main()
