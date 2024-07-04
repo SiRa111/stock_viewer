@@ -1,6 +1,6 @@
 def main():
     fuel = input("Fraction: ")
-    
+
     n,d = fuel.split('/')
     final = run(n,d)
     if final == 1:
