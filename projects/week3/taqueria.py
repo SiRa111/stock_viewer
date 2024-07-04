@@ -12,7 +12,7 @@ def main():
             "Tortilla Salad": 8.00
             }
     while True:
-      
+      item = input("Item")
 
 
 main()
