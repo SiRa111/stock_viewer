@@ -18,6 +18,6 @@ def main():
             total = total + menu[item]
             print(f"Total: ${total}")
         else:
-            break
+            pass
 
 main()
