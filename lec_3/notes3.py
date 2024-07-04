@@ -31,3 +31,6 @@ __________DEBUGGING_____________
 
 
 https://learning.edx.org/course/course-v1:HarvardX+CS50P+Python/block-v1:HarvardX+CS50P+Python+type@sequential+block@bd6e4b312f2b4e8d9e89ec63708a367a/block-v1:HarvardX+CS50P+Python+type@vertical+block@623a0c3f8ee941baa7ceeef4204f94e8
+
+
+always write the error which the except block will handle. if w edo not specify the error, it will handle all errors which make debugging difficult job
