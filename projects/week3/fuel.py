@@ -5,8 +5,15 @@ def main():
     d = int(d)
     final = run(n,d)
 
-    if 
-    print(final)
+    if final > 1:
+        main()
+        return
+    elif final == 1:
+        print("F")
+    elif final == 0:
+        print("E")
+    else:
+        print(final)
 
 def run(a,b):
     try:
