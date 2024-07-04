@@ -15,7 +15,7 @@ def main():
 
 def run(a,b):
     try:
-        if a.isnumeric()
+        if a.isdigit()
         return int(a/b)
     except ZeroDivisionError:
         main()
