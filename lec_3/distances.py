@@ -7,9 +7,11 @@ distances = {
 }
 
 def main():
-    spacecraft = input("Enter a spacecraft; ")
+    spacecraft = input("Enter a spacecraft: ")
     m = convert(distances[spacecraft])
     print(f"{m} m away")
 
 def convert(au):
     return au * 149597870700
+
+main()
