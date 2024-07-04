@@ -17,7 +17,8 @@ def run(str):
     try:
         n = int(n)
         d = int(d)
-        return (n/d)*100
+        print((n/d)*100)
+        return
     except (ValueError, ZeroDivisionError):
         main()
         return
