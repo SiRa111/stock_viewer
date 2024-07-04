@@ -13,11 +13,13 @@ def main():
         print(f"{final}%")
 
 def run(str):
-    n,d = str.split('/')
+
     try:
         n = int(n)
         d = int(d)
-        return int((n/d)*100)
+        s = float((n/d))
+        return s*100
+
     except (ValueError, ZeroDivisionError):
         main()
         return
