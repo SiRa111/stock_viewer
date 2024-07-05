@@ -26,5 +26,6 @@ def main(n):
 
   except (EOFError, ValueError):
     print("")
+    return True
 
 main(0)
