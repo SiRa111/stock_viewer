@@ -10,11 +10,14 @@ def main(n):
             "Taco": 3.00,
             "Tortilla Salad": 8.00
             }
-  dish = input("Item: ").title()
-  if dish in menu:
-    cost = menu[dish]
-  else:
-    main(total)
+  while True:
+    dish = input("Item: ").title()
+    if dish in menu:
+      cost = menu[dish]
+      break
+    else:
+      continue
+
   total = n
   try:
     total = total + cost
