@@ -23,7 +23,8 @@ def main(n):
         break
       else:
         continue
-
+    while True:
+      break
 
   except (EOFError, ValueError):
     print("")
