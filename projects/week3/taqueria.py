@@ -21,7 +21,7 @@ def main(n):
   total = n
   try:
     total = total + cost
-    print(total)
+    print(f"${total}")
     main(total)
   except (EOFError, ValueError):
     print("")
