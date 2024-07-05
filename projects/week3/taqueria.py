@@ -18,9 +18,9 @@ def main():
     total = total + cost
     global total
     return total
-  except
+  except EOFError:
+    return
 
 
-
-
-main()
+_ = main()
+print(_)
