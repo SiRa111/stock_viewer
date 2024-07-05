@@ -13,14 +13,14 @@ def main(n):
   dish = input("Item: ").title()
   if dish in menu:
     cost = menu[dish]
+  else:
+    main(s)
   total = n
   try:
     total = total + cost
     print(total)
     main(total)
-  except EOFError:
+  except (EOFError, ValueError):
     print("")
 
-
-_ = main()
-print(_)
+main(0)
