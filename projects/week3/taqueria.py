@@ -16,13 +16,14 @@ def main(n):
       dish = input("Item: ").title()
       if dish in menu:
         cost = menu[dish]
+        total = n
+        total = total + cost
+        print(f"${total}")
+        main(total)
         break
       else:
         continue
-      total = n
-      total = total + cost
-      print(f"${total}")
-      main(total)
+
 
   except (EOFError, ValueError):
     print("")
