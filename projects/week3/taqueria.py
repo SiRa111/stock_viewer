@@ -13,7 +13,7 @@ def main():
   dish = input("Item: ").title()
   if dish in menu:
     cost = menu[dish]
-
+  global total
   try:
     total = total + cost
     print(total)
