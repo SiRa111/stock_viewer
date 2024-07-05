@@ -11,8 +11,8 @@ def main(n):
             "Tortilla Salad": 8.00
             }
 
-  try:
-    while True:
+  while True:
+    try:
       dish = input("Item: ").title()
       if dish in menu:
         cost = menu[dish]
@@ -23,11 +23,9 @@ def main(n):
         break
       else:
         continue
-    while True:
-      break
 
-  except (EOFError, ValueError):
-    print("")
-    return True
+    except (EOFError, ValueError):
+      print("")
+      return True
 
 main(0)
