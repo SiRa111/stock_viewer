@@ -19,10 +19,11 @@ def main(n):
         total = n
         total = total + cost
         print(f"${total}")
-
+        main(total)
+        break
       else:
         continue
-      
+
     except (EOFError, ValueError):
       print("")
       return True
