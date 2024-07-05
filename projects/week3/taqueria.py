@@ -14,7 +14,7 @@ def main(n):
   if dish in menu:
     cost = menu[dish]
   else:
-    main(s)
+    main(0)
   total = n
   try:
     total = total + cost
