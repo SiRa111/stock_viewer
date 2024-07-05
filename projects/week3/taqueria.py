@@ -23,6 +23,7 @@ def main(n):
     total = total + cost
     print(f"${total}")
     main(total)
+
   except (EOFError, ValueError):
     print("")
 
