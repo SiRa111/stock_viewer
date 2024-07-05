@@ -1,4 +1,4 @@
-def main():
+def main(n):
   menu = {
             "Baja Taco": 4.25,
             "Burrito": 7.50,
@@ -13,11 +13,11 @@ def main():
   dish = input("Item: ").title()
   if dish in menu:
     cost = menu[dish]
-  global total
+  total = n
   try:
     total = total + cost
     print(total)
-    main()
+    main(total)
   except EOFError:
     print("")
 
