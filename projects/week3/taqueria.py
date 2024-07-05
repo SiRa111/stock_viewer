@@ -15,7 +15,6 @@ def main():
     cost = menu[dish]
 
   try:
-    
     total = total + cost
     print(total)
     main()
