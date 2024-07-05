@@ -15,12 +15,12 @@ def main():
     cost = menu[dish]
 
   try:
+    
     total = total + cost
-    global total
     print(total)
     main()
   except EOFError:
-    break
+    print("")
 
 
 _ = main()
