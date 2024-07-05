@@ -19,7 +19,6 @@ def main(n):
         total = n
         total = total + cost
         print(f"${total}")
-        print("\n")
         main(total)
         break
       else:
