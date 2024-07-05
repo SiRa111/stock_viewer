@@ -17,9 +17,10 @@ def main():
   try:
     total = total + cost
     global total
-    return total
+    print(total)
+    main()
   except EOFError:
-    return
+    break
 
 
 _ = main()
