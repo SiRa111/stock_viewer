@@ -57,7 +57,7 @@ def convert(m,d,y):
   elif m.isalpha():
     for _ in valid_month:
       if _ == m:
-        print(_)
+        print(valid_month(_))
     '''
     index = int(index)
     final[1] = index + 1
