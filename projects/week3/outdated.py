@@ -42,12 +42,11 @@ def convert(m,d,y):
   for i in final:
     print(i, end="-")
 
+  d = int(d)
   if 1 <= d <= 9:
-    print(f"{d:02}")
-
-
-
-
+    print(f"{d:02}, end=''")
+  else:
+    print(d, end='')
 
 
 main()
