@@ -60,10 +60,10 @@ def convert(m,d,y):
         index = valid_month.index(m)
         index = int(index)
         final[1] = index + 1
-
+        break
   for i in final:
     print(i, end="-")
-
+    
   if 1 <= d <= 9:
     print(f"{d:02}", end='')
   else:
