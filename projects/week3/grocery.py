@@ -16,7 +16,8 @@ def  main():
   for _ in list:
     _ = _.upper()
     
-  print(list)
+
+
 
 
 
