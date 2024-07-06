@@ -1,5 +1,6 @@
 def  main():
   list = {}
+  dict={}
   while True:
     try:
       item = input()
@@ -16,6 +17,7 @@ def  main():
   for _ in list:
     _ = _.upper()
     
+
 
 
 
