@@ -3,7 +3,8 @@ def  main():
   while True:
     try:
       item = input()
-      for _ in list:
+      for _ in list():
+        
 
 
 main()
