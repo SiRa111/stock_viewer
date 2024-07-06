@@ -49,24 +49,26 @@ def convert(m,d,y):
     "November",
     "December"
   ]
-  final = [0,1,2]
+
   y = int(y)
-  final[0] = y
-  if m is int():
-    final[1] = m
-  elif m.isalpha():
+
+  if m.isalpha():
     for _ in valid_month:
       if _ == m:
         index = valid_month.index(m)
         index = int(index)
-        final[1] = index + 1
+        index = index + 1
         break
-  final[2] = d
-  for i in final:
-    print(i, end="-")
+
+  print(y, end="-")
+
+  if 1 <= m <= 9:
+    print(f"{index:02}", end='-')
+  else:
+    print(index, end='-')
 
   if 1 <= d <= 9:
-    print(f"{d:02}", end='')
+    print(f"{d:02}", end='\n')
   else:
     print(d, end='\n')
 
