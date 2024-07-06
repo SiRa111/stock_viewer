@@ -40,7 +40,7 @@ def convert(m,d,y):
   final[0] = y
   if m is int():
     final[1] = m
-  elif m is str():
+  elif m.isalpha():
     index = valid_month(m)
     index = int(index)
     final[1] = index + 1
