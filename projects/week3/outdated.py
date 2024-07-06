@@ -18,6 +18,8 @@ def main():
     "November",
     "December"
   ]
+  if ',' in day:
+    
   day = int(day)
   if 1 <= day <= 31:
     if month.isalpha():
