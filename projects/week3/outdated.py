@@ -20,9 +20,10 @@ def main():
   ]
   if ',' in day1:
     day = day1.strip(',')
+    day = int(day)
   else:
+    day = int(day1)
     pass
-  day = int(day1)
 
   if 1 <= day <= 31:
     if month.isalpha():
