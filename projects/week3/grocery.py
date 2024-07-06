@@ -3,13 +3,13 @@ def  main():
   while True:
     try:
       item = input()
-      for _ in list():
+      for _ in list:
         n = 0
         if item in list():
           n += 1
-          list.update(item:n)
+          list.update({item:n})
         else:
-          list.update(item:1)
+          list.update({item:n})
 
     except EOFError:
       break
