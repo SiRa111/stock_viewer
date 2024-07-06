@@ -15,7 +15,7 @@ def  main():
       break
   list = list.sort()
   for i in list:
-    print(list[i], i)
+    print (list[i].upper(), i)
 
 
 
