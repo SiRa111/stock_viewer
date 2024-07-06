@@ -31,7 +31,10 @@ def main():
 def convert(m,d,y):
   final = []
   y = int(y)
-  
+  final[0] = y
+  if m.isalpha():
+    final[1] = valid_month(m)
+
 
 
 
