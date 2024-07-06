@@ -19,6 +19,7 @@ def main():
     "December"
   ]
   if ',' in day1:
+    day = day1.strip(',')
 
   day = int(day)
   if 1 <= day <= 31:
