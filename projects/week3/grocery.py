@@ -4,8 +4,10 @@ def  main():
     try:
       item = input()
       for _ in list():
-        list.update(item:1)
-        if 
+        if item in list():
+          list.update(item:n)
+        else:
+          list.update
 
 
 main()
