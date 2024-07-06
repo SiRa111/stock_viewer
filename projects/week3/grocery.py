@@ -13,7 +13,8 @@ def  main():
 
     except EOFError:
       break
-  list = list.sort()
+  print(list)
+
   for i in list:
     print (list[i].upper(), i)
 
