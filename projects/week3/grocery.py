@@ -3,7 +3,7 @@ def  main():
   dict={}
   while True:
     try:
-      item = input()
+      item = input().upper()
 
       if item in listd:
         n = listd[item]
@@ -19,9 +19,9 @@ def  main():
   print(l)
   for i in l:
     dict.update({i:listd[i]})
-  for i in dict:
-    i = i.upper()
-    print(dict[i], i)
+
+  for _ in dict:
+    print(dict[_], _)
 
 
 
