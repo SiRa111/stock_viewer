@@ -13,7 +13,9 @@ def  main():
     except EOFError:
       break
 
-  
+  for _ in list:
+    _ = _.upper()
+  print(list)
 
 
 
