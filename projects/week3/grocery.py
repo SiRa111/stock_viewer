@@ -15,7 +15,7 @@ def  main():
 
   for _ in list:
     _ = _.upper()
-    list.update({_:list[_]})
+    
   print(list)
 
 
