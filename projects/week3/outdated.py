@@ -33,7 +33,14 @@ def convert(m,d,y):
   y = int(y)
   final[0] = y
   if m.isalpha():
-    final[1] = valid_month(m)
+    index = valid_month(m)
+    index = int(index)
+    final[1] = index + 1
+  else:
+    final[1] = m
+  final[2] = d
+
+  for i 
 
 
 
