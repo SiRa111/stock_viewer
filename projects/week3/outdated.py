@@ -1,6 +1,6 @@
 def main():
   date = input()
-  month,day,year = date.split("/"," ",)
+  month,day,year = date.split("/" or " ",)
   valid_month = [
     "January",
     "February",
