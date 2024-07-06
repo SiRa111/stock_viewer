@@ -60,6 +60,7 @@ def convert(m,d,y):
           index = index + 1
           break
   except AttributeError:
+    index = m
     pass
 
   print(y, end="-")
