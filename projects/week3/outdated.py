@@ -18,6 +18,7 @@ def main():
     "November",
     "December"
   ]
+  date = int(date)
   if 1 <= date <= 31:
     if month.isalpha():
       if month in valid_month:
@@ -45,7 +46,6 @@ def convert(m,d,y):
   for i in final:
     print(i, end="-")
 
-  d = int(d)
   if 1 <= d <= 9:
     print(f"{d:02}, end=''")
   else:
