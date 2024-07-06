@@ -40,7 +40,9 @@ def convert(m,d,y):
     final[1] = m
   final[2] = d
 
-  for i 
+  if 1 <= d <= 9:
+    
+
 
 
 
