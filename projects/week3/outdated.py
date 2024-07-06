@@ -15,6 +15,18 @@ def main():
     "November",
     "December"
   ]
-  
+  if 1 <= date <= 31:
+    if month.isalpha():
+      if month in valid_month:
+        convert(month,day,year)
+      else:
+        main()
+    elif month.isnumeric():
+      if 1 <= month <= 12:
+        convert(month,day,year)
+      else:
+        main()
+
+def convert():
 
 main()
