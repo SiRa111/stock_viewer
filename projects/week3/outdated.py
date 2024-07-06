@@ -1,7 +1,7 @@
 def main():
   date = input()
   if "/" in date:
-    month,day,year = date.split("/")
+    month,day1,year = date.split("/")
   elif " " in date:
     month,day1,year = date.split(" ")
   valid_month = [
@@ -20,6 +20,8 @@ def main():
   ]
   if ',' in day1:
     day = day1.strip(',')
+  else:
+    pass
 
   day = int(day)
   if 1 <= day <= 31:
