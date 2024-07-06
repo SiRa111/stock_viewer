@@ -49,7 +49,7 @@ def convert(m,d,y):
     print(i, end="-")
 
   if 1 <= d <= 9:
-    print(f"{d:02}, end=''")
+    print(f"{d:02}", end='')
   else:
     print(d, end='\n')
 
