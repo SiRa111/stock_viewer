@@ -17,7 +17,10 @@ def  main():
   l = list(listd.keys())
   l.sort()
   print(l)
-  '''
+  for i in l:
+    dict.update({i:listd[i]})
+  print(dict)
+  
   for _ in listd:
     _ = _.upper()
   '''
