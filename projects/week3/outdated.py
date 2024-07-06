@@ -19,7 +19,7 @@ def main():
     "December"
   ]
   day = int(day)
-  if 1 <= date <= 31:
+  if 1 <= day <= 31:
     if month.isalpha():
       if month in valid_month:
         convert(month,day,year)
