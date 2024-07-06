@@ -33,7 +33,7 @@ def main():
         main()
 
 def convert(m,d,y):
-  final = []
+  final = [0,1,2]
   y = int(y)
   final[0] = y
   if m.isalpha():
