@@ -61,9 +61,10 @@ def convert(m,d,y):
         index = int(index)
         final[1] = index + 1
         break
+  final[2] = d
   for i in final:
     print(i, end="-")
-    
+
   if 1 <= d <= 9:
     print(f"{d:02}", end='')
   else:
