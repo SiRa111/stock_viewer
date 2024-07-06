@@ -38,10 +38,13 @@ def convert(m,d,y):
     final[1] = index + 1
   else:
     final[1] = m
-  final[2] = d
+
+  for i in final:
+    print(i, end="-")
 
   if 1 <= d <= 9:
-    
+    print(f"{d:02}")
+
 
 
 
