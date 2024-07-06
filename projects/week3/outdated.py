@@ -22,8 +22,8 @@ def main():
     day = day1.strip(',')
   else:
     pass
+  day = int(day1)
 
-  day = int(day)
   if 1 <= day <= 31:
     if month.isalpha():
       if month in valid_month:
