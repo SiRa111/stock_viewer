@@ -19,7 +19,10 @@ def  main():
   print(l)
   for i in l:
     dict.update({i:listd[i]})
-  print(dict)
+  for i in dict:
+    i = i.upper()
+    print(dict[i], i)
+
 
 
 
