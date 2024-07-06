@@ -1,5 +1,5 @@
 def main():
-  date = input()
+  date = input("Date: ")
   if "/" in date:
     month,day1,year = date.split("/")
   elif " " in date:
