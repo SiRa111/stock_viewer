@@ -35,6 +35,20 @@ def main():
     main()
 
 def convert(m,d,y):
+  valid_month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ]
   final = [0,1,2]
   y = int(y)
   final[0] = y
