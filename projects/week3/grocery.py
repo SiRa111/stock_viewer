@@ -16,7 +16,7 @@ def  main():
 
   l = list(listd.keys())
   l.sort()
-  print(l)
+  
   for i in l:
     dict.update({i:listd[i]})
 
