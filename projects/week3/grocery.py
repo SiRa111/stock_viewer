@@ -1,22 +1,26 @@
 def  main():
-  list = {}
+  listd = {}
   dict={}
   while True:
     try:
       item = input()
 
-      if item in list:
-        n = list[item]
-        list.update({item:n+1})
+      if item in listd:
+        n = listd[item]
+        listd.update({item:n+1})
       else:
-        list.update({item:1})
+        listd.update({item:1})
 
     except EOFError:
       break
 
-  for _ in list:
+  l = list(listd.keys())
+  l.sort()
+  print(l)
+ '''
+  for _ in listd:
     _ = _.upper()
-    
+ '''
 
 
 
