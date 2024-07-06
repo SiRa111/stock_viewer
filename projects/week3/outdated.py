@@ -51,14 +51,16 @@ def convert(m,d,y):
   ]
 
   y = int(y)
-
-  if m.isalpha():
-    for _ in valid_month:
-      if _ == m:
-        index = valid_month.index(m)
-        index = int(index)
-        index = index + 1
-        break
+  try:
+    if m.isalpha():
+      for _ in valid_month:
+        if _ == m:
+          index = valid_month.index(m)
+          index = int(index)
+          index = index + 1
+          break
+  except AttributeError:
+    pass
 
   print(y, end="-")
 
