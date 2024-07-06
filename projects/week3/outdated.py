@@ -3,7 +3,7 @@ def main():
   if "/" in date:
     month,day,year = date.split("/")
   elif " " in date:
-    month,day,year = date.split(" ")
+    month,day1,year = date.split(" ")
   valid_month = [
     "January",
     "February",
@@ -18,8 +18,8 @@ def main():
     "November",
     "December"
   ]
-  if ',' in day:
-    
+  if ',' in day1:
+
   day = int(day)
   if 1 <= day <= 31:
     if month.isalpha():
