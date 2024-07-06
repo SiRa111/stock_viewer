@@ -65,7 +65,7 @@ def convert(m,d,y):
 
   print(y, end="-")
 
-  if 1 <= m <= 9:
+  if 1 <= index <= 9:
     print(f"{index:02}", end='-')
   else:
     print(index, end='-')
