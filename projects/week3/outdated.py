@@ -40,7 +40,7 @@ def convert(m,d,y):
     index = valid_month(m)
     index = int(index)
     final[1] = index + 1
-  else:
+  elif m.isnumeric():
     final[1] = m
 
   for i in final:
