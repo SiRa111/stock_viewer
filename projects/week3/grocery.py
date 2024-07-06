@@ -4,7 +4,8 @@ def  main():
     try:
       item = input()
       for _ in list():
-        list.update(item:)
+        list.update(item:1)
+        if 
 
 
 main()
