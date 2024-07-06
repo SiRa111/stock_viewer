@@ -31,6 +31,8 @@ def main():
         convert(month,day,year)
       else:
         main()
+  else:
+    main()
 
 def convert(m,d,y):
   final = [0,1,2]
