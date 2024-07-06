@@ -9,7 +9,7 @@ def  main():
           n += 1
           list.update({item:n})
         else:
-          list.update({item:n})
+          list.update({item:1})
 
     except EOFError:
       break
