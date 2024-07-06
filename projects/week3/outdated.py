@@ -22,13 +22,17 @@ def main():
       else:
         main()
     elif month.isnumeric():
+      month = int(month)
       if 1 <= month <= 12:
         convert(month,day,year)
       else:
         main()
 
-def convert():
+def convert(m,d,y):
+  final = []
+  y = int(y)
   
+
 
 
 main()
