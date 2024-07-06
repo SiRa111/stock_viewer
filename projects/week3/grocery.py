@@ -18,12 +18,12 @@ def  main():
   l.sort()
   print(l)
   for i in l:
+    i = i.upper()
     dict.update({i:listd[i]})
   print(dict)
-  
-  for _ in listd:
-    _ = _.upper()
-  '''
+
+
+
 
 
 
