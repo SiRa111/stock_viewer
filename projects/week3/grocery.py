@@ -7,11 +7,13 @@ def  main():
       if item in list:
         n = list[item]
         list.update({item:n+1})
-      list.update({item:1})
-      
+      else:
+        list.update({item:1})
+
     except EOFError:
       break
-  print(list)
+
+  
 
 
 
