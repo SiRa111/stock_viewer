@@ -17,7 +17,7 @@ def main(n):
         cost = menu[dish]
         total = n
         total = total + cost
-        print(f"${total}")
+        print(f"${total.2f}")
         main(total)
       else:
         pass
