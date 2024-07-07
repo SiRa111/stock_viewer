@@ -1,17 +1,4 @@
 def main():
-  date = input("Date: ").strip()
-  if "/" in date:
-    month,day1,year = date.split("/")
-    if month in valid_month:
-      main()
-    else:
-      pass
-  elif " " in date:
-    month,day1,year = date.split(" ")
-    if ',' in day1:
-      pass
-    else:
-      main()
   valid_month = [
     "January",
     "February",
@@ -26,6 +13,20 @@ def main():
     "November",
     "December"
   ]
+  date = input("Date: ").strip()
+  if "/" in date:
+    month,day1,year = date.split("/")
+    if month in valid_month:
+      main()
+    else:
+      pass
+  elif " " in date:
+    month,day1,year = date.split(" ")
+    if ',' in day1:
+      pass
+    else:
+      main()
+
   try:
     if ',' in day1:
       day = day1.strip(',')
