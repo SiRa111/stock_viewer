@@ -21,7 +21,6 @@ def main(n):
         main(total)
       else:
         pass
-
     except (EOFError, ValueError):
         print("")
         return True
