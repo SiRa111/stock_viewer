@@ -5,10 +5,12 @@ import random
 
 coin = random.choice(["heads", "tails"])
 print(coin)
-'''
+
 
 #METHOD 2
 from random import choice
 
 coin = choice(["heads","tails"])
 print(coin)
+'''
+
