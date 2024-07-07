@@ -30,15 +30,15 @@ def main():
       if month in valid_month:
         convert(month,day,year)
       else:
-        return False
+        return
     elif month.isnumeric():
       month = int(month)
       if 1 <= month <= 12:
         convert(month,day,year)
       else:
-        return False
+        return
   else:
-    return False
+    return
 
 def convert(m,d,y):
   valid_month = [
