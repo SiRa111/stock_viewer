@@ -18,13 +18,15 @@ def main():
     "November",
     "December"
   ]
-  if ',' in day1:
-    day = day1.strip(',')
-    day = int(day)
-  else:
-    day = int(day1)
-    pass
-
+  try:
+    if ',' in day1:
+      day = day1.strip(',')
+      day = int(day)
+    else:
+      day = int(day1)
+      pass
+  except ValueError:
+    return
   if 1 <= day <= 31:
     if month.isalpha():
       if month in valid_month:
