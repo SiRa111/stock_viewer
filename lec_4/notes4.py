@@ -20,4 +20,4 @@ shuffles or randomizes the provided values. it does not return a specific value 
 
 
 # 0 statistics
-
+mean - gives the average
