@@ -16,4 +16,4 @@ it picks a random int bw a and b.
 a and b are inclusive
 
 ___random.shuffle(x)
-shuffles or randomizes the provided values
+shuffles or randomizes the provided values. it does not return a specific value unlike the previous two methods, rather shuffles the entire list
