@@ -14,3 +14,6 @@ coin = choice(['a','b'])
 ___random.randint(a,b)
 it picks a random int bw a and b.
 a and b are inclusive
+
+___random.shuffle(x)
+shuffles or randomizes the provided values
