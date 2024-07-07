@@ -26,21 +26,21 @@ def main():
       day = int(day1)
       pass
   except ValueError:
-    return
+    return False
   if 1 <= day <= 31:
     if month.isalpha():
       if month in valid_month:
         convert(month,day,year)
       else:
-        return
+        return False
     elif month.isnumeric():
       month = int(month)
       if 1 <= month <= 12:
         convert(month,day,year)
       else:
-        return
+        return False
   else:
-    return
+    return False
 
 def convert(m,d,y):
   valid_month = [
