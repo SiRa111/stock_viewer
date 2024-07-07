@@ -25,4 +25,4 @@ mean - gives the average
 
 # 0 sys
 sys.argv - argument vector
-stores the data entered in a list 
+stores the data entered in the command line even before the program is executed
