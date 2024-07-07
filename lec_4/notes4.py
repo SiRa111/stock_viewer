@@ -17,3 +17,7 @@ a and b are inclusive
 
 ___random.shuffle(x)
 shuffles or randomizes the provided values. it does not return a specific value unlike the previous two methods, rather shuffles the entire list
+
+
+# 0 statistics
+
