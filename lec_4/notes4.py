@@ -23,4 +23,5 @@ shuffles or randomizes the provided values. it does not return a specific value 
 mean - gives the average
 
 
-# 0 
+# 0 sys
+sys.argv - argument vector
