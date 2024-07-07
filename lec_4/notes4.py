@@ -25,3 +25,4 @@ mean - gives the average
 
 # 0 sys
 sys.argv - argument vector
+stores the data entered in a list 
