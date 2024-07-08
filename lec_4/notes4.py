@@ -50,3 +50,7 @@ __
 
 pip: allows you to install packages and softwares by the command  line
 
+APIs: application programming interface
+3rd party services
+
+requests: allows us to make web requests (package)
