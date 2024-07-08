@@ -56,3 +56,4 @@ APIs: application programming interface
 requests: allows us to make web requests (package)
 
 JSON: javascript object notation
+used as language agnostic format ie you can use any programming language to read or write json 
