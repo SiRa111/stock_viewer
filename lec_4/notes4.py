@@ -49,6 +49,9 @@ __
 3rd party libraries to gain more functionalities
 
 pip: allows you to install packages and softwares by the command  line
+which do not come pretinstalled with python
+eg: requests library
+
 
 APIs: application programming interface
 3rd party services
@@ -58,3 +61,7 @@ requests: allows us to make web requests (library)
 
 JSON: javascript object notation
 used as language agnostic format ie you can use any programming language to read or write json
+
+#json library -- comes with python
+so no need to install with pip
+json.dumps() - prints the the request data in more aethetic manner (more comfortrable to eyes)
