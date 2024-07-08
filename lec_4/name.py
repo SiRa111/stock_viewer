@@ -22,5 +22,5 @@ print("Hi! My name is", sys.argv[1])
 #even though we have this code here. it is not execurted if sys.exit is executed before.
 '''
 
-for arg in sys.argv[1:]:
+for arg in sys.argv[1:]: #slicing the list here. printing from index 1
   print("My name is",arg)
