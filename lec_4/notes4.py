@@ -23,7 +23,7 @@ shuffles or randomizes the provided values. it does not return a specific value 
 mean - gives the average
 
 
-# 0 sys
+# 0 sys - library
 __sys.argv - argument vector
 stores the data entered in the command line even before the program is executed
 by default index 0 holds the name of the file being executed
@@ -54,7 +54,7 @@ APIs: application programming interface
 3rd party services
 a mechanism whereby you can access data on someone else's server and itegrate it to my own program
 
-requests: allows us to make web requests (package)
+requests: allows us to make web requests (library)
 
 JSON: javascript object notation
 used as language agnostic format ie you can use any programming language to read or write json
