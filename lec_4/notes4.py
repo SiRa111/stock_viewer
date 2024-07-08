@@ -34,3 +34,8 @@ name.py is in sys.argv[0]
 Simran is stored in sys.argv[1]
 
 __sys.exit - exits the command line
+
+
+#i
+for arg in sys.argv[1:]: #slicing the list here. printing from index 1
+  print("My name is",arg)
