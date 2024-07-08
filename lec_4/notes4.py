@@ -78,4 +78,5 @@ json.dumps() - prints the the request data in more aethetic manner (more comfort
 
 
 (__name__)
+n Python, __name__ is a special built-in variable. When a Python file is run directly, __name__ is set to "__main__". However, if the file is imported as a module in another Python script, __name__ is set to the name of that module (the filename without the .py extension). This allows you to have parts of your code which only run when the file is executed directly, and not when it's imported as a module. This is often used to write test code or to run a function when the file is executed directly.
 
