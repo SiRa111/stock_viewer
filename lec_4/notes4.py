@@ -54,3 +54,5 @@ APIs: application programming interface
 3rd party services
 
 requests: allows us to make web requests (package)
+
+JSON: javascript object notation
