@@ -1,4 +1,12 @@
 '''modules also known as libraries encourage reusablity of code
+
+import downloads the entire library
+
+if you use from you download that specified fxn
+syntaxz;
+
+from random import shuffle()
+this will just download the shiffle fxn
 '''
 
 # 0 random
