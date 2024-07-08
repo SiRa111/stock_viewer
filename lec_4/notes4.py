@@ -47,3 +47,6 @@ __
 
 #PACKAGES
 3rd party libraries to gain more functionalities
+
+pip: allows you to install packages and softwares by the command  line
+
