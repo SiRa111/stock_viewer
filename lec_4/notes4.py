@@ -52,8 +52,9 @@ pip: allows you to install packages and softwares by the command  line
 
 APIs: application programming interface
 3rd party services
+a mechanism whereby you can access data on someone else's server and itegrate it to my own program
 
 requests: allows us to make web requests (package)
 
 JSON: javascript object notation
-used as language agnostic format ie you can use any programming language to read or write json 
+used as language agnostic format ie you can use any programming language to read or write json
