@@ -24,7 +24,7 @@ mean - gives the average
 
 
 # 0 sys
-sys.argv - argument vector
+__sys.argv - argument vector
 stores the data entered in the command line even before the program is executed
 by default index 0 holds the name of the file being executed
 eg : name.py
@@ -32,3 +32,5 @@ index 1 holds what we input after file name
 eg : python name.py Simran <-- cmd line text
 name.py is in sys.argv[0]
 Simran is stored in sys.argv[1]
+
+__sys.exit - exits the command line
