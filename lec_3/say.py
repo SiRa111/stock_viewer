@@ -1,5 +1,5 @@
 import cowsay
 import sys
 
-if sys.argv == 2:
-  cowsay.cow("HEllo",sys.argv[1])
+if len(sys.argv) == 2:
+  cowsay.cow("Hello "+ sys.argv[1])
