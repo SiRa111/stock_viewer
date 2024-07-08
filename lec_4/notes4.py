@@ -67,6 +67,7 @@ APIs: application programming interface
 a mechanism whereby you can access data on someone else's server and itegrate it to my own program
 
 requests: allows us to make web requests (library)
+allows your program to behave as a web browser would.
 
 JSON: javascript object notation
 used as language agnostic format ie you can use any programming language to read or write json
