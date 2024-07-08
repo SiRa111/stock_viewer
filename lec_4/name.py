@@ -19,3 +19,4 @@ elif len(sys.argv) > 2:
   sys.exit("Too many arguments")
 
 print("Hi! My name is", sys.argv[1])
+#even though we have this code here. it is not execurted if sys.exit is executed before.
