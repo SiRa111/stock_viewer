@@ -48,7 +48,8 @@ __
 #PACKAGES
 3rd party libraries to gain more functionalities
 
-pip: allows you to install packages and softwares by the command  line
+pip: package manager
+allows you to install packages and softwares by the command  line
 which do not come pretinstalled with python
 eg: requests library
 
