@@ -19,6 +19,26 @@ the choice will be made from the elements of the sequence
 syntax:
 coin = choice(['a','b'])
 
+
+___random.choices(list_name, k=2)
+k is the no. of random elements from that list
+shuffling with replacement
+choose a card. write it down. put it back. choose again
+for [1,2,3]: [1,1]... may happen
+
+___weighing the choices
+cards = ["jack", "king", "queen"]
+random.choices(list_name, weights=[100,0,0]k=2)
+#the weights are entred according to the index of the list
+#here the output will always be [jack,jack]
+sum of weights = 100
+weights=[5,20,75]
+
+
+___random.sample(list_name, k=2)
+shuffling without replacement
+[1,2,3] : [2,2]... twin cases will never occur
+
 ___random.randint(a,b)
 it picks a random int bw a and b.
 a and b are inclusive
@@ -80,3 +100,10 @@ json.dumps() - prints the the request data in more aethetic manner (more comfort
 (__name__)
 n Python, __name__ is a special built-in variable. When a Python file is run directly, __name__ is set to "__main__". However, if the file is imported as a module in another Python script, __name__ is set to the name of that module (the filename without the .py extension). This allows you to have parts of your code which only run when the file is executed directly, and not when it's imported as a module. This is often used to write test code or to run a function when the file is executed directly.
 
+random.seed(0)
+random.seed(1)
+a random output will be generated for the seed.
+if the seed is same, output is same
+used to debug
+
+by dafault the seed for various fxn is something like systemtime.
