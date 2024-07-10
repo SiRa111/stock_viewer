@@ -5,6 +5,6 @@ def main():
   emo(i)
 
 def emo(string):
-  print(emojize("string"))
+  print(emojize('string'))
 
 main()
