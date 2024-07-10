@@ -25,15 +25,12 @@ def main():
                     return a
                 else:
                     sys.exit(1)
-                    
 
             else:
                 sys.exit(1)
 
-
         else:
             sys.exit(1)
-
 
     else:
         sys.exit(1)
