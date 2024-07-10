@@ -39,7 +39,6 @@ def main():
         sys.exit
         return False
 
-
 a = main()
 if a == False:
     print("Invalid Usage")
