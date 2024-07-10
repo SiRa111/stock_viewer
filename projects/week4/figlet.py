@@ -13,12 +13,13 @@ def main():
         a = figlet.renderText(string)
         print(a)
         return True
+
     elif len(sys.argv) == 3:
-        string = input("Input: ")
         valid_font = figlet.getFonts()
-        if sys.argv[2] == "-f" or "-font":
-            if sys.argv[3] in valid_font:
-                figlet.setFont(font=sys.argv[3])
+        if sys.argv[1] == "-f" or "-font":
+            if sys.argv[2] in valid_font:
+                string = input("Input: ")
+                figlet.setFont(font=sys.argv[2])
                 a = figlet.renderText(string)
                 print(a)
             else:
