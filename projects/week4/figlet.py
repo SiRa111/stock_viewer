@@ -14,8 +14,10 @@ def convert(string):
     if len(sys.argv) == 2:
         f = random.choice(figlet.getFonts())
         figlet.setFont(font=f)
+        print(f)
         a = figlet.renderText(string)
         print(a)
+        return True
     elif len(sys.argv) == 4:
         valid_font = figlet.getFonts()
         if sys.argv[2] == "-f" or "-font":
