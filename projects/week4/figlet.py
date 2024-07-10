@@ -40,7 +40,9 @@ def main():
         return 1
 
 
-if main() == 1:
+a = main()
+if a == 1:
     print("Invalid Usage")
 else:
-    print(main())
+    print(a)
+
