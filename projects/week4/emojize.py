@@ -12,5 +12,5 @@ def emo(string):
   elif '_' not in b:
     print(emoji.emojize(f"{a} {b}", language= 'alias'))
 
-
-main()
+if __name__ == "__main__":
+  main()
