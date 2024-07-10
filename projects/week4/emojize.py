@@ -5,6 +5,6 @@ def main():
   emo(i)
 
 def emo(string):
-  print(emoji.emojize(":thumbsup:"))
+  print(emoji.emojize("string"))
 
 main()
