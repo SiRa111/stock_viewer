@@ -9,9 +9,10 @@ def main():
 
 
 def convert(string):
-    a = random.choice(figlet)
-    print(a)
-    print(figlet.a(string))
+    a1 = figlet(string)
+    #a = random.choice(a1)
+    print(a1)
+   
 
 
 if __name__ == "__main__":
