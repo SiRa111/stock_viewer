@@ -4,8 +4,11 @@ def main():
     try:
       name = input("Name: ")
       l.append(name)
+      if len()
     except EOFError:
       return l
 
 a = main()
-print(a)
+for _ in a:
+  print(_, end=" ")
+print()
