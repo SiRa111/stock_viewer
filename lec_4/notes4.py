@@ -79,6 +79,10 @@ __
 pip: package manager
 allows you to install packages and softwares by the command  line
 which do not come pretinstalled with python
+eg : pip install figlet
+pip install emoji
+pip install cowsay
+
 eg: requests library
 
 
