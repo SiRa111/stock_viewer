@@ -30,7 +30,7 @@ def main():
             sys.exit
     else:
         print("Invalid usage")
-        sys.exit
+        return False
 
 if __name__ == "__main__":
     main()
