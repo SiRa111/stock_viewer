@@ -111,3 +111,13 @@ if the seed is same, output is same
 used to debug
 
 by dafault the seed for various fxn is something like systemtime.
+
+
+if __name__ == "__main__":
+  main()
+#this part will run only when we run the program directly during checking
+#it will not run when you import it as a module in other files as
+__name__ == "the_filename" and hence it will not be "main".
+when you run the file directly. by default the filename turns to main and it runs
+when you import this file. the filename is not so and hence the following cmd does not run
+
