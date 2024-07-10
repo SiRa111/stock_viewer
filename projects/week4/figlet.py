@@ -6,9 +6,6 @@ figlet = Figlet()
 
 
 def main():
-    convert()
-
-def convert():
     if len(sys.argv) == 2:
         string = input("Input: ")
         f = random.choice(figlet.getFonts())
