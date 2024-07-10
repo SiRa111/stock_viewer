@@ -7,10 +7,13 @@ def main():
 def emo(string):
   a,b = string.split(":",1)
   b = ":" + b
-  if '_' in b:
+  if "earth" in b:
+    print(emoji.emojize(f"{a} {b}", language= 'alias GB'))
+  elif '_' in b:
     print(emoji.emojize(f"{a} {b}"))
   elif '_' not in b:
     print(emoji.emojize(f"{a} {b}", language= 'alias'))
+
 
 if __name__ == "__main__":
   main()
