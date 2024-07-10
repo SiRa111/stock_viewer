@@ -4,7 +4,6 @@ import random
 
 figlet = Figlet()
 
-
 def main():
     if len(sys.argv) == 2:
         string = input("Input: ")
