@@ -11,7 +11,8 @@ def main():
 
 def convert(string):
     f = random.choice(figlet.getFonts())
-    a = figlet.renderText(string, font = f )
+    figlet.setFont(font=f)
+    a = figlet.renderText(string)
     print(a)
 
 
