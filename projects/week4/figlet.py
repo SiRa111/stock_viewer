@@ -9,7 +9,7 @@ def main():
 
 
 def convert(string):
-    a1 = pyfiglet.figlet_format(string)
+    a1 = random.choice(pyfiglet.figlet_format)
     #a = random.choice(a1)
     print(a1)
 
