@@ -24,24 +24,25 @@ def main():
                     a = figlet.renderText(string)
                     return a
                 else:
-                    sys.exit
+
                     return False
 
             else:
-                sys.exit
+
                 return False
 
         else:
-            sys.exit
+
             return False
 
     else:
-        sys.exit
+
         return False
 
 a = main()
 if a == False:
     print("Invalid Usage")
+    sys.exit
 else:
     print(a)
 
