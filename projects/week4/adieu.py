@@ -5,7 +5,7 @@ def main():
       if len(l) < 4:
         name = input("Name: ")
         l.append(name)
-      elif len(l) > 4:
+      elif len(l) >= 4:
         name = input("Name: ")
         l.append(name)
         l.append([-2],"and")
