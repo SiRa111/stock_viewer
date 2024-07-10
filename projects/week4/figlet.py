@@ -25,23 +25,19 @@ def main():
                     return a
                 else:
                     sys.exit(1)
-                    print("Invalid Usage")
-                    return False
+                    
 
             else:
                 sys.exit(1)
-                print("Invalid Usage")
-                return False
+
 
         else:
             sys.exit(1)
-            print("Invalid Usage")
-            return False
+
 
     else:
         sys.exit(1)
-        print("Invalid Usage")
-        return False
+
 
 a = main()
 if a == False:
