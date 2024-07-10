@@ -1,3 +1,4 @@
 import emoji
 
-
+def main():
+  
