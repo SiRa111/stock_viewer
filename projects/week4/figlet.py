@@ -10,8 +10,8 @@ def main():
 
 
 def convert(string):
-    a1 = random.choice(figlet.getFonts())
-    a = figlet.renderText(string, font=a1)
+    f = random.choice(figlet.getFonts())
+    a = figlet.renderText(string, font = f )
     print(a)
 
 
