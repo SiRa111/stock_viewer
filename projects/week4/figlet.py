@@ -25,17 +25,17 @@ def main():
                     print(a)
                 else:
                     print("Invalid usage")
-                    sys.exit()
+                    sys.exit
 
             else:
                 print("Invalid usage")
-                sys.exit()
+                sys.exit
         else:
             print("Invalid usage")
-            sys.exit()
+            sys.exit
     else:
         print("Invalid usage")
-        sys.exit()
+        sys.exit
 
 if __name__ == "__main__":
     main()
