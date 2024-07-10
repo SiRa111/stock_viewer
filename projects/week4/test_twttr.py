@@ -1,6 +1,5 @@
 from twttr import shorten
 
-
 def main():
   string = input("string here : ")
   a = shorten(string)
@@ -10,4 +9,3 @@ def main():
   print(final)
   return True
 main()
-
