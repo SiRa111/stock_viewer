@@ -4,6 +4,7 @@ import random
 
 figlet = Figlet()
 
+
 def main():
     if len(sys.argv) == 1:
         string = input("Input: ")
@@ -11,31 +12,35 @@ def main():
         figlet.setFont(font=f)
         print(f)
         a = figlet.renderText(string)
-        print(a)
-        return True
+        return a
 
     elif len(sys.argv) == 3:
         valid_font = figlet.getFonts()
-        if sys.argv[1] == "-f" or sys.argv[1] =="-font":
+        if sys.argv[1] == "-f" or sys.argv[1] == "-font":
             if sys.argv[2] in valid_font:
                 if len(sys.argv[1]) == 2 or len(sys.argv[1]) == 5:
                     string = input("Input: ")
                     figlet.setFont(font=sys.argv[2])
                     a = figlet.renderText(string)
-                    print(a)
+                    return a
                 else:
-                    print("Invalid usage")
                     sys.exit
+                    return 1
 
             else:
-                print("Invalid usage")
                 sys.exit
-        else:
-            print("Invalid usage")
-            sys.exit
-    else:
-        print("Invalid usage")
-        sys.exit
+                return 1
 
-if __name__ == "__main__":
-    main()
+        else:
+            sys.exit
+            return 1
+
+    else:
+        sys.exit
+        return 1
+
+
+if main() == 1:
+    print("Invalid Usage")
+else:
+    print(main())
