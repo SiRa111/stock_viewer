@@ -16,9 +16,9 @@ def main():
 
     elif len(sys.argv) == 3:
         valid_font = figlet.getFonts()
-        if sys.argv[1] == "-f" or "-font":
+        if sys.argv[1] == "-f" or sys.argv[1] =="-font":
             if sys.argv[2] in valid_font:
-                if len(sys.argv[1]) == 2 or 5:
+                if len(sys.argv[1]) == 2 or len(sys.argv[1]) == 5:
                     string = input("Input: ")
                     figlet.setFont(font=sys.argv[2])
                     a = figlet.renderText(string)
