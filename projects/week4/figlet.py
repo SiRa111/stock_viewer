@@ -6,9 +6,7 @@ figlet = Figlet()
 
 
 def main():
-
     convert()
-
 
 def convert():
     if len(sys.argv) == 2:
