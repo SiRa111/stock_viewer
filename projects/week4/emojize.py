@@ -5,10 +5,8 @@ def main():
   emo(i)
 
 def emo(string):
-  if '_' in string:
-    print(emoji.emojize(f"{string}"))
-  elif '_' not in string:
-    print(emoji.emojize(f"{string}", language= 'alias'))
+  a,b = string.lstrip(":")
+  print(a,b)
 
 
 main()
