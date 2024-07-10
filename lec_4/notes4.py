@@ -121,3 +121,5 @@ __name__ == "the_filename" and hence it will not be "main".
 when you run the file directly. by default the filename turns to main and it runs
 when you import this file. the filename is not so and hence the following cmd does not run
 
+_______________________________________________________________________________________
+figlet slant is so 
