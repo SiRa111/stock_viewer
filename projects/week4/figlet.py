@@ -5,7 +5,7 @@ import random
 figlet = Figlet()
 
 def main():
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 1:
         string = input("Input: ")
         f = random.choice(figlet.getFonts())
         figlet.setFont(font=f)
@@ -13,7 +13,7 @@ def main():
         a = figlet.renderText(string)
         print(a)
         return True
-    elif len(sys.argv) == 4:
+    elif len(sys.argv) == 3:
         string = input("Input: ")
         valid_font = figlet.getFonts()
         if sys.argv[2] == "-f" or "-font":
