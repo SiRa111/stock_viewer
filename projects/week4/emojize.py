@@ -1,11 +1,10 @@
-import emoji
+from emoji import emojize
 
 def main():
   i = input("Input: ")
   emo(i)
 
 def emo(string):
-  if string in emoji:
-    print(string)
+  print(emojize("string"))
 
 main()
