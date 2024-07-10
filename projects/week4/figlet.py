@@ -1,8 +1,8 @@
-import pyfiglet
+from pyfiglet import Figlet
 import sys
 import random
 
-fig() = pyfiglet.figlet_format()
+figlet = Figlet()
 
 def main():
     idk = input("Input: ")
@@ -10,7 +10,7 @@ def main():
 
 
 def convert(string):
-    a1 = random.choice(pyfiglet.figlet_format)
+    a1 = random.choice(figlet.getFonts())
     #a = random.choice(a1)
     print(a1)
 
