@@ -2,6 +2,7 @@ import pyfiglet
 import sys
 import random
 
+fig() = pyfiglet.figlet_format()
 
 def main():
     idk = input("Input: ")
