@@ -1,10 +1,10 @@
-from emoji import emojize
+import emoji
 
 def main():
   i = input("Input: ")
   emo(i)
 
 def emo(string):
-  print(emojize("{:thumbsup:}"))
+  print(emoji.emojize(":thumbsup:"))
 
 main()
