@@ -5,8 +5,12 @@ def main():
   emo(i)
 
 def emo(string):
-  a,b = string.lstrip(":")
-  print(a,b)
+  a,b = string.split(":",1)
+  b = ":" + b
+  if '_' in b:
+    print(emoji.emojize(f"a, {b}"))
+  elif '_' not in b:
+    print(emoji.emojize(f"a, {b}", language= 'alias'))
 
 
 main()
