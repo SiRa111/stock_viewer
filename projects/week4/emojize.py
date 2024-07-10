@@ -5,7 +5,7 @@ def main():
   emo(i)
 
 def emo(string):
-  for _ in emoji:
-    print(_)
+  if string in emoji:
+    print(string)
 
 main()
