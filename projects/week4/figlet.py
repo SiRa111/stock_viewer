@@ -28,7 +28,9 @@ def main():
         else:
             print("Invalid usage")
             sys.exit
-
+    else:
+        print("Invalid usage")
+        sys.exit
 
 if __name__ == "__main__":
     main()
