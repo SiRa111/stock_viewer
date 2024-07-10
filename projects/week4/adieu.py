@@ -7,8 +7,9 @@ def main():
         l.append(name)
       elif len(l) >= 4:
         name = input("Name: ")
+        
         l.append(name)
-        l.append([-2],"and")
+        l.append(",")
 
 
   except EOFError:
