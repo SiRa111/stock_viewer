@@ -6,12 +6,13 @@ figlet = Figlet()
 
 
 def main():
-    idk = input("Input: ")
-    convert(idk)
+
+    convert()
 
 
-def convert(string):
+def convert():
     if len(sys.argv) == 2:
+        string = input("Input: ")
         f = random.choice(figlet.getFonts())
         figlet.setFont(font=f)
         print(f)
@@ -19,6 +20,7 @@ def convert(string):
         print(a)
         return True
     elif len(sys.argv) == 4:
+        string = input("Input: ")
         valid_font = figlet.getFonts()
         if sys.argv[2] == "-f" or "-font":
             if sys.argv[3] in valid_font:
