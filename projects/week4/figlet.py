@@ -18,10 +18,15 @@ def main():
         valid_font = figlet.getFonts()
         if sys.argv[1] == "-f" or "-font":
             if sys.argv[2] in valid_font:
-                string = input("Input: ")
-                figlet.setFont(font=sys.argv[2])
-                a = figlet.renderText(string)
-                print(a)
+                if len(sys.argv[1]) == 2 or 5:
+                    string = input("Input: ")
+                    figlet.setFont(font=sys.argv[2])
+                    a = figlet.renderText(string)
+                    print(a)
+                else:
+                    print("Invalid usage")
+                    sys.exit
+
             else:
                 print("Invalid usage")
                 sys.exit
