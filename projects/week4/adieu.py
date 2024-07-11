@@ -10,7 +10,8 @@ def main():
         l.append(","+name)
 
   except EOFError:
-    return l
+    pass
+  l.append
 
 a = main()
 for _ in a:
