@@ -12,6 +12,7 @@ def main():
   except EOFError:
     pass
   a = []
+  a
   print(a)
 
 a = main()
