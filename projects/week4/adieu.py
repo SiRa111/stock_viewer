@@ -15,7 +15,7 @@ def main():
   a.append(l[-1])
   l.pop()
   l.append("and")
-  l.append(a[0]-",")
+  l.append(a[0])
   return l
 
 q = main()
