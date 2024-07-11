@@ -1,5 +1,5 @@
 def main():
-  l = ["Adieu, ", "adieu, ", "to "]
+  l = ["Adieu,", "adieu,", "to"]
   try:
     while True:
       if len(l) < 4:
