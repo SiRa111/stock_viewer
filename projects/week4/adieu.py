@@ -11,7 +11,8 @@ def main():
 
   except EOFError:
     pass
-  l.append
+  a = l[-2:-1]
+  print(a)
 
 a = main()
 for _ in a:
