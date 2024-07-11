@@ -12,12 +12,15 @@ def main():
   except EOFError:
     pass
   if len(l) > 4:
-    a = []
-    a.append(l[-1].rstrip(","))
+    b = ""
+    a = ""
+    b = b + l[-1].rstrip(",")
+    a = a + l[-2].rstrip(",")
     l.pop()
+    l.pop()
+    l.append(a)
     l.append("and")
-    l.append(a[0])
-    l
+    l.append(b)
   return l
 
 q = main()
