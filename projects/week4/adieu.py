@@ -7,10 +7,7 @@ def main():
         l.append(name)
       elif len(l) >= 4:
         name = input("Name: ")
-        
-        l.append(name)
-        l.append(",")
-
+        l.append(","+name)
 
   except EOFError:
     return l
