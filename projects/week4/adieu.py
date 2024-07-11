@@ -13,8 +13,8 @@ def main():
     pass
   a = []
   a.append(l[-1])
-  
-  print(a)
+  l.pop()
+  l.append()
 
 a = main()
 for _ in a:
