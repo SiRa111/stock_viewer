@@ -14,9 +14,10 @@ def main():
   a = []
   a.append(l[-1])
   l.pop()
-  l.append("and", a[0])
+  l.append(["and", a[0]])
+  return l
 
-a = main()
-for _ in a:
+q = main()
+for _ in q:
   print(_, end=" ")
 print()
