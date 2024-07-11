@@ -14,7 +14,7 @@ def main():
   a = []
   a.append(l[-1])
   l.pop()
-  l.append([])
+  l.append("and")
 
 a = main()
 for _ in a:
