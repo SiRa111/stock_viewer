@@ -22,6 +22,7 @@ def get_level():
 
 
 def generate_integer(level):
+    s = 0
     match level:
         case 1:
             for _ in range(10):
@@ -44,8 +45,7 @@ def generate_integer(level):
     return s
 
 
-def game(a, b):
-    score = 0
+def game(a, b, score):
     i = 0
     while i < 3:
         try:
