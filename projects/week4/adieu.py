@@ -25,8 +25,9 @@ def main():
         l.append("and")
         l.append(e[-1])
   else:
-
     l.pop()
+    l.append("and")
+    l.append(e[-1])
   return l
 
 q = main()
