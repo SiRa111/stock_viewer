@@ -19,12 +19,12 @@ def main():
         l.append(e[-1])
       case 5:
         e.append(l[-2])
-        e[-2].rstrip(",")
+        e[-2e[-2].rstrip(",")
         l.pop()
         l.pop()
-        l.append(e[-2])
-        l.append("and")
         l.append(e[-1])
+        l.append("and")
+        l.append(e[-2])
   else:
     l.pop()
     l.append("and")
