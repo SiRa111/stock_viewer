@@ -17,7 +17,7 @@ def main():
 
 def game(n):
     ans = random.randint(1, n)
-    print(ans)
+    
     while True:
         try:
             guess = int(input("Guess: "))
