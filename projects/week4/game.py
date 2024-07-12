@@ -18,11 +18,11 @@ def game(n):
   while True:
     try:
       guess = int(input("Guess: "))
-      if guess < n and guess > 0:
+      if guess < ans and guess > 0:
         print("Too small!")
-      elif guess > n and guess > 0:
+      elif guess > ans and guess > 0:
         print("Too large!")
-      elif guess == n:
+      elif guess == ans:
         print("Just Right!")
         break
       else:
