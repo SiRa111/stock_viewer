@@ -34,4 +34,5 @@ def game(n):
             pass
     return
 
-main()
+if "__name__" == "__main__":
+    main()
