@@ -9,10 +9,13 @@ def main():
     pass
 
   e = []
-  
+  e.append(l[-1])
   if len(l) < 6:
     match len(l):
       case 4:
+        e[-1].rstrip(",")
+      case 5:
+        
 
   return l
 
