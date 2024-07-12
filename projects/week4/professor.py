@@ -49,6 +49,7 @@ def generate_integer(level):
 def game(a, b, score):
     i = 0
     while i < 3:
+        if 
         try:
             sum = int(input(f"{a} + {b} = "))
             if sum == a + b:
