@@ -28,19 +28,19 @@ def generate_integer(level):
             for _ in range(10):
                 x = random.randint(0, 9)
                 y = random.randint(0, 9)
-                s = game(x, y)
+                s = game(x, y, s)
 
         case 2:
             for _ in range(10):
                 x = random.randint(10, 99)
                 y = random.randint(10, 99)
-                s = game(x, y)
+                s = game(x, y, s)
 
         case 3:
             for _ in range(10):
                 x = random.randint(100, 999)
                 y = random.randint(100, 999)
-                s = game(x, y)
+                s = game(x, y, s)
 
     return s
 
