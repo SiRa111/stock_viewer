@@ -15,15 +15,18 @@ def main():
 def game(n):
   ans = random.randint(1,n)
   while True:
-    guess = int(input("Guess: "))
-    if guess < n:
-      print("Too small!")
-    elif guess > n:
-      print("Too large!")
-    elif guess == n:
-      print("Just Right!")
-      break
-    else:
+    try:
+      guess = int(input("Guess: "))
+      if guess < n:
+        print("Too small!")
+      elif guess > n:
+        print("Too large!")
+      elif guess == n:
+        print("Just Right!")
+        break
+      else:
+        pass
+    except ValueError:
       pass
 
 
