@@ -8,7 +8,9 @@ def main():
   except EOFError:
     pass
   if len(l) < 6:
-    
+    match len(l):
+      case 4:
+        
   return l
 
 q = main()
