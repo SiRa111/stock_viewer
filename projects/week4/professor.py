@@ -23,6 +23,7 @@ def get_level():
 
 
 def generate_integer(level):
+    print(level)
     s = 0
     if level ==  1:
         for _ in range(10):
