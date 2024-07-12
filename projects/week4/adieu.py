@@ -18,7 +18,7 @@ def main():
         l.pop()
         l.append(e[-1])
       case 5:
-        e.append[-2]
+        e.append(l[-2])
         e[-2].rstrip(",")
         l.pop()
         l.pop()
