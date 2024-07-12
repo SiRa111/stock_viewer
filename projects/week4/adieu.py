@@ -11,6 +11,7 @@ def main():
   e = []
   e.append(l[-1])
   e[-1].strip(",")
+  print(e)
   if len(l) < 6:
     match len(l):
       case 4:
