@@ -7,7 +7,7 @@ def main():
 
   except EOFError:
     pass
-
+  
   return l
 
 q = main()
