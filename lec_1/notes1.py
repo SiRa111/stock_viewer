@@ -65,4 +65,7 @@ match "world":
     print("you should not have seen this")
     print(hello)
 
+here "world" does not match with any case.
+so the default case we created hello, could be anything _, hello, bye, hehe, haha
+python will forcefully shove that match value to that variable
 '''
