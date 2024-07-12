@@ -11,7 +11,7 @@ def main():
         pass
     except ValueError:
       pass
-
+  return
 def game(n):
   ans = random.randint(1,n)
   print(ans)
@@ -24,7 +24,7 @@ def game(n):
         print("Too large!")
       elif guess == ans:
         print("Just Right!")
-        break
+        return
       else:
         pass
     except ValueError:
