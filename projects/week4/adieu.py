@@ -19,7 +19,7 @@ def main():
         l.append(e[-1])
       case 5:
         e.append(l[-2])
-        e[-2] = e[-2].rstrip(",")
+        e[-1] = e[-1].rstrip(",")
         l.pop()
         l.pop()
         l.append(e[-1])
