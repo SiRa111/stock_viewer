@@ -20,7 +20,13 @@ def get_level():
 
 
 def generate_integer(level):
-    x = random.randint(1,)
+    match level:
+        case 1:
+            for i in range(10):
+              x = random.randint(0,9)
+              y = random.randint(0,9)
+              
+
 
 
 if __name__ == "__main__":
