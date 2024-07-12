@@ -7,6 +7,7 @@ def main():
 
 
 def get_level():
+    ans = int()
     while True:
         try:
             lev = int(input("Level: "))
