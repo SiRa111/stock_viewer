@@ -7,7 +7,8 @@ def main():
 
   except EOFError:
     pass
-  
+  if len(l) < 6:
+    
   return l
 
 q = main()
