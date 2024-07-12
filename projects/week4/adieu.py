@@ -3,10 +3,10 @@ def main():
   try:
     while True:
       if len(l) < 4:
-        name = input()
+        name = input("Name: ")
         l.append(name+",")
       elif len(l) >= 4:
-        name = input()
+        name = input("Name: ")
         l.append(name+",")
 
   except EOFError:
