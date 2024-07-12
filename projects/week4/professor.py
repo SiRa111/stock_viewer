@@ -58,14 +58,13 @@ def game(a, b, score):
             if sum == a + b:
                 score += 1
                 break
-            elif sum != a + b and i < 2:
+            elif sum != a + b:
                 print("EEE")
                 i += 1
 
         except ValueError:
-            if i < 2:
-                i += 1
-            
+            i += 1
+
 
     return score
 
