@@ -10,7 +10,7 @@ def main():
 
   e = []
   e.append(l[-1])
-  e[-1].rstrip(",")
+  e[-1] = e[-1].rstrip(",")
   print(e)
   if len(l) < 6:
     match len(l):
