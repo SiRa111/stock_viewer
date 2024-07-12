@@ -24,25 +24,25 @@ def get_level():
 
 def generate_integer(level):
     s = 0
-    match level:
-        case 1:
-            for _ in range(10):
-                x = random.randint(0, 9)
-                y = random.randint(0, 9)
-                s = game(x, y, s)
+    if level ==  1:
+        for _ in range(10):
+            x = random.randint(0, 9)
+            y = random.randint(0, 9)
+            s = game(x, y, s)
 
-        case 2:
-            for _ in range(10):
-                x = random.randint(10, 99)
-                y = random.randint(10, 99)
-                s = game(x, y, s)
+    elif level == 2:
+         for _ in range(10):
+            x = random.randint(10, 99)
+            y = random.randint(10, 99)
+            s = game(x, y, s)
 
-        case 3:
-            for _ in range(10):
-                x = random.randint(100, 999)
-                y = random.randint(100, 999)
-                s = game(x, y, s)
-
+    elif level == 3:
+         for _ in range(10):
+            x = random.randint(100, 999)
+            y = random.randint(100, 999)
+            s = game(x, y, s)
+    else:
+        pass
     return s
 
 
