@@ -17,9 +17,9 @@ def game(n):
   while True:
     try:
       guess = int(input("Guess: "))
-      if guess < n:
+      if guess < n and guess > 0:
         print("Too small!")
-      elif guess > n:
+      elif guess > n and guess > 0:
         print("Too large!")
       elif guess == n:
         print("Just Right!")
