@@ -1,5 +1,7 @@
-hello = "hello"
-match "world":
-  case hello:
-    print("you should not have seen this")
-    print(hello)
+match [1, 2]:
+  case (a, b, c):
+    print(a, b, c) # wont run
+  case (x):
+    print(x) # will run
+  case (a, b):
+    print(a, b) # should run but maybe x will eat it first
