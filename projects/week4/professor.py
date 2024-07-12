@@ -49,7 +49,10 @@ def generate_integer(level):
 def game(a, b, score):
     i = 0
     while i < 3:
-        if 
+        if i == 2:
+            i =  0
+            print(f"{a} + {b} = {a+b}")
+            break
         try:
             sum = int(input(f"{a} + {b} = "))
             if sum == a + b:
@@ -58,16 +61,12 @@ def game(a, b, score):
             elif sum != a + b and i < 2:
                 print("EEE")
                 i += 1
-            elif i == 2:
-                i = 0
-                print(f"{a} + {b} = {a+b}")
-                break
+
         except ValueError:
             if i < 2:
                 i += 1
-            elif i == 2:
-                print(f"{a} + {b} = {a+b}")
-                break
+            
+
     return score
 
 
