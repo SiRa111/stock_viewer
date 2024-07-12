@@ -53,5 +53,16 @@ more efficient :
 STRINGS ARE IMMUTABLE
 ANY CHANGES MADE IN STRINGS ARE TRANSIENT
 
+hello = "hello"
+match "world":
+  case hello:
+    print("you should not have seen this")
+    print(hello)
+
+hello = "hello"
+match "world":
+  case hello:
+    print("you should not have seen this")
+    print(hello)
 
 '''
