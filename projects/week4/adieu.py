@@ -10,13 +10,23 @@ def main():
 
   e = []
   e.append(l[-1])
+  e[-1].strip(",")
   if len(l) < 6:
     match len(l):
       case 4:
-        e[-1].rstrip(",")
+        l.pop()
+        l.append(e[-1])
       case 5:
-        
+        e.append[-2]
+        e[-2].rstrip(",")
+        l.pop()
+        l.pop()
+        l.append(e[-2])
+        l.append("and")
+        l.append(e[-1])
+  else:
 
+    l.pop()
   return l
 
 q = main()
