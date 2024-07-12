@@ -2,11 +2,14 @@ import random
 
 def main():
   while True:
-    num = int(input("Level: "))
-    if num > 0:
-      game(num)
-      break
-    else:
+    try:
+      num = int(input("Level: "))
+      if num > 0:
+        game(num)
+        break
+      else:
+        pass
+    except ValueError:
       pass
 
 def game(n):
