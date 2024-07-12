@@ -7,10 +7,13 @@ def main():
 
   except EOFError:
     pass
+
+  e = []
+  
   if len(l) < 6:
     match len(l):
       case 4:
-        
+
   return l
 
 q = main()
