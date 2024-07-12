@@ -2,8 +2,8 @@ import random
 
 
 def main():
-    final = get_level()
-    print(final)
+    get_level()
+
 
 
 def get_level():
@@ -12,14 +12,14 @@ def get_level():
         try:
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
-                ans = generate_integer(lev)
+                generate_integer(lev)
                 break
             else:
                 pass
 
         except ValueError:
             pass
-    return ans
+    return True
 
 
 def generate_integer(level):
@@ -43,7 +43,7 @@ def generate_integer(level):
             s = game(x, y, s)
     else:
         pass
-    return s
+    print("s")
 
 
 def game(a, b, score):
