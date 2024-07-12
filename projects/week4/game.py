@@ -5,11 +5,12 @@ def main():
     num = int(input("Level: "))
     if num > 0:
       game(num)
+      break
     else:
       pass
 
 def game(n):
-  ans = random.randint(n)
+  ans = random.randint(1,n)
   while True:
     guess = int(input("Guess: "))
     if guess < n:
