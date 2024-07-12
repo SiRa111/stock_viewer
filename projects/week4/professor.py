@@ -12,19 +12,19 @@ def get_level():
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
                 ans = generate_integer(lev)
-                return ans
+                break
             else:
                 pass
 
         except ValueError:
             pass
-
+    return ans
 
 def generate_integer(level):
     score = 0
     match level:
         case 1:
-            for i in range(10):
+            for _ in range(10):
                 x = random.randint(0, 9)
                 y = random.randint(0, 9)
                 i = 0
@@ -49,7 +49,7 @@ def generate_integer(level):
                             break
 
         case 2:
-            for i in range(10):
+            for _ in range(10):
                 x = random.randint(10, 99)
                 y = random.randint(10, 99)
                 i = 0
@@ -74,7 +74,7 @@ def generate_integer(level):
                             break
 
         case 3:
-            for i in range(10):
+            for _ in range(10):
                 x = random.randint(100, 999)
                 y = random.randint(100, 999)
                 i = 0
