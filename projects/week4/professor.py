@@ -19,7 +19,7 @@ def get_level():
 
         except ValueError:
             pass
-    return True
+    return 
 
 
 def generate_integer(level):
