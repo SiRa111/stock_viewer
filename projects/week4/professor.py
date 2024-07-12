@@ -12,7 +12,7 @@ def get_level():
         try:
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
-                ans = generate_integer(lev)
+                ans = generate_integer(lev) 
                 break
             else:
                 pass
