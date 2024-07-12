@@ -12,7 +12,7 @@ def get_level():
         try:
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
-                ans = generate_integer(lev) 
+                ans = generate_integer(lev)
                 break
             else:
                 pass
@@ -23,26 +23,28 @@ def get_level():
 
 
 def generate_integer(level):
-    s = 0
-    match level:
-        case 1:
-            for _ in range(10):
-                x = random.randint(0, 9)
-                y = random.randint(0, 9)
-                s = game(x, y, s)
+    try :
+        s = 0
+        match level:
+            case 1:
+                for _ in range(10):
+                    x = random.randint(0, 9)
+                    y = random.randint(0, 9)
+                    s = game(x, y, s)
 
-        case 2:
-            for _ in range(10):
-                x = random.randint(10, 99)
-                y = random.randint(10, 99)
-                s = game(x, y, s)
+            case 2:
+                for _ in range(10):
+                    x = random.randint(10, 99)
+                    y = random.randint(10, 99)
+                    s = game(x, y, s)
 
-        case 3:
-            for _ in range(10):
-                x = random.randint(100, 999)
-                y = random.randint(100, 999)
-                s = game(x, y, s)
-
+            case 3:
+                for _ in range(10):
+                    x = random.randint(100, 999)
+                    y = random.randint(100, 999)
+                    s = game(x, y, s)
+    except:
+        pass
     return s
 
 
