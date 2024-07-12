@@ -11,6 +11,7 @@ def get_level():
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
                 generate_integer(lev)
+                return
             else:
                 pass
 
@@ -19,7 +20,7 @@ def get_level():
 
 
 def generate_integer(level):
-    ...
+    x = random.randint(1,)
 
 
 if __name__ == "__main__":
