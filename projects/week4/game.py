@@ -17,7 +17,7 @@ def main():
 
 def game(n):
     ans = random.randint(1, n)
-    
+
     while True:
         try:
             guess = int(input("Guess: "))
@@ -27,11 +27,11 @@ def game(n):
                 print("Too large!")
             elif guess == ans:
                 print("Just Right!")
-                return
+                break
             else:
                 pass
         except ValueError:
             pass
-
+    return
 
 main()
