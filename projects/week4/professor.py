@@ -13,7 +13,6 @@ def get_level():
         try:
             lev = int(input("Level: "))
             if 1 <= lev <= 3:
-                generate_integer(lev)
                 break
             else:
                 pass
@@ -23,8 +22,7 @@ def get_level():
     return lev
 
 
-def generate_integer(level):
-    print(level)
+def generate_integer():
     s = 0
     try :
         if level ==  1:
@@ -44,7 +42,7 @@ def generate_integer(level):
                 x = random.randint(100, 999)
                 y = random.randint(100, 999)
                 s = game(x, y, s)
-                
+
     except ValueError:
         pass
 
