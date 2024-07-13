@@ -7,7 +7,6 @@ def main():
     print(score)
 
 
-
 def get_level():
     ans = int()
     while True:
@@ -27,26 +26,28 @@ def get_level():
 def generate_integer(level):
     print(level)
     s = 0
-    if level ==  1:
-        for _ in range(10):
-            x = random.randint(0, 9)
-            y = random.randint(0, 9)
-            s = game(x, y, s)
+    try :
+        if level ==  1:
+            for _ in range(10):
+                x = random.randint(0, 9)
+                y = random.randint(0, 9)
+                s = game(x, y, s)
 
-    elif level == 2:
-         for _ in range(10):
-            x = random.randint(10, 99)
-            y = random.randint(10, 99)
-            s = game(x, y, s)
+        elif level == 2:
+            for _ in range(10):
+                x = random.randint(10, 99)
+                y = random.randint(10, 99)
+                s = game(x, y, s)
 
-    elif level == 3:
-         for _ in range(10):
-            x = random.randint(100, 999)
-            y = random.randint(100, 999)
-            s = game(x, y, s)
-    else:
+        elif level == 3:
+            for _ in range(10):
+                x = random.randint(100, 999)
+                y = random.randint(100, 999)
+                s = game(x, y, s)
+    except ValueError:
         pass
-    return x
+
+    return s
 
 
 def game(a, b, score):
