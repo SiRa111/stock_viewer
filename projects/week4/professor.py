@@ -44,6 +44,7 @@ def generate_integer(level):
                 x = random.randint(100, 999)
                 y = random.randint(100, 999)
                 s = game(x, y, s)
+                
     except ValueError:
         pass
 
