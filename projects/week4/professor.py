@@ -46,7 +46,7 @@ def generate_integer(level):
             s = game(x, y, s)
     else:
         pass
-    print("s")
+    return x
 
 
 def game(a, b, score):
