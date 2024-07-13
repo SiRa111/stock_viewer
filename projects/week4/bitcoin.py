@@ -9,9 +9,10 @@ print(_)
 
 rate = float()
 for i in _["bpi"]:
-   rate1 = i["USD"]
-   rate = rate1["rate_float"]
+   if i == "USD":
+      print(i)
 
+'''
 def main():
   if len(sys.argv) == 1:
     print("Missing command-line argument")
@@ -29,3 +30,4 @@ def main():
 if __name__ == "__main__":
   main()
 
+'''
