@@ -2,10 +2,11 @@ import json
 import requests
 import sys
 
-_ = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
+_ = response.json()
 print(_)
-'''
+
 rate = float()
 for i in _["bpi"]:
    rate1 = i["USD"]
@@ -27,4 +28,4 @@ def main():
 
 if __name__ == "__main__":
   main()
-'''
+
