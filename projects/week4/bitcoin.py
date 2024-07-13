@@ -10,7 +10,8 @@ print(_)
 rate = float()
 for i in _["bpi"]:
    if i == "USD":
-      print(i)
+      for j in i:
+         print(j)
 
 '''
 def main():
