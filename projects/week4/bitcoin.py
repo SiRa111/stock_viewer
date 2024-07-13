@@ -2,9 +2,14 @@ import json
 import requests
 import sys
 
-_ = request.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+_ = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
-
+print(_)
+'''
+rate = float()
+for i in _["bpi"]:
+   rate1 = i["USD"]
+   rate = rate1["rate_float"]
 
 def main():
   if len(sys.argv) == 1:
@@ -13,6 +18,8 @@ def main():
   elif len(sys.argv) == 2:
       try:
          bc = float(sys.argv)
+         value = rate * bc
+         print(f"${value}.:4f")
       except requests.RequestException:
          print("Command line argument is not a number")
          sys.exit()
@@ -20,3 +27,4 @@ def main():
 
 if __name__ == "__main__":
   main()
+'''
