@@ -18,7 +18,7 @@ def main():
       try:
          bc = float(sys.argv[1])
          value = rate * bc
-         print(f"${value:.4f}")
+         print(f"${value:,}")
       except (requests.RequestException, ValueError):
          print("Command line argument is not a number")
          sys.exit()
