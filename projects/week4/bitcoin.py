@@ -4,6 +4,8 @@ import sys
 
 _ = request.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
+
+
 def main():
   if len(sys.argv) == 1:
     print("Missing command-line argument")
@@ -12,6 +14,8 @@ def main():
       try:
          bc = float(sys.argv)
       except requests.RequestException:
+         print("Command line argument is not a number")
+         sys.exit()
 
 
 if __name__ == "__main__":
