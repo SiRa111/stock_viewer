@@ -4,7 +4,7 @@ import random
 def main():
     level = get_level()
     score = generate_integer(level)
-    print(score)
+    print(f"Score: {score}")
 
 
 def get_level():
