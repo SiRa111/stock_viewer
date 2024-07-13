@@ -22,7 +22,7 @@ def get_level():
     return lev
 
 
-def generate_integer():
+def generate_integer(level):
     s = 0
     try :
         if level ==  1:
