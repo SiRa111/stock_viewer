@@ -11,6 +11,7 @@ def main():
   elif len(sys.argv) == 2:
       try:
          bc = float(sys.argv)
+      except requests.RequestException:
 
 
 if __name__ == "__main__":
