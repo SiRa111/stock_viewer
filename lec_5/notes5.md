@@ -8,3 +8,4 @@ we ended up writing 38 lines of test_code for 2 lines of fxn
 not a very convinent way
 
 pytest - 3rd party library that assissts you in testting your code
+pip install pytest
