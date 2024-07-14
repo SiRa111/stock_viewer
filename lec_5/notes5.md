@@ -9,3 +9,5 @@ not a very convinent way
 
 pytest - 3rd party library that assissts you in testting your code
 pip install pytest
+try to write code in fxns
+makes debugging easier
