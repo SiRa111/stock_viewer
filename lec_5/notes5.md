@@ -11,3 +11,5 @@ pytest - 3rd party library that assissts you in testting your code
 pip install pytest
 try to write code in fxns
 makes debugging easier
+
+give your fxns a return value to make them more testable rather than just printing
