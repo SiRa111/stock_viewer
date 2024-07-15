@@ -9,7 +9,7 @@ def main():
 def value(greeting):
   if greeting.startswith("hello" or "Hello"):
       return 0
-  elif greeting.startswith("h" or "H"):
+  elif greeting.startswith("h","H"):
       return 20
   else:
       return 100
