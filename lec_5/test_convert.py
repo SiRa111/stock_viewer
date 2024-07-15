@@ -17,5 +17,5 @@ def test_float_conversion():
   'assert convert(0.001) == 149597870.691'
   #this gives error due to the floating pt
 
-  assert convert(0.001) == pytest.approx(149597870.691)
+  assert convert(0.001) == pytest.approx(149597870.691, abs=1e-5)
   #allows some float tolerance
