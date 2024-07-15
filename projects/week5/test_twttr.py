@@ -11,4 +11,4 @@ def test_num():
   assert shorten("1234") == "1234"
 
 def test_punc():
-  assert shorten("hi!we:that.") == "h!w:tht"
+  assert shorten("hi!we:that.") == "h!w:tht."
