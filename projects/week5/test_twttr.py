@@ -11,5 +11,5 @@ def test_num():
   assert shorten("1234") == "1234"
 
 def test_nums():
-  with pytest.raises(ValueError):
+  with pytest.raises(TypeError):
     shorten(1234)
