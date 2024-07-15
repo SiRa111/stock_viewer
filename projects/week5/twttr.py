@@ -8,11 +8,11 @@ def shorten(word):
         l.append(word[i])
 
     for i in l:
-        if i == 'a' or  i == 'e' or i == "o" or i == "u" or i == "i" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U":
+        if i in "aeiouAEIOU.,!@:":
             l.remove(i)
 
     for i in l:
-        if i == 'a' or  i == 'e' or i == "o" or i == "u" or i == "i" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U":
+        if i in "aeiouAEIOU.,!@:" :
             l.remove(i)
     final = ""
     for i in l:
