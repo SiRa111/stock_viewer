@@ -13,3 +13,8 @@ try to write code in fxns
 makes debugging easier
 
 give your fxns a return value to make them more testable rather than just printing
+
+__init__.py
+the folder in which you make this file is treated as a package
+ie a package with multiple fxns
+and not just a module or file alone
