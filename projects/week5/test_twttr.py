@@ -1,6 +1,5 @@
 from twttr import shorten
 import pytest
-import sys
 
 def test_lower():
   assert shorten("short word") == "shrt wrd"
@@ -14,5 +13,5 @@ def test_num():
 def test_nums():
   with pytest.raises(TypeError):
     shorten(1234)
+    return True
 
-sys.exit(1)
