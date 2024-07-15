@@ -1,5 +1,5 @@
 g = input("Greeting : ")
-g1 = g.strip().lower()
+g1 = g.strip()
 
 
 def main():
