@@ -13,5 +13,5 @@ def test_num():
 def test_nums():
   with pytest.raises(TypeError):
     shorten(1234)
-    return True
+    return 1
 
