@@ -5,7 +5,7 @@ def test_lower():
   assert shorten("short word") == "shrt wrd"
 
 def test_upper():
-  assert shorten("UPPERCASE HUH") == "PPRCSE HH"
+  assert shorten("UPPERCASE HUH") == "PPRCS HH"
 
 def test_num():
   assert shorten("1234") == "1234"
