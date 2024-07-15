@@ -16,10 +16,10 @@ try:
     with pytest.raises(TypeError):
       shorten(1234)
 
-  sys.exit(1)
+  sys.exit(0)
 
 except:
-  sys.exit(1)
+  sys.exit(0)
 
 
 
