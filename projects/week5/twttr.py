@@ -8,11 +8,11 @@ def shorten(word):
         l.append(word[i])
 
     for i in l:
-        if i in "aeiouAEIOU.,!@:":
+        if i in "aeiouAEIOU":
             l.remove(i)
 
     for i in l:
-        if i in "aeiouAEIOU.,!@:" :
+        if i in "aeiouAEIOU" :
             l.remove(i)
     final = ""
     for i in l:
