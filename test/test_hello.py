@@ -1,8 +1,8 @@
-from hello import hello
+import hello
 
 def test_default():
-  assert hello() == "hello, world"
+  assert hello.hello() == "hello, world"
 
 
 def test_argument():
-  assert hello("xira") == "hello, xira"
+  assert hello.hello("xira") == "hello, xira"
