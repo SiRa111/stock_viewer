@@ -13,5 +13,6 @@ def test_num():
 def test_nums():
   with pytest.raises(TypeError):
     shorten(1234)
-    
+
+
 
