@@ -1,5 +1,4 @@
 from twttr import shorten
-import sys
 
 def test_lower():
   assert shorten("short word") == "shrt wrd"
@@ -13,4 +12,4 @@ def test_num():
 def test_punc():
   assert shorten("hi!we:that.") == "h!w:tht"
 
-sys.exit(0)
+
