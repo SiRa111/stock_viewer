@@ -9,14 +9,13 @@ def main():
 
 
 def value(greeting):
-  for i in unwanted:
-      if greeting.find(i) is int():
-        return 0
-  for _ in unwanted1:
-      if greeting.find(_) is int() :
-         return 20
-      return 100
-
+  if greeting in unwanted:
+     return 0
+  elif greeting[0] in unwanted1:
+     return 20
+  else:
+     return 100
+  
 
 if __name__ == "__main__":
     main()
