@@ -3,6 +3,7 @@ g1 = g.strip()
 unwanted = "helloHelloHELLO"
 unwanted1 = "hH"
 
+
 def main():
     print(value(g1))
 
@@ -16,7 +17,5 @@ def value(greeting):
       return 100
 
 
-
 if __name__ == "__main__":
     main()
-
