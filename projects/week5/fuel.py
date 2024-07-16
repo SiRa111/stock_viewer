@@ -1,6 +1,6 @@
 def main():
     fuel = input("Fraction: ")
-    final = run(fuel)
+    final = convert(fuel)
 
 
 def convert(str):
@@ -13,8 +13,10 @@ def convert(str):
         return s
 
     except (ValueError, ZeroDivisionError):
-        main()
-        return
+        if n > d :
+            return ValueError
+        elif y == 0 :
+            return ZeroDivisionError
 
 def gauge(percentage):
     if percentage > 100:
@@ -22,7 +24,7 @@ def gauge(percentage):
         return
     elif 99 <= percentage:
         return "F"
-    elif percentage <= 1
+    elif percentage <= 1:
         return "E"
     else:
         return f"{percentage}%"
