@@ -1,7 +1,7 @@
 g = input("Greeting : ")
 g1 = g.strip()
-unwanted = "helloHelloHELLO"
-unwanted1 = "hH"
+unwanted = ["hello","Hello","HELLO"]
+unwanted1 =["h","H"]
 
 
 def main():
@@ -9,6 +9,11 @@ def main():
 
 
 def value(greeting):
+  l=[]
+  for i in greeting:
+      l.append(i)
+  print(l)
+
   if greeting in unwanted:
       return 0
   elif greeting.startswith("H""h"):
