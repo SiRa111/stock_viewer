@@ -9,9 +9,9 @@ def main():
 
 
 def value(greeting):
-  if greeting.find("Hello"):
+  if greeting.find("Hello"or"hello") is int():
       return 0
-  elif greeting.startswith() :
+  elif greeting.find("h"or"H") is int() :
       return 20
   else:
       return 100
