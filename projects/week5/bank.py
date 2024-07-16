@@ -9,13 +9,13 @@ def main():
 
 
 def value(greeting):
-  if greeting in unwanted:
+  if greeting[0:4] in unwanted:
      return 0
   elif greeting[0] in unwanted1:
      return 20
   else:
      return 100
-  
+
 
 if __name__ == "__main__":
     main()
