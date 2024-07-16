@@ -30,4 +30,8 @@ def test_end_num():
     assert is_valid("gh09ji") == False
     assert is_valid("ghji90") == True
     assert is_valid("99ghi") == False
+    assert is_valid("6fdsf") == False
+    assert is_valid("fdsf6") == True
+    assert is_valid("1234hi") == False
+    assert is_valid("hi1234") == True
 
