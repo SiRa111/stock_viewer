@@ -9,10 +9,12 @@ def main():
 
 
 def value(greeting):
-  if greeting.find("Hello"or"hello") is int():
-      return 0
-  elif greeting.find("h"or"H") is int() :
-      return 20
+  for i in unwanted:
+      if greeting.find(i) is int():
+        return 0
+  for _ in unwanted1:
+      if greeting.find("h"or"H") is int() :
+         return 20
   else:
       return 100
 
