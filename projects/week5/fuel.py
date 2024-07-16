@@ -15,6 +15,9 @@ def convert(str):
       s = float((n/d))
       s = round(s*100)
       return s
+  elif n == d:
+      s = 1
+      return s
   elif n > d and d != 0:
     return ValueError
   elif d == 0 :
