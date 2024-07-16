@@ -10,6 +10,7 @@ def test_first_two():
     assert is_valid("54gh") == False
     assert is_valid("jk") == True
     assert is_valid("jkl90") == True
+    assert is_valid("34567")
 
 
 def test_only_alnum():
