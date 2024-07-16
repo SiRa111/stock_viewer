@@ -1,4 +1,7 @@
-g = input("Greeting : ")
+g = list(input("Greeting : "))
+print(g)
+
+
 g1 = g.strip()
 unwanted = ["hello","Hello","HELLO"]
 unwanted1 =["h","H"]
