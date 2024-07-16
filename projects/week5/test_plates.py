@@ -7,7 +7,7 @@ def test_alpha():
 
 def test_first_two():
   assert is_valid("54gh") == "Invalid"
-  assert is_valid("jk") == "Valid)
+  assert is_valid("jk") == "Valid"
   assert is_valid("jkl90") == "Valid"
 
 
