@@ -1,10 +1,10 @@
 def main():
     fuel = input("Fraction: ")
     final = convert(fuel)
-    if type(final) == int():
-        print(gauge(final))
-    else:
-        print(final)
+    try:
+       print(gauge(final))
+    except TypeError:
+       print(final)
 
 
 def convert(str):
