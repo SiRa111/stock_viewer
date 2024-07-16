@@ -9,7 +9,7 @@ def main():
 
 
 def value(greeting):
-  if greeting.find("Hello"or"hello"):
+  if greeting.find("Hello"):
       return 0
   elif greeting.startswith() :
       return 20
