@@ -4,7 +4,7 @@ from plates import is_valid
 def test_alpha():
     assert is_valid("q") == False
     assert is_valid("QWERTYU") == False
-    assert is_valid("QWerTy") == False
+    assert is_valid("QWerTy") == True
 
 
 def test_first_two():
