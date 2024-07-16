@@ -17,5 +17,10 @@ def test_only_alnum():
   assert is_valid("welp./87") == "Invalid"
   assert is_valid("ghji980") == "Valid"
 
-def def first_non_zero():
-  assert is_valid("")
+def first_non_zero():
+  assert is_valid("gh009") == "Invalid"
+  assert is_valid("gh909") == "Valid"
+
+def end_num():
+  assert is_valid("gh09ji") == "Invalid"
+  assert is_valid("ghji90") == "Valid"
