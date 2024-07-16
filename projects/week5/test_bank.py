@@ -2,7 +2,7 @@ from bank import value
 
 def test_hello():
   assert value("hello") == 0
-  assert value("hello supp") == 0
+  assert value("hello, supp") == 0
 
 
 def test_hstart():
