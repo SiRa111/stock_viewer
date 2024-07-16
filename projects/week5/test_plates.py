@@ -1,26 +1,26 @@
 from plates import is_valid
 
 def test_alpha():
-  assert is_valid("q") == "Invalid"
-  assert is_valid("QWERTYU") == "Invalid"
+  assert is_valid("q") == False
+  assert is_valid("QWERTYU") == False
 
 
 def test_first_two():
-  assert is_valid("54gh") == "Invalid"
-  assert is_valid("jk") == "Valid"
-  assert is_valid("jkl90") == "Valid"
+  assert is_valid("54gh") == False
+  assert is_valid("jk") == True
+  assert is_valid("jkl90") == True
 
 
 def test_only_alnum():
-  assert is_valid("gh_ij") == "Invalid"
-  assert is_valid("whoa:90") == "Invalid"
-  assert is_valid("welp./87") == "Invalid"
-  assert is_valid("ghji980") == "Valid"
+  assert is_valid("gh_ij") == False
+  assert is_valid("whoa:90") == False
+  assert is_valid("welp./87") == False
+  assert is_valid("ghji980") == True
 
 def first_non_zero():
-  assert is_valid("gh009") == "Invalid"
-  assert is_valid("gh909") == "Valid"
+  assert is_valid("gh009") == False
+  assert is_valid("gh909") == True
 
 def end_num():
-  assert is_valid("gh09ji") == "Invalid"
-  assert is_valid("ghji90") == "Valid"
+  assert is_valid("gh09ji") == False
+  assert is_valid("ghji90") == True
