@@ -16,7 +16,7 @@ def value(greeting):
 
   if greeting in unwanted:
       return 0
-  elif greeting.startswith("H""h"):
+  elif greeting.startswith() :
       return 20
   else:
       return 100
