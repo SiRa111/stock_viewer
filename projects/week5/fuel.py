@@ -8,19 +8,17 @@ def main():
 
 
 def convert(str):
-    try:
-        n,d = str.split('/')
-        n = int(n)
-        d = int(d)
-        s = float((n/d))
-        s = round(s*100)
-        return s
-
-    except (ValueError, ZeroDivisionError):
-        if n > d :
-            return ValueError
-        elif y == 0 :
-            return ZeroDivisionError
+  n,d = str.split('/')
+  n = int(n)
+  d = int(d)
+  if n < d:
+      s = float((n/d))
+      s = round(s*100)
+      return s
+  elif n > d and d != 0:
+    return ValueError
+  elif d == 0 :
+    return ZeroDivisionError
 
 def gauge(percentage):
     if percentage > 100:
