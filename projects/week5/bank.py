@@ -11,7 +11,7 @@ def main():
 def value(greeting):
   if greeting in unwanted:
       return 0
-  elif greeting in unwanted1:
+  elif greeting.startswith("H""h"):
       return 20
   else:
       return 100
