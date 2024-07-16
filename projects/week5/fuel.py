@@ -1,7 +1,7 @@
 def main():
     fuel = input("Fraction: ")
     final = convert(fuel)
-    if final == int(final):
+    if final is int(final):
         print(gauge(final))
     else:
         print(final)
@@ -22,6 +22,7 @@ def convert(str):
     return ValueError
   elif d == 0 :
     return ZeroDivisionError
+
 
 def gauge(percentage):
     if percentage > 100:
