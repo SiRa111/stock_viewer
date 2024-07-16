@@ -21,7 +21,13 @@ def test_only_alnum():
     assert is_valid("ghj980") == True
 
 
-def test_end_num():
+
+
+
+
+def test_first_non_zero():
+    assert is_valid("gh009") == False
+    assert is_valid("gh909") == True
     assert is_valid("gh09ji") == False
     assert is_valid("123ABC") == False  # Number at the beginning
     assert is_valid("ABC12") == True  # Number at the end
@@ -29,11 +35,6 @@ def test_end_num():
     assert is_valid("A1") == False  # Short valid plate
     assert is_valid("A") == False  # Too short
     assert is_valid("AB1234") == True
-
-
-def test_first_non_zero():
-    assert is_valid("gh009") == False
-    assert is_valid("gh909") == True
 
 
 
