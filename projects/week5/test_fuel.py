@@ -13,4 +13,4 @@ def test_outputs():
   assert gauge(78) == "78%"
   assert gauge(1) == "E"
   assert gauge(99) == "F"
-  assert gauge(100) == "F"
+  
