@@ -13,9 +13,8 @@ def value(greeting):
       if greeting.find(i) is int():
         return 0
   for _ in unwanted1:
-      if greeting.find("h"or"H") is int() :
+      if greeting.find(_) is int() :
          return 20
-  else:
       return 100
 
 
