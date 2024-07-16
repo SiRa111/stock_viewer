@@ -1,5 +1,5 @@
 g = input("Greeting : ")
-g1 = g.strip().lowercse()
+g1 = g.strip().lowercase()
 unwanted = ["hello","Hello","HELLO"]
 unwanted1 =["h","H"]
 
