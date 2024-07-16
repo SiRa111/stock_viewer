@@ -17,15 +17,15 @@ def convert(str):
         return
 
 def gauge(percentage):
-    if final > 100:
+    if percentage > 100:
         main()
         return
-    elif 90 < final <= 100:
-        print("F")
-    elif 0.01 <= final <= 10 or final == 0:
-        print("E")
+    elif 99 <= percentage:
+        return "F"
+    elif percentage <= 1
+        return "E"
     else:
-        print(f"{final}%")
+        return f"{percentage}%"
 
 
 if __name__ == "__main__":
