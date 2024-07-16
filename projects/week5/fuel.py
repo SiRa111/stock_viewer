@@ -1,7 +1,7 @@
 def main():
     fuel = input("Fraction: ")
     final = convert(fuel)
-    if final is int(final):
+    if type(final) == int():
         print(gauge(final))
     else:
         print(final)
