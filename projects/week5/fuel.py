@@ -12,7 +12,7 @@ def main():
     else:
         print(f"{final}%")
 
-def run(str):
+def convert(str):
     try:
         n,d = str.split('/')
         n = int(n)
