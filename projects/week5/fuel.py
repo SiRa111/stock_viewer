@@ -2,15 +2,6 @@ def main():
     fuel = input("Fraction: ")
     final = run(fuel)
 
-    if final > 100:
-        main()
-        return
-    elif 90 < final <= 100:
-        print("F")
-    elif 0.01 <= final <= 10 or final == 0:
-        print("E")
-    else:
-        print(f"{final}%")
 
 def convert(str):
     try:
@@ -24,6 +15,17 @@ def convert(str):
     except (ValueError, ZeroDivisionError):
         main()
         return
+
+def gauge(percentage):
+    if final > 100:
+        main()
+        return
+    elif 90 < final <= 100:
+        print("F")
+    elif 0.01 <= final <= 10 or final == 0:
+        print("E")
+    else:
+        print(f"{final}%")
 
 
 if __name__ == "__main__":
