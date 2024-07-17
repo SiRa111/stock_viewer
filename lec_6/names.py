@@ -1,4 +1,6 @@
 names = []
 
-input("Whats your name ? ")
-print()
+for _ in range(3):
+  names.append(input("Whats your name ? "))
+
+print(names)
