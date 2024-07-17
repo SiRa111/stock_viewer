@@ -19,9 +19,9 @@ def convert(str):
       s = 1
       return s
   elif n > d and d != 0:
-    raise ValueError
+    return ValueError
   elif d == 0 :
-    raise ZeroDivisionError
+    return ZeroDivisionError
 
 
 def gauge(percentage):
