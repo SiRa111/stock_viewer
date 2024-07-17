@@ -3,7 +3,7 @@ import pytest
 
 
 def test_valid_fraction():
-  assert convert("9/9") == 1
+  assert convert("1/100") == 1
   with pytest.raises(ZeroDivisionError) : convert("8/0")
   with pytest.raises(ValueError) : convert("8/2")
   assert convert("8/9") == 89
