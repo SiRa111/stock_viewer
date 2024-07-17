@@ -4,7 +4,7 @@ from fuel import convert, gauge
 def test_valid_fraction():
   assert convert("9/9") == 1
   assert convert("8/0") == <class 'ZeroDivisionError'>
-  assert convert("8/2") == < class 'ValueError'>
+  assert convert("8/2") == <class 'ValueError'>
   assert convert("8/9") == 89
 
 
