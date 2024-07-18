@@ -7,5 +7,5 @@ with open("names.txt") as file: #default is r mode
     names.append(line.rstrip()) #we dont want newlines
 
 
-for name in sorted(names): #alphetically sorted list
+for name in sorted(names, reverse = True): #alphetically sorted list
   print(f"hello, {name}")

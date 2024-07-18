@@ -1,4 +1,6 @@
-sorted(argument)
+sorted(argument, key = None, reverse = False)
+by default reverse is false
+but if we want in descending order : reverse = True
 list
 tuple
 different strings
