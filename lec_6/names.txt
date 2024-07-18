@@ -1,4 +1,4 @@
-Hermionie,Gryffindor
-Harry,Gryffindor
-Ron,Gryffindor
-Draco,Slytherin
+Hermionie
+Harry
+Ron
+Draco
