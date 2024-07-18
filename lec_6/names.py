@@ -6,6 +6,6 @@ with open("names.txt") as file: #default is r mode
   for line in file:
     names.append(line.rstrip()) #we dont want newlines
 
-
+/workspaces/146064214/lec_0
 for name in sorted(names, reverse = True): #alphetically sorted list
   print(f"hello, {name}")
