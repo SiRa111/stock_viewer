@@ -2,8 +2,8 @@ students = []
 
 with open("students.csv") as file:
   for line in file:
-    name, house = line.rstrip().split(",")
-    student = {"name":name, "house":house}
+    name, home = line.rstrip().split(",")
+    student = {"name":name, "home":home}
     students.append(student)
 
 
