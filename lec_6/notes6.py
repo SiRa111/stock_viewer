@@ -24,3 +24,9 @@ METHOD WITH NO CLOSIGN TAG
 with open("names.txt", "a") as file:
     file.write(f"{name}\n")
 """
+
+
+LAMBDA FXN
+it only needs to be called once
+so we dont name it
+
