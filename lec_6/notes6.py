@@ -47,4 +47,22 @@ anonymous
 
 
 CSV MODULE
+0 DictReader is robust. even though we might make changes to the csv file. it will understand :)
+''' to read dict from a csv file
+
+import csv
+
+
+students = []
+
+
+with open("students.csv") as file:
+  reader = csv.DictReader(file) #dict reader
+  for row in reader:
+    students.append({"name": row["name"], "home":row["home"]})
+
+
+for student in sorted(students, key=lambda student: student["name"]):
+  print(f"{student['name']} is from {student['home']}")
+'''
 
