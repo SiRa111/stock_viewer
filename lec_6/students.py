@@ -5,9 +5,9 @@ students = []
 
 
 with open("students.csv") as file:
-  reader = csv.DictReader(file)
+  reader = csv.DictReader(file) #dict reader
   for row in reader:
-    students.append({"name": row[0], "home":row[1]})
+    students.append({"name": row["name"], "home":row["home"]})
 
 
 for student in sorted(students, key=lambda student: student["name"]):
