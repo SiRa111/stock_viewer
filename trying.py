@@ -1,7 +1,8 @@
-from PIL import Image
+import os
 
-try:
-    img = Image.open("C:\\Users\\Administrator\\Downloads\\costume1.gif")
-    # Do something with img
-except IOError as e:
-    print("Error opening image:", e)
+file_path = "C:\\Users\\Administrator\\Downloads\\costume1.gif"
+
+if os.path.exists(file_path):
+    print("File exists:", file_path)
+else:
+    print("File does not exist:", file_path)
