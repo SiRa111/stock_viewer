@@ -30,11 +30,11 @@ def count(filename):
     with open("memo.txt", "r") as filo:
         readlist = filo.readlines()
         for _ in readlist:
-            if _.startswith("#"):
+            if _[0] == "#":
                 continue
-            elif _.startswith("\n"):
+            elif _[0] == "\n":
                 continue
-            elif _.startswith("\t"):
+            elif _[0] == "\t":
                 continue
             if _.isspace():
                 continue
