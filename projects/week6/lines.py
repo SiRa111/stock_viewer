@@ -31,6 +31,8 @@ def count(filename):
                 continue
             elif _.startswith("#"):
                 continue
+            elif _.startswith(" #"):
+                continue
             else:
                 i = i + 1
     print(i)
