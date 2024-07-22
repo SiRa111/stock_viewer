@@ -1,8 +1,2 @@
-t
-e
-s
-t
-1
-.
-p
-y
+
+<_io.TextIOWrapper name='test1.py' mode='r' encoding='UTF-8'>

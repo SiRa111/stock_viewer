@@ -18,7 +18,7 @@ def main():
 
 def count(filename):
     with open("memo.txt", "a") as file:
-        for _ in filename:
+        with open(f"{filename}", "r") as _:
             file.write(f"{_}\n")
 
 
