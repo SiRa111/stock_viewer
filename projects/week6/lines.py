@@ -9,15 +9,16 @@ def main():
         print("Too many command-line arguments")
         sys.exit(1)
     else:
-        try:
-            if sys.argv[0].endswith(.py) :
+        if sys.argv[0].endswith(".py") :
+            try:
                 count(sys.argv[1])
-            else:
-                print("Not a Python file")
+            except FileNotFoundError:
+                print("File not found")
                 sys.exit(1)
-        except FileNotFoundError:
-            print("File not found")
+        else:
+            print("Not a Python file")
             sys.exit(1)
+
 def count(filename):
     with open("memo.txt", "a") as file:
         with open(f"{filename}", "r") as _:
