@@ -2,19 +2,22 @@ import sys
 
 
 def main():
-    if len(sys.argv) == 1:
-        print("Too few commnad-line arguments")
-        sys.exit(1)
-    elif len(sys.argv) >= 3:
-        print("Too many command-line arguments")
-        sys.exit(1)
-    else:
-        if sys.argv[0].endswith(".py") :
-            count(sys.argv[1])
-        else:
-            print("Not a Python file")
+    try:
+        if len(sys.argv) == 1:
+            print("Too few commnad-line arguments")
             sys.exit(1)
-
+        elif len(sys.argv) >= 3:
+            print("Too many command-line arguments")
+            sys.exit(1)
+        else:
+            if sys.argv[0].endswith(".py") :
+                count(sys.argv[1])
+            else:
+                print("Not a Python file")
+                sys.exit(1)
+    except FileNotFoundError:
+        print("File does not exist")
+        sys.exit(1)
 
 def count(filename):
     with open("memo.txt", "a") as file:
