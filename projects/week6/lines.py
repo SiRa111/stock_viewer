@@ -20,7 +20,8 @@ def count(filename):
     with open("memo.txt", "a") as file:
         with open(f"{filename}", "r") as _:
             obj = _.readline()
-            file.append(obj, end="\n")
+            file.write(obj, end="\n")
+            
 
 
 if  __name__ == "__main__":
