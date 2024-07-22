@@ -21,7 +21,7 @@ def count(filename):
         with open(f"{filename}", "r") as _:
             om = _.readlines()
             for whoa in om:
-                file.write(whoa.strip)
+                file.write(whoa)
 
     i = 0
     with open("memo.txt", "r") as filo:
