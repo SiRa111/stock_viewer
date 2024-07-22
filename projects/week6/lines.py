@@ -1,5 +1,4 @@
 import sys
-import csv
 
 
 def main():
@@ -18,8 +17,9 @@ def main():
 
 
 def count(filename):
-    
-
+    with open("memo.txt", "a") as file:
+        for _ in filename:
+            file.write(f"{_}\n")
 
 
 if  __name__ == "__main__":
