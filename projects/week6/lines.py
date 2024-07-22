@@ -14,7 +14,7 @@ def main():
         except FileNotFoundError:
             sys.exit(1)
     else:
-        # print("Not a Python file")
+        print("Not a Python file")
         sys.exit(1)
 
 def count(filename):
