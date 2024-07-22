@@ -28,12 +28,9 @@ def count(filename):
         readlist = filo.readlines()
         for _ in readlist:
             if _.startswith(" "):
-                if _.endswith(" "):
-                    if _.isspace():
-                        continue
-                else:
-                    i = i + 1
+                if _.isspace():
                     continue
+                    i
             elif _.startswith("#"):
                 continue
             elif _ in "\n":
