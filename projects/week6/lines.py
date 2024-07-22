@@ -38,7 +38,7 @@ def count(filename):
                 continue
             elif _ in "\n":
                 continue
-            else:
+            elif _.isalnum():
                 i = i + 1
     print(i)
 
