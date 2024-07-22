@@ -4,16 +4,16 @@ import sys
 def main():
     if len(sys.argv) == 1:
         print("Too few commnad-line arguments")
-        sys.exit()
+        sys.exit(1)
     elif len(sys.argv) >= 3:
         print("Too many command-line arguments")
-        sys.exit()
+        sys.exit(1)
     else:
         if '.py' in sys.argv[1]:
             count(sys.argv[1])
         else:
             print("Not a Python file")
-            sys.exit()
+            sys.exit(1)
 
 
 def count(filename):
