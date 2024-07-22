@@ -35,7 +35,9 @@ def count(filename):
                 continue
             elif _[0] == "\t":
                 continue
-            if _.isspace():
+            elif _.isspace():
+                continue
+            if _ == "":
                 continue
             else:
                 i = i + 1
