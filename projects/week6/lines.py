@@ -21,7 +21,7 @@ def count(filename):
         with open(f"{filename}", "r") as _:
             om = _.readlines()
             for whoa in om:
-                whoa = whoa.strip()
+                whoa = whoa.lstrip()
                 file.write(whoa)
 
 
@@ -32,6 +32,8 @@ def count(filename):
             if '#' in _:
                 continue
             elif _.startswith("\n"):
+                continue
+            elif _.startswith("\t"):
                 continue
             else:
                 i = i + 1
