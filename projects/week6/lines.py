@@ -21,7 +21,7 @@ def count(filename):
         with open(f"{filename}", "r") as _:
             om = _.readlines()
             for whoa in om:
-                whoa = whoa.strip()
+                whoa = whoa.lstrip()
                 file.write(whoa)
 
 
