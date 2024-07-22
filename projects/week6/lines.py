@@ -21,19 +21,13 @@ def count(filename):
         with open(f"{filename}", "r") as _:
             om = _.readlines()
             for whoa in om:
-                file.write(whoa)
+                file.write(whoa.strip)
 
     i = 0
     with open("memo.txt", "r") as filo:
         readlist = filo.readlines()
         for _ in readlist:
-            if _.startswith(" "):
-                if _.isspace():
-                    continue
-                elif _.isspace() == False:
-                    i = i + 1
-                    continue
-            elif '#' in _:
+            if '#' in _:
                 continue
             elif _.startswith("\n"):
                 continue
