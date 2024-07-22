@@ -19,7 +19,7 @@ def main():
 def count(filename):
     with open("memo.txt", "a") as file:
         with open(f"{filename}", "r") as _:
-            file.write(f"{_}\n")
+            file.read(f"{_}\n")
 
 
 if  __name__ == "__main__":
