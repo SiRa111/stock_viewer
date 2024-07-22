@@ -30,7 +30,7 @@ def count(filename):
             if _.startswith(" "):
                 if _.isspace():
                     continue
-                else:
+                elif _.isspace() == False:
                     i = i + 1
                     continue
             elif _.startswith("#"):
