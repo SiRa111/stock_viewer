@@ -34,9 +34,6 @@ def count(filename):
                 continue
             elif _.startswith("\n"):
                 continue
-            elif f"'''" or f'"""' in _:
-                i = i + 1
-                continue
             else:
                 i = i + 1
     print(i)
