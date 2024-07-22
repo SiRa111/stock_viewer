@@ -12,8 +12,9 @@ def main():
         try:
             count(sys.argv[1])
         except FileNotFoundError:
+            print("File does not exist")
             sys.exit(1)
-    else:
+    elif sys.argv[0].endswith(".py") == False:
         print("Not a Python file")
         sys.exit(1)
 
