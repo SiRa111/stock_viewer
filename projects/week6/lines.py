@@ -9,7 +9,7 @@ def main():
         print("Too many command-line arguments")
         sys.exit(1)
     else:
-        if '.py' in sys.argv[1]:
+        if sys.argv[0].endswith(".py") :
             count(sys.argv[1])
         else:
             print("Not a Python file")
