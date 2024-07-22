@@ -29,7 +29,8 @@ def count(filename):
         for _ in readlist:
             if _.startswith(" "):
                 if _.endswith(" "):
-                    continue
+                    if _.isspace():
+                        continue
             elif _.startswith("#"):
                 continue
             elif _.startswith(" #"):
