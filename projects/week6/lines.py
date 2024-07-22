@@ -12,7 +12,7 @@ def main():
         if sys.argv[0].endswith(".py") :
             try:
                 count(sys.argv[1])
-            except FileNotFoundError:
+            except raise FileNotFoundError:
                 print("File does not exist")
                 sys.exit(1)
         else:
