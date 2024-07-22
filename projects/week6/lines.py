@@ -17,7 +17,7 @@ def main():
                 sys.exit(1)
         except FileNotFoundError:
             print("File not found")
-            sys.exit(1)
+            sys.exit(False)
 def count(filename):
     with open("memo.txt", "a") as file:
         with open(f"{filename}", "r") as _:
