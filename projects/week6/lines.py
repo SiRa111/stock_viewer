@@ -13,7 +13,7 @@ def main():
             try:
                 count(sys.argv[1])
             except FileNotFoundError:
-                print("File not found")
+                print("File does not exist")
                 sys.exit(1)
         else:
             print("Not a Python file")
