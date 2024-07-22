@@ -19,9 +19,21 @@ def main():
 def count(filename):
     with open("memo.txt", "a") as file:
         with open(f"{filename}", "r") as _:
-            obj = _.readline()
-            file.write(obj, end="\n")
-            
+            om = _.readlines()
+            for whoa in om:
+                file.write(whoa)
+
+    i = 0
+    with open("memo.txt", "r") as filo:
+        readlist = filo.readlines()
+        for _ in readlist:
+            if _.startswith(" "):
+                continue
+            elif _.startswith("#"):
+                continue
+            else:
+                i = i + 1
+    print(i)
 
 
 if  __name__ == "__main__":
