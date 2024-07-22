@@ -22,7 +22,7 @@ def count(filename):
             om = _.readlines()
             for whoa in om:
                 if whoa[0] == " ":
-                    whoa = whoa.strip()
+                    whoa = whoa.lstrip()
                 file.write(whoa)
 
 
