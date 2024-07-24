@@ -24,9 +24,9 @@ def main():
 
 def pizza(csvfile):
     with open(f"{csvfile}", "r") as file:
-        reader = csv.DictReader(file)
+        reader = csv.reader(file)
         for row in reader:
-            print(tabulate.tabulate((row[0], row[1], row[2]), tablefmt="grid"))
+            print(tabulate.tabulate((row), tablefmt="grid"))
 
 
 if __name__ == "__main__":
