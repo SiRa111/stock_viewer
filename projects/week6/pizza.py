@@ -25,7 +25,7 @@ def main():
 def pizza(csvfile):
     with open(f"{csvfile}", "r") as file:
         reader = csv.reader(file)
-        print(tabulate((reader), tablefmt="grid"))
+        print(tabulate(reader[0], tablefmt="grid"))
 
 
 if __name__ == "__main__":
