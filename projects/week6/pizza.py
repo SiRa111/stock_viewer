@@ -24,7 +24,8 @@ def main():
 def pizza(csvfile):
     with open(f"{csvfile}", "r") as file:
         reader = DictReader(file)
-        reader = readlines
+        for row in reader:
+            print(tabulate(readline))
 
 
 if __name__ == "__main__":
