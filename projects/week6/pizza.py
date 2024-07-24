@@ -1,5 +1,6 @@
 import sys
 import csv
+import tabulate
 
 def main():
     if len(sys.argv) == 2:
@@ -23,9 +24,9 @@ def main():
 
 def pizza(csvfile):
     with open(f"{csvfile}", "r") as file:
-        reader = DictReader(file)
+        reader = csv.DictReader(file)
         for row in reader:
-            print(tabulate(readline))
+            print(tabulate(readline), tablefmt="grid")
 
 
 if __name__ == "__main__":
