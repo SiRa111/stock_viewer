@@ -1,6 +1,6 @@
 import sys
 import csv
-import tabulate
+from tabulate import tabulate
 
 def main():
     if len(sys.argv) == 2:
@@ -24,9 +24,8 @@ def main():
 
 def pizza(csvfile):
     with open(f"{csvfile}", "r") as file:
-        reader = csv.reader(file, delimiter=",")
-        for row in reader:
-            print(tabulate.tabulate((row), tablefmt="grid"))
+        reader = csv.reader(file)
+        print(tabulate((reader), tablefmt="grid"))
 
 
 if __name__ == "__main__":
