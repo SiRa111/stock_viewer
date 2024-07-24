@@ -41,7 +41,7 @@ def count(filename):
                 continue
             elif _.isspace():
                 continue
-            if _ == "":
+            elif _ == "":
                 continue
             else:
                 i = i + 1
