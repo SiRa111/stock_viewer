@@ -26,7 +26,7 @@ def main():
 def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
-        l=['first, last, house']
+        l=[]
         for _ in reader:
             try :
                 last, first = _[0].split(",")
