@@ -31,12 +31,10 @@ def clean(nsorted, sorted):
             writer = csv.DictWriter(nfile, fieldnames=["first", "last", "house"])
             n = 0
             for i in reader:
-                while n == 0:
-                    n += 1
-                    pass
+                first, last = i[0].split(",")
+                house = i[1]
+                writer.writerow("first":first, "last":last, "house":house)
 
-                # first, last = i[0].split(",")
-                # house = i[1]
 
 
 
