@@ -27,13 +27,12 @@ def main():
 def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
-        with open(sorted, "w") as nfile:
-            writer = csv.DictWriter(nfile, fieldnames=["first", "last", "house"])
-            n = 0
-            for i in reader:
-                first, last = i[0].split(",")
-                house = i[1]
-                writer.writerow("first"=first, "last"=last, "house"=house)
+        dub = {}
+        for _ in reader:
+            first, last = _[0].split(",")
+            house = _[1]
+            
+
 
 
 
