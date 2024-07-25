@@ -28,15 +28,17 @@ def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
         dub = {}
+        l=[]
         for _ in reader:
             try :
                 first, last = _[0].split(",")
                 house = _[1]
                 dub = {"first":first, "last":last, "house":
                 house}
+                l.append(dub)
             except:
                 pass
-        print(dub)
+        print(l)
 
 
 
