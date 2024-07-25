@@ -11,7 +11,7 @@ def main():
     else:
         sys.argv[1] = input_img
         sys.argv[2] = output_img
-        if input_img and output_img.
+        if input_img and output_img. 
 
 
 
