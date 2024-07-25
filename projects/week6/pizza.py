@@ -29,8 +29,14 @@ def pizza(csvfile):
         head=[]
         feet=[]
         for _ in reader:
-            print(_)
-        # print(tabulate(reader, tablefmt="grid"))
+            i = 0
+            while i == 0:
+                head = _
+                i += 1
+            feet = _
+        print(head)
+        print(feet)
+        # print(tabulate(head, feet, tablefmt="grid"))
 
 
 if __name__ == "__main__":
