@@ -32,7 +32,7 @@ def clean(nsorted, sorted):
                 last, first = _[0].split(",")
                 last = last.strip()
                 house = _[1]
-                l.append(f"{first}, {last}, {house}")
+                l.append(f"{first},{last},{house}")
             except:
                 pass
     with open(sorted, "w") as sfile:
