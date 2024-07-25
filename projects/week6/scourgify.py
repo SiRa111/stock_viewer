@@ -28,8 +28,8 @@ def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
         with open(sorted, "w") as nfile:
-            writer = csv.DictWriter(nfile)
-            for i in reader[1:]:
+            writer = csv.DictWriter(nfile, fieldnames=["first", "last", "house"])
+            for i in reader:
                 print(i)
 
                 # first, last = i[0].split(",")
