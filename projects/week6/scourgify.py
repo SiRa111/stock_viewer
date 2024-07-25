@@ -27,7 +27,7 @@ def main():
 def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
-        l=[]
+        l=['first, last, house']
         for _ in reader:
             try :
                 first, last = _[0].split(",")
@@ -39,6 +39,7 @@ def clean(nsorted, sorted):
     with open(sorted, "w") as sfile:
         writer = csv.writer(sfile, delimiter = "\n")
         writer.writerow(l)
+
 
 
 
