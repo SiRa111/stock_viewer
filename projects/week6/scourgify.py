@@ -29,8 +29,11 @@ def clean(nsorted, sorted):
         reader = csv.reader(ofile)
         with open(sorted, "w") as nfile:
             writer = csv.DictWriter(nfile, fieldnames=["first", "last", "house"])
+            n = 0
             for i in reader:
-                print(i)
+                while n == 0:
+                    n += 1
+                    pass
 
                 # first, last = i[0].split(",")
                 # house = i[1]
