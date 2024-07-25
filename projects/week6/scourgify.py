@@ -8,17 +8,27 @@ def main():
         sys.exit(1)
     elif len(sys.argv) > 3:
         print("Too many command-line arguments")
-        sys.exit()
+        sys.exit(1)
     else:
+        one = sys.argv[1]
+        two = sys.argv[2]
         try:
-            if sysclean(sys.argv[1], sys.argv[2])
+            if one.endswith(".csv") and two.endswith(".csv"):
+                clean(one, two)
+            else:
+                print("Not a csv file")
+                sys.exit(1)
+
         except FileNotFoundError:
             print("File not found")
             sys.exit(1)
 
 
 def clean(nsorted, sorted):
-    ...
+    with open(nsorted, "r") as file:
+        reader = csv.reader(file)
+        for _ in reader:
+            print(_)
 
 
 
