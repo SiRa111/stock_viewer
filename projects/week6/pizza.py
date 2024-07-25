@@ -28,7 +28,8 @@ def pizza(csvfile):
         reader = csv.reader(file)
         head=[]
         feet=[]
-        
+        for _ in reader:
+            print(_)
         # print(tabulate(reader, tablefmt="grid"))
 
 
