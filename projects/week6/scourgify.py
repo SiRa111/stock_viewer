@@ -29,9 +29,13 @@ def clean(nsorted, sorted):
         reader = csv.reader(ofile)
         dub = {}
         for _ in reader:
-            first, last = _[0].split(",")
-            house = _[1]
-            dub = {"first":first, "last":last, "house":house}
+            try :
+                first, last = _[0].split(",")
+                house = _[1]
+                dub = {"first":first, "last":last, "house":
+                house}
+            except:
+                pass
         print(dub)
 
 
