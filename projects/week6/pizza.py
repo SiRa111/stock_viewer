@@ -30,10 +30,11 @@ def pizza(csvfile):
         feet=[]
         i = 0
         for _ in reader:
-            while i == 0:
+            if i == 0:
                 head = _
                 i += 1
-            feet.append(_)
+            else:
+                feet.append(_)
         print(tabulate( feet, head, tablefmt="grid"))
 
 
