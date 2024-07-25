@@ -11,7 +11,7 @@ def main():
         sys.exit()
     else:
         try:
-            clean(sys.argv[1], sys.argv[2])
+            if sysclean(sys.argv[1], sys.argv[2])
         except FileNotFoundError:
             print("File not found")
             sys.exit(1)
