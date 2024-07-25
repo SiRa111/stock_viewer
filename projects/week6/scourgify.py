@@ -31,7 +31,9 @@ def clean(nsorted, sorted):
         for _ in reader:
             first, last = _[0].split(",")
             house = _[1]
-            
+            dub = {"first":first, "last":last, "house":house}
+        print(dub)
+
 
 
 
