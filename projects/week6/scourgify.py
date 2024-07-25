@@ -25,10 +25,12 @@ def main():
 
 
 def clean(nsorted, sorted):
-    with open(nsorted, "r") as file:
-        reader = csv.reader(file)
-        for _ in reader:
-            print(_)
+    with open(nsorted, "r") as ofile:
+        reader = csv.reader(ofile)
+        with open(sorted, "w") as nfile:
+            writer = csv.writer(nfile)
+            for i in reader:
+                
 
 
 
