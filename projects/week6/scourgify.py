@@ -30,7 +30,7 @@ def clean(nsorted, sorted):
         for _ in reader:
             try :
                 last, first = _[0].split(",")
-                last = last.lstrip()
+                first = first.lstrip()
                 house = _[1]
                 l.append(f"{first},{last},{house}")
             except:
