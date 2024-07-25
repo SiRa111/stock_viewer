@@ -28,10 +28,14 @@ def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
         with open(sorted, "w") as nfile:
-            writer = csv.writer(nfile)
+            writer = csv.DictWriter(nfile)
             for i in reader[1:]:
-                first, last = i[0].split(",")
-                
+                print(i)
+
+                # first, last = i[0].split(",")
+                # house = i[1]
+
+
 
 
 
