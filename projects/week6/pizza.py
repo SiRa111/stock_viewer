@@ -28,15 +28,13 @@ def pizza(csvfile):
         reader = csv.reader(file)
         head=[]
         feet=[]
+        i = 0
         for _ in reader:
-            i = 0
             while i == 0:
                 head = _
                 i += 1
-            feet = _
-        print(head)
-        print(feet)
-        # print(tabulate(head, feet, tablefmt="grid"))
+            feet.append(_)
+        print(tabulate( feet, head, tablefmt="grid"))
 
 
 if __name__ == "__main__":
