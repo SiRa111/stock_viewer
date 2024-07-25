@@ -9,9 +9,7 @@ def main():
         print("Too many command-line arguments")
         sys.exit(1)
     else:
-        sys.argv[1] = input_img
-        sys.argv[2] = output_img
-        if input_img and output_img. 
+        
 
 
 
