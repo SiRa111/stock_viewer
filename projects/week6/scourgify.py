@@ -35,6 +35,7 @@ def clean(nsorted, sorted):
                 l.append(first, last, house)
             except:
                 pass
+            
         print(l)
 
 
