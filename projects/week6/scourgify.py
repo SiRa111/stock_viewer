@@ -18,7 +18,6 @@ def main():
             else:
                 print("Not a csv file")
                 sys.exit(1)
-
         except FileNotFoundError:
             print("File not found")
             sys.exit(1)
@@ -36,18 +35,9 @@ def clean(nsorted, sorted):
                 l.append(f"{first}, {last}, {house}")
             except:
                 pass
-
     with open(sorted, "w") as sfile:
         writer = csv.writer(sfile, delimiter = "\n")
         writer.writerow(l)
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
