@@ -26,11 +26,12 @@ def main():
 def clean(nsorted, sorted):
     with open(nsorted, "r") as ofile:
         reader = csv.reader(ofile)
-        l=[]
+        l=['first, last, house']
         for _ in reader:
             try :
                 last, first = _[0].split(",")
-                last = last.strip()
+                print(last)
+                last = last.lstrip()
                 house = _[1]
                 l.append(f"{first},{last},{house}")
             except:
