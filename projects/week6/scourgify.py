@@ -33,7 +33,7 @@ def clean(nsorted, sorted):
             for i in reader:
                 first, last = i[0].split(",")
                 house = i[1]
-                writer.writerow("first":first, "last":last, "house":house)
+                writer.writerow("first"=first, "last"=last, "house"=house)
 
 
 
