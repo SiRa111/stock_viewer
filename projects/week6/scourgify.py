@@ -32,11 +32,14 @@ def clean(nsorted, sorted):
             try :
                 first, last = _[0].split(",")
                 house = _[1]
-                l.append(first, last, house)
+                l.append(f"{first}, {last}, {house}")
             except:
                 pass
-            
-        print(l)
+
+    with open(sorted, "w") as sfile:
+        writer = csv.writer(sfile)
+        for i in l:
+            writer.writerow(i)
 
 
 
