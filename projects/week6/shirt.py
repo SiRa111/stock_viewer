@@ -9,7 +9,11 @@ def main():
         print("Too many command-line arguments")
         sys.exit(1)
     else:
-        
+        a1,b1 = sys.argv[1].split('.')
+        a2,b2 = sys.argv[2].split('.')
+        if b1 == b2 == ('jpg' or 'jpeg' or 'png'):
+            
+
 
 
 
