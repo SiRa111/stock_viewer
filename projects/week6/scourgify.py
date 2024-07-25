@@ -36,8 +36,9 @@ def clean(nsorted, sorted):
             except:
                 pass
     with open(sorted, "w") as sfile:
-        writer = csv.writer(sfile)
+        writer = csv.writer(sfile, delimiter = ".")
         for i in l:
+            print(i)
             writer.writerow(i)
 
 
