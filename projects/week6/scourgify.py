@@ -35,7 +35,7 @@ def clean(nsorted, sorted):
                 l.append(f"{first}, {last}, {house}")
             except:
                 pass
-            
+
     with open(sorted, "w") as sfile:
         writer = csv.writer(sfile, delimiter = ".")
         for i in l:
