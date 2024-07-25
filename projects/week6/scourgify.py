@@ -37,10 +37,8 @@ def clean(nsorted, sorted):
                 pass
 
     with open(sorted, "w") as sfile:
-        writer = csv.writer(sfile, delimiter = ".")
-        for i in l:
-            print(i)
-            writer.writerow(i)
+        writer = csv.writer(sfile, delimiter = "\n")
+        writer.writerow(l)
 
 
 
