@@ -23,7 +23,8 @@ def main():
 
 
 def fit(before, after):
-    
+    with Image.open("shirt.png") as shirt:
+        print(shirt.getbox())
 
 
 if __name__ == "__main__":
