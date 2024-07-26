@@ -24,7 +24,7 @@ def main():
 
 def fit(before, after):
     with Image.open("shirt.png") as shirt:
-        print(shirt.getbox())
+        print(shirt.getbbox())
 
 
 if __name__ == "__main__":
