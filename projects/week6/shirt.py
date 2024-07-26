@@ -24,7 +24,7 @@ def main():
 
 def fit(before, after):
     try:
-        with Image.open("shirt.png") as shirt:
+        with Image.open("/workspaces/146064214/projects/week6/shirt.png") as shirt:
             print(shirt.getbbox())
     except :
         print("Error opening file")
