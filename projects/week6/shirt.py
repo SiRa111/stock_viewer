@@ -23,12 +23,10 @@ def main():
 
 
 def fit(before, after):
-    try:
-        with Image.open("/workspaces/146064214/projects/week6/shirt.png") as shirt:
-            print(shirt.getbbox())
-    except :
-        print("Error opening file")
-        sys.exit(1)
+    print("hi")
+    with Image.open("shirt.png") as shirt:
+        print("hiiiiii")
+        print(shirt.getbbox())
 
 
 if __name__ == "__main__":
