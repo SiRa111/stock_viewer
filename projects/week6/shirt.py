@@ -23,8 +23,12 @@ def main():
 
 
 def fit(before, after):
-    with Image.open("shirt.png") as shirt:
-        print(shirt.getbbox())
+    try:
+        with Image.open("shirt.png") as shirt:
+            print(shirt.getbbox())
+    except :
+        print("Error opening file")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
