@@ -23,9 +23,8 @@ def main():
 
 
 def fit(before, after):
-    print("hi")
     with Image.open("shirt.png") as shirt:
-        print("hiiiiii")
+
         print(shirt.getbbox())
 
 
