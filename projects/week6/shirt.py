@@ -1,5 +1,6 @@
 import sys
 from PIL import Image
+from PIL import ImageOps
 
 def main():
     if len(sys.argv) < 3:
@@ -26,7 +27,7 @@ def fit(before, after):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
         height = shirt.height
-        ImageOps.fit(image= before, size=(width,shirt))
+        ImageOps.fit(image: before, size:(width,shirt))
         print(width)
 
 
