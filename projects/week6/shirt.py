@@ -17,8 +17,8 @@ def main():
             if b1 == b2 and b1 in ['jpg','jpeg','png']:
                 try:
                     fit(sys.argv[1], sys.argv[2])
-                except:
-                    print("error raised")
+                except Exception as e:
+                    print(f"error raised {e}")
                     sys.exit(1)
             elif b1 != b2:
                 print("Input and output have different extensions")
