@@ -13,7 +13,7 @@ def main():
         try:
             a1,b1 = sys.argv[1].split('.')
             a2,b2 = sys.argv[2].split('.')
-            if b1 == b2 in 'jpgjpegpng':
+            if b1 == b2 and b1 in ['jpg','jpeg','png']:
                 try:
                     fit(sys.argv[1], sys.argv[2])
                 except:
