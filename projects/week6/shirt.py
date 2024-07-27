@@ -22,20 +22,18 @@ def main():
                     sys.exit(1)
             elif b1 != b2:
                 print("Input and output have different extensions")
-                sys.argv[1]
+                sys.exit(1)
         except:
             print("Invalid input")
             sys.exit(1)
 
 
-def fit(before, after):
+def fit(a,b):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
         height = shirt.height
-        ImageOps.fit(image= before, size=(width,height))
+        ImageOps.fit(image= sys.argv[1], size=(width,height))
         print(width)
-
-
 
 
 if __name__ == "__main__":
