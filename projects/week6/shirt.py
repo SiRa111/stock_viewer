@@ -18,13 +18,13 @@ def main():
                 try:
                     fit(sys.argv[1], sys.argv[2])
                 except Exception as e:
-                    print(f"error raised {e}")
+                    print(f"error raised {e} E1")
                     sys.exit(1)
             elif b1 != b2:
                 print("Input and output have different extensions")
                 sys.exit(1)
         except Exception as e:
-            print(f"Invalid input, {e}")
+            print(f"Invalid input, {e} E2")
             sys.exit(1)
 
 
