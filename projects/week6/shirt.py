@@ -26,7 +26,7 @@ def fit(before, after):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
         height = shirt.height
-        PIL.ImageOps.fit(image= before, size=(width,shirt)) 
+        ImageOps.fit(image= before, size=(width,shirt))
         print(width)
 
 
