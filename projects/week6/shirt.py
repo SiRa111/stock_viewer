@@ -21,13 +21,13 @@ def main():
         except:
             print("Invalid input")
             sys.exit(1)
-
+/workspaces/146064214/projects/week6/before1.jpg
 
 def fit(before, after):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
         height = shirt.height
-        ImageOps.fit(image: before, size:(width,shirt))
+        ImageOps.fit(image= before, size=(width,shirt))
         print(width)
 
 
