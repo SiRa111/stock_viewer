@@ -2,6 +2,7 @@ import sys
 from PIL import Image
 from PIL import ImageOps
 
+
 def main():
     if len(sys.argv) < 3:
         print("Too few command-line arguments")
