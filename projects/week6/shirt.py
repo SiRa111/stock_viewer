@@ -12,7 +12,7 @@ def main():
         try:
             a1,b1 = sys.argv[1].split('.')
             a2,b2 = sys.argv[2].split('.')
-            if b1 == b2 == ('jpg' or 'jpeg' or 'png'):
+            if b1 == b2 == 'jpg' or 'jpeg' or 'png':
                 fit(sys.argv[1], sys.argv[2])
             elif b1 != b2:
                 print("Input and output have different extensions")
@@ -24,7 +24,6 @@ def main():
 
 def fit(before, after):
     with Image.open("shirt.png") as shirt:
-
         print(shirt.getbbox())
 
 
