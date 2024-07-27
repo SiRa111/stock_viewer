@@ -23,8 +23,8 @@ def main():
             elif b1 != b2:
                 print("Input and output have different extensions")
                 sys.exit(1)
-        except:
-            print("Invalid input")
+        except Excpetion as e:
+            print(f"Invalid input, {e}")
             sys.exit(1)
 
 
