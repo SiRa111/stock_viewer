@@ -14,7 +14,11 @@ def main():
             a1,b1 = sys.argv[1].split('.')
             a2,b2 = sys.argv[2].split('.')
             if b1 == b2 in 'jpgjpegpng':
-                fit(sys.argv[1], sys.argv[2])
+                try:
+                    fit(sys.argv[1], sys.argv[2])
+                except:
+                    print("error raised")
+                    sys.exit(1)
             elif b1 != b2:
                 print("Input and output have different extensions")
                 sys.argv[1]
