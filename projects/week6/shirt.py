@@ -32,7 +32,8 @@ def fit(a,b):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
         height = shirt.height
-        ImageOps.fit(image= sys.argv[1], size=(width,height))
+        with Image.open(f"{sys.argv[1]}") as before:
+            ImageOps.fit(image= sys.argv[1], size=(width,height))
         print(width)
 
 
