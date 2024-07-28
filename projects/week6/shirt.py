@@ -34,7 +34,8 @@ def fit(a,b):
         with Image.open(f"{sys.argv[1]}") as before:
 
             fitted_image = ImageOps.fit(image= before, size=(590,590), method = 0, bleed = 0.0, centering =(0.5, 0.5))
-            fitted_image = Image.new('RGBA', fitted_image.size)
+            result_image = Image.new('RGBA', fitted_image.size)
+            result_image.paste(fitted_image, (0, 0))
             fitted_image.save("after.jpg")
 
             fitted_image.paste( shirt)
