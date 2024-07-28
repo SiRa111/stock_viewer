@@ -38,7 +38,7 @@ def fit(a,b):
             result_image = Image.new('RGBA', fitted_image.size)
             result_image.paste(fitted_image, (0, 0))
 
-            paste_x = (result_image.width - shirt_width) // 2
+            paste_x = (result_image.width - shirt_width)
             paste_y = result_image.height - shirt_height
 
             result_image.paste(shirt, (paste_x, paste_y), shirt)
