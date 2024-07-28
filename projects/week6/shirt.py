@@ -37,6 +37,7 @@ def fit(a,b):
             fitted_image.save("after.jpg")
 
             fitted_image.paste( shirt)
+            
             fitted_image.save("after.jpg")
             fitted_image.show()
 
