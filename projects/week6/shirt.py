@@ -30,18 +30,21 @@ def main():
 
 def fit(a,b):
     with Image.open("shirt.png") as shirt:
+        shirt_width, shirt_height = shirt.size
 
         with Image.open(f"{sys.argv[1]}") as before:
 
             fitted_image = ImageOps.fit(image= before, size=(590,590), method = 0, bleed = 0.0, centering =(0.5, 0.5))
             result_image = Image.new('RGBA', fitted_image.size)
             result_image.paste(fitted_image, (0, 0))
-            fitted_image.save("after.jpg")
 
-            fitted_image.paste( shirt)
+            paste_x = (result_image.width - shirt_width) // 2
+            paste_y = result_image.height - shirt_height
 
-            fitted_image.save("after.jpg")
-            fitted_image.show()
+            result_image.paste(shirt, (paste_x, paste_y), shirt)
+
+            result_image.save(sys.argv[2])
+            result_image.show()
 
         print("success")
 
