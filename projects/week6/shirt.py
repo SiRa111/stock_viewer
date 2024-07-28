@@ -35,7 +35,7 @@ def fit(a,b):
         with Image.open(f"{sys.argv[1]}") as before:
             ImageOps.fit(image= before, size=(width,height))
         print(width)
-
+            Image.paste(image = before, mask = shirt)
 
 if __name__ == "__main__":
     main()
