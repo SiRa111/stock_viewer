@@ -31,14 +31,14 @@ def main():
 def fit(a,b):
     with Image.open("shirt.png") as shirt:
         width = shirt.width
-        height = shirt.height
         with Image.open(f"{sys.argv[1]}") as before:
+            height = before.height
             fitted_image = ImageOps.fit(image= before, size=(width,height))
             fitted_image.save("after.jpg")
+
+            fitted_image.paste( shirt)
+            fitted_image.save("after.jpg")
             fitted_image.show()
-            # fitted_image.paste( shirt)
-            # fitted_image.save("after.jpg")
-            # fitted_image.show()
 
         print("success")
 
