@@ -1,6 +1,6 @@
 import sys
-from PIL import Image
-from PIL import ImageOps
+from PIL import Image,ImageOps
+
 
 
 def main():
@@ -37,7 +37,7 @@ def fit(a,b):
             before.paste( shirt)
             before.save("after.jpg")
             before.show()
-            
+
         print("success")
 
 
