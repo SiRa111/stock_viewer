@@ -30,10 +30,11 @@ def main():
 
 def fit(a,b):
     with Image.open("shirt.png") as shirt:
-        width = shirt.width
+        shirt_width, shirt_height = shirt.size
+
         with Image.open(f"{sys.argv[1]}") as before:
-            height = before.height
-            fitted_image = ImageOps.fit(image= before, size=(width,height), method = 0, bleed = 0.0, centering =(0.5, 0.5))
+
+            fitted_image = ImageOps.fit(image= before, size=(600,600), method = 0, bleed = 0.0, centering =(0.5, 0.5))
             fitted_image.save("after.jpg")
 
             fitted_image.paste( shirt)
