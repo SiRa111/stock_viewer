@@ -33,11 +33,11 @@ def fit(a,b):
         width = shirt.width
         with Image.open(f"{sys.argv[1]}") as before:
             height = before.height
-            fitted_image = ImageOps.fit(image= before, size=(width,height))
+            fitted_image = ImageOps.fit(image= before, size=(width,height), bleed = 0.0, centering =(0.5, 0.5))
             fitted_image.save("after.jpg")
 
             fitted_image.paste( shirt)
-            
+
             fitted_image.save("after.jpg")
             fitted_image.show()
 
