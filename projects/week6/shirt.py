@@ -43,7 +43,7 @@ def fit(a,b):
 
             result_image.paste(shirt, (paste_x, paste_y), shirt)
 
-            if sys.argv[2].lower().endswith(('.jpg', '.jpeg')):
+            if sys.argv[2].lower().endswith(('.jpg', '.jpeg')):  
                 result_image = result_image.convert('RGB')
 
             result_image.save(sys.argv[2])
