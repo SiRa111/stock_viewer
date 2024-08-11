@@ -5,7 +5,7 @@ locations = {"+1": "United States and Canada", "+62": "Indonesia", "+505": "Nica
 def main():
     pattern = r"\+\d{1,3} \d{3}-\d{3}-\d{4}"
     #\+ : we literally want +
-    #\d : 
+    #\d : we want decimal digits
 
     number = input("Number: ")
 
