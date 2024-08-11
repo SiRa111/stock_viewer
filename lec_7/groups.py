@@ -10,7 +10,6 @@ def main():
     #it is named country code
 
 
-
     number = input("Number: ")
 
     match = re.search(pattern, number)
