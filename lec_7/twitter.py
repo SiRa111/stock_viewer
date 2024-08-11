@@ -2,5 +2,5 @@ import re
 
 url = input("URL: ").strip()
 
-username = url.replace("https://twitter.com/", "")
+username = re.place
 print(f"Username: {username}")
