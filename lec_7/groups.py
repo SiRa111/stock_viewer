@@ -7,7 +7,7 @@ def main():
     #\+ : we literally want +
     #\d : we want decimal digits ie 0 to 9
     #they can be 1 or 3 digits
-    #it is named country code 
+    #it is named country code
 
 
 
@@ -16,7 +16,7 @@ def main():
     match = re.search(pattern, number)
     if match:
         country_code = match.group("country_code")
-        print("Valid")
+        print(locations[country_code])
     else:
         print("Invalid")
 
