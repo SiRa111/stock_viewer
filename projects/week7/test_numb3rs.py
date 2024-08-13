@@ -1,9 +1,6 @@
 
 from numb3rs import validate
 
-def test_first_byte():
-
-
 
 def test_four_num():
   assert validate("0") == False
