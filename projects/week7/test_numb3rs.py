@@ -12,6 +12,8 @@ def test_valid_nums():
   assert validate("3000.5.6.7") == False
   assert validate("567.890.1000.5783945") == False
   assert validate("1.2.3.4.5") == False
+  assert validate("0.0.0.0") == True
+  assert validate("255.255.255.255") == True
 
 def test_no_extra_chars():
   assert validate("0.0.0.0.") == False
