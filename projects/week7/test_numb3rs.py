@@ -1,7 +1,6 @@
 
 from numb3rs import validate
 
-
 def test_four_num():
   assert validate("0") == False
   assert validate("0.0.0.") == False
