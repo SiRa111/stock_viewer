@@ -1,4 +1,6 @@
+import sys
 from numb3rs import validate
+
 
 def test_four_num():
   assert validate("0") == False
@@ -17,3 +19,5 @@ def test_no_extra_chars():
 def test_only_nums():
   assert validate("cat") == False
   assert validate("dog") == False
+
+
