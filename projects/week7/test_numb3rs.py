@@ -3,6 +3,7 @@ from numb3rs import validate
 
 def test_first_byte():
   assert validate("256.255.255.255") == False
+  assert validate("700.34.45.56") == False
 
 def test_four_num():
   assert validate("0") == False
