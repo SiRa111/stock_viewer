@@ -1,6 +1,17 @@
 
 from numb3rs import validate
 
+def test_first_byte():
+  assert validate("256.256.256.256") == False
+  assert validate("192.168.0.256") == False
+  assert validate("192.168.0") == False
+  assert validate("192.168.0.1.1") == False
+  assert validate("192.168.0.-1") == False
+  assert validate("192.168.0.abc") == False
+  assert validate("1234.123.123.123") == False
+
+
+
 def test_four_num():
   assert validate("0") == False
   assert validate("0.0.0.") == False
