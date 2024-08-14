@@ -7,9 +7,10 @@ def main():
 
 
 def parse(s):
-    if valid := re.search(r"^https?://(?:www\.)youtube.com/embed/(z[a-zA-Z0-9]+)$", s):
-        print("")
-
+    if valid := re.search(r"^https?://(?:www\.)youtube.com/embed/([a-zA-Z0-9]+)$", s):
+        return "https://youtu.be/" + valid.group()
+    else:
+        return None
 
 
 
