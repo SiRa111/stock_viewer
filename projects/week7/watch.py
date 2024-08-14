@@ -7,8 +7,7 @@ def main():
 
 
 def parse(s):
-    
-
+    if valid := re.search(r"", s)
 
 
 
