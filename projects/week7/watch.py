@@ -8,7 +8,7 @@ def main():
 
 def parse(s):
     if valid := re.search(r"^https?://(?:www\.)youtube.com/embed/(z[a-zA-Z0-9]+)$", s):
-        print()
+        print("")
 
 
 
