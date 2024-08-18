@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    if := re.search('[1-12]:?'):
+    if := re.search('[1-12]:?\s'):
 
 ...
 
