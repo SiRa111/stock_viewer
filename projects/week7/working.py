@@ -7,7 +7,8 @@ def main():
 
 
 def convert(s):
-    if := re.search('[1-12]:([0-60])?\s(am|AM|pm|PM)'):
+    if match := re.search('([1-12]):([0-5]/d)?\s(?:am|AM|pm|PM)\sto\s([1-12]):([0-5]/d)?\s(?:am|AM|pm|PM)'):
+        if match.group
 
 ...
 
