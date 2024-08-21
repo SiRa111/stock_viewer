@@ -10,7 +10,7 @@ def convert(s):
     if match := re.search(r'([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)\sto\s([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)', s):
         if match.group(3) == ('am' or 'AM'):
             if match.group(2) == None:
-                match.group(2) == "00"
+                min1 == "00"
             else:
                 pass
 
@@ -19,6 +19,8 @@ def convert(s):
             ...
     else:
         raise ValueError("ValueError")
+
+    return f"{}:{} to {}:{}"
 
 
 
