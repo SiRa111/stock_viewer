@@ -9,7 +9,8 @@ def main():
 def convert(s):
     if match := re.search(r'([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)\sto\s([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)', s):
         if match.group(3) == ('am' or 'AM'):
-            ...
+            if match.group(4) == 12:
+                return f"{match.group(1)}:{match.group(2)}
         else:
             ...
 
