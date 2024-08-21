@@ -8,6 +8,27 @@ def main():
 
 def convert(s):
     if match := re.search(r'([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)\sto\s([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)', s):
+
+
+        if match.group(3) == ('PM' or 'pm'):
+            if match.group(1) == '12':
+                hour2 = '00'
+            else:
+                hour2 = int(match.group(1)) + 12
+            hour1 = match.group(4)
+            min1 = match.group(5)
+            min2 = match.group(2)
+
+        else:
+            if match.group(4) == '12':
+                hour2 = '00'
+            else:
+                hour2 = int(match.group(4)) + 12
+            hour1 = match.group(1)
+            min1 = match.group(2)
+            min2 = match.group(5)
+
+
         if (match.group(2) and match.group(5)) == None:
             min1 = "00"
             min2 = "00"
@@ -17,25 +38,7 @@ def convert(s):
         elif match.group(5) == None:
             match.group(2) = min1
             min2 = "00"
-
-
-        if match.group(3) == ('PM' or 'pm'):
-            if match.group(1) == '12':
-                hour2 = '00'
-            else:
-                hour2 = match.group(4)
-            hour1 = match.group(1)
-            min1 = match.group(2)
-            hour2 = int(match.group(4)) + 12
-            min2 = match.group(5)
-
-        else:
-            if match.group(1) == '12':
-                hour2 = '00'
-            else:
-                hour2 = match.group(4)
-            hour1 = match.group(4)
-            min1 = match.group(5)
+            
     else:
         raise ValueError("ValueError")
 
