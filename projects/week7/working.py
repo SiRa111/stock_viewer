@@ -25,16 +25,19 @@ def convert(s):
             else:
                 hour2 = match.group(4)
             hour1 = match.group(4)
-            min1 = m
-
-
+            min1 = match.group(5)
 
         else:
-            ...
+            if match.group(1) == '12':
+                hour2 = '00'
+            else:
+                hour2 = match.group(4)
+            hour1 = match.group(4)
+            min1 = match.group(5)
     else:
         raise ValueError("ValueError")
 
-    return f"{}:{} to {}:{}"
+    return f"{hour1}:{min1} to {hour2}:{min2}"
 
 
 
