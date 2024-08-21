@@ -34,11 +34,11 @@ def convert(s):
             min2 = "00"
         elif match.group(2) == None:
             min1 = "00"
-            match.group(5) = min2
+            min2 = match.group(5)
         elif match.group(5) == None:
-            match.group(2) = min1
+            min1 = match.group(2)
             min2 = "00"
-            
+
     else:
         raise ValueError("ValueError")
 
