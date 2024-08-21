@@ -24,8 +24,10 @@ def convert(s):
                 hour2 = '00'
             else:
                 hour2 = match.group(4)
-            hour1 = match.group(4)
-            min1 = match.group(5)
+            hour1 = match.group(1)
+            min1 = match.group(2)
+            hour2 = int(match.group(4)) + 12
+            min2 = match.group(5)
 
         else:
             if match.group(1) == '12':
