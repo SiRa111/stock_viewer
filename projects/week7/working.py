@@ -10,7 +10,7 @@ def convert(s):
     if match := re.search(r'([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)\sto\s([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)', s):
 
 
-        if match.group(3) == ('PM' or 'pm'):
+        if match.group(3).lower() == 'pm':
             if match.group(1) == '12':
                 hour2 = '00'
             else:
