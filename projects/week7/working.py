@@ -17,8 +17,16 @@ def convert(s):
         elif match.group(5) == None:
             match.group(2) = min1
             min2 = "00"
-            
-        if match.group(3) == ('am' or 'AM'):
+
+
+        if match.group(3) == ('PM' or 'pm'):
+            if match.group(1) == '12':
+                hour2 = '00'
+            else:
+                hour2 = match.group(4)
+            hour1 = match.group(4)
+            min1 = m
+
 
 
         else:
