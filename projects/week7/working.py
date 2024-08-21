@@ -17,9 +17,8 @@ def convert(s):
         elif match.group(5) == None:
             match.group(2) = min1
             min2 = "00"
+            
         if match.group(3) == ('am' or 'AM'):
-
-
 
 
         else:
