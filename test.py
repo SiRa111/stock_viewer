@@ -1,13 +1,13 @@
-import numpy as np
+
 
 num = input("ENTER YOUR BODY COUNT: ")
 
-umm = []
+umm = 0
 
 for _ in range(len(num)):
-    umm.append(num[_])
+    umm = umm + _
 
-final = np.array(umm)
+final = umm
 
 print(final)
 
