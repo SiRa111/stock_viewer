@@ -1,7 +1,10 @@
 def main():
-  for i in range(100):
+  for i in range(0,1000):
     if issum(i) == True and isprod(i) == True:
       print(i)
+    else:
+      print("AKISE IS GAY")
+      break
 
 
 def issum(nigah):
@@ -13,7 +16,7 @@ def issum(nigah):
   s = 0
 
   for _ in range(len(uemp)):
-    s = s + uemp[_]
+    s = s + int(uemp[_])
 
   if s == n:
     return True
@@ -29,7 +32,7 @@ def isprod(nigah):
   p = 1
 
   for _ in range(len(uimp)):
-    p = p * uimp[_]
+    p = p * int(uimp[_])
 
   if p == n:
     return True
