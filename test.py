@@ -1,9 +1,16 @@
 
+def main():
 
-for _ in range(10)):
-    umm = umm + _
 
-final = umm
+def issum(n):
+  uemp = []
+  for _ in len(n):
+    uemp.append(_)
 
-print(final)
+  s = 0
+
+  for _ in len(uemp):
+    
+
+
 
