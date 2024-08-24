@@ -1,4 +1,3 @@
-
 def main():
   for i in range(100):
     if issum(i) == True and isprod(i) == True:
