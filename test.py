@@ -1,10 +1,6 @@
 
 
-num = input("ENTER YOUR BODY COUNT: ")
-
-umm = 0
-
-for _ in range(len(num)):
+for _ in range(10)):
     umm = umm + _
 
 final = umm
