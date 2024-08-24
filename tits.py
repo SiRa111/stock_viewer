@@ -6,8 +6,8 @@ def main():
 
 def issum(n):
   uemp = []
-  for _ in len(n):
-    uemp.append(_)
+  for _ in range(len(n)):
+    uemp.append(n[_])
 
   s = 0
 
@@ -21,8 +21,8 @@ def issum(n):
 
 def isprod(n):
   uimp = []
-  for _ in len(n):
-    uimp.append(_)
+  for _ in range(len(n)):
+    uimp.append(n[_])
 
   p = 1
 
