@@ -7,42 +7,38 @@ def main():
 
 
 def convert(s):
-    if match := re.search(r'([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)\sto\s([1-12]):?([0-5]\d)?\s(am|AM|pm|PM)', s):
+
+    match = re.search(r'([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)\s*to\s*([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)', s, re.IGNORECASE)
+
+    if match:
+        hour1, min1, period1, hour2, min2, period2 = match.groups()
 
 
-        if match.group(3).lower() == 'pm':
-            if match.group(1) == '12':
-                hour2 = '00'
-            else:
-                hour2 = int(match.group(1)) + 12
-            hour1 = match.group(4)
-            min1 = match.group(5)
-            min2 = match.group(2)
+        hour1 = int(hour1)
+        hour2 = int(hour2)
 
-        else:
-            if match.group(4) == '12':
-                hour2 = '00'
-            else:
-                hour2 = int(match.group(4)) + 12
-            hour1 = match.group(1)
-            min1 = match.group(2)
-            min2 = match.group(5)
+        if period1.lower() == 'pm' and hour1 != 12:
+            hour1 += 12
+        elif period1.lower() == 'am' and hour1 == 12:
+            hour1 = 0
+
+        if period2.lower() == 'pm' and hour2 != 12:
+            hour2 += 12
+        elif period2.lower() == 'am' and hour2 == 12:
+            hour2 = 0
 
 
-        if (match.group(2) and match.group(5)) == None:
+        if not min1:
             min1 = "00"
+        if not min2:
             min2 = "00"
-        elif match.group(2) == None:
-            min1 = "00"
-            min2 = match.group(5)
-        elif match.group(5) == None:
-            min1 = match.group(2)
-            min2 = "00"
+
+        return f"{hour1}:{min1} to {hour2}:{min2}"
 
     else:
         raise ValueError("ValueError")
 
-    return f"{hour1}:{min1} to {hour2}:{min2}"
+    
 
 
 
