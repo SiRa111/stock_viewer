@@ -24,7 +24,7 @@ def convert(s):
         if not min2:
             min2 = "00"
 
-        # Format hours and minutes to always have two digits
+        
         hour1 = f"{hour1:02}"
         hour2 = f"{hour2:02}"
 
