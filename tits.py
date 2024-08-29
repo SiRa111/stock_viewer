@@ -1,6 +1,6 @@
 def main():
   for i in range(0,1000):
-    if issum(i) * isprod(i) == True:
+    if issum(i) == True and isprod(i) == True:
       print(i)
     else:
       print("AKISE IS GAY")
