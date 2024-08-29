@@ -1,7 +1,7 @@
 import re
 
 def convert(s):
-    match = re.search(r'([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)\s*to\s*([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)', s, re.IGNORECASE)
+    match = re.search(r'([1-9]|1[0-2]):?([0-5]\d)?\s+(AM|PM)\s+to\s+([1-9]|1[0-2]):?([0-5]\d)?\s+(AM|PM)', s, re.IGNORECASE)
 
     if match:
         hour1, min1, period1, hour2, min2, period2 = match.groups()
@@ -24,7 +24,7 @@ def convert(s):
         if not min2:
             min2 = "00"
 
-        
+
         hour1 = f"{hour1:02}"
         hour2 = f"{hour2:02}"
 
