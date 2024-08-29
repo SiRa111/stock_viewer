@@ -1,18 +1,10 @@
 import re
-import sys
-
-
-def main():
-    print(convert(input("Hours: ")))
-
 
 def convert(s):
-
     match = re.search(r'([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)\s*to\s*([1-9]|1[0-2]):?([0-5]\d)?\s*(AM|PM)', s, re.IGNORECASE)
 
     if match:
         hour1, min1, period1, hour2, min2, period2 = match.groups()
-
 
         hour1 = int(hour1)
         hour2 = int(hour2)
@@ -27,18 +19,19 @@ def convert(s):
         elif period2.lower() == 'am' and hour2 == 12:
             hour2 = 0
 
-
         if not min1:
             min1 = "00"
         if not min2:
             min2 = "00"
 
+        # Format hours and minutes to always have two digits
+        hour1 = f"{hour1:02}"
+        hour2 = f"{hour2:02}"
+
         return f"{hour1}:{min1} to {hour2}:{min2}"
 
     else:
-        raise ValueError("ValueError")
-
-    
+        raise ValueError("Invalid time format")
 
 if __name__ == "__main__":
-    main()
+    print(convert(input("Hours: ")))
