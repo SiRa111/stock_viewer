@@ -11,10 +11,11 @@ def fetch_stock_data(symbol: str, start_date: str, end_date: str):
     return df.reset_index()
 
 def prepare_chart_data(df):
-    dates = df['Date'].dt.strftime('%Y-%m-%d').to_list()
-    prices = df['Close'].to_list()
-    volumes = df['Volume'].to_list()
+    dates = [d.strftime('%Y-%m-%d') for d in df['Date']]
+    prices = list(df['Close'])
+    volumes = list(df['Volume'])
     return dates, prices, volumes
+
 
 
 def create_stock_animation(dates, prices, volumes, symbol, region):
