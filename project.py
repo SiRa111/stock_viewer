@@ -16,8 +16,6 @@ def prepare_chart_data(df):
     volumes = list(df['Volume'])
     return dates, prices, volumes
 
-
-
 def create_stock_animation(dates, prices, volumes, symbol, region):
     fig = go.Figure(
         data=[go.Scatter(x=[dates[0]], y=[prices[0]], mode='lines+markers', name='Price')],
