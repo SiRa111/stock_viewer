@@ -1,4 +1,4 @@
-import validators  # you MUST import this
+import validators  
 
 def main():
     email = input("What's your email? ").strip()
