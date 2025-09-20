@@ -20,8 +20,10 @@ def minutes_since_birth(birth_date, today=None):
 
 def number_to_words(n):
     words = num2words(n, to='cardinal')
-    words = words[0].upper() + words[1:]
-    return f"{words} minutes"
+    words = words.replace("-", " ")
+    words = words.lower()
+    words = words[0].upper() + words[1:] + " minutes"
+    return words
 
 if __name__ == "__main__":
     main()
