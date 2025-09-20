@@ -10,11 +10,11 @@ def main():
         sys.exit(1)
 
     minutes = minutes_since_birth(dob)
-    minutes_words = number_to_words(minutes)
-    print(minutes_words)
+    print(number_to_words(minutes))
 
-def minutes_since_birth(birth_date):
-    today = date.today()
+def minutes_since_birth(birth_date, today=None):
+    if today is None:
+        today = date.today()
     delta_days = (today - birth_date).days
     return delta_days * 24 * 60
 
