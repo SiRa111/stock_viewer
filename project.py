@@ -33,12 +33,10 @@ def fetch_us_stock_data(symbol, start_date, end_date):
 
 
 def fetch_indian_stock_data(symbol, start_date, end_date):
-    """Fetch Indian stock data using nsepy."""
-    from nsepy import get_history
-    from datetime import datetime
-    start = datetime.strptime(start_date, "%Y-%m-%d").date()
-    end = datetime.strptime(end_date, "%Y-%m-%d").date()
-    df = get_history(symbol=symbol, start=start, end=end)
+    """Fetch Indian stock data using Yahoo Finance."""
+    import yfinance as yf
+    symbol_yf = f"{symbol}.NS"  # NSE stocks have .NS suffix
+    df = yf.download(symbol_yf, start=start_date, end=end_date)
     if df.empty:
         raise ValueError(f"No data found for {symbol}")
     return df.reset_index()
