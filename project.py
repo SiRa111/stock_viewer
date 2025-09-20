@@ -12,8 +12,8 @@ def fetch_stock_data(symbol: str, start_date: str, end_date: str):
 
 def prepare_chart_data(df):
     dates = df['Date'].dt.strftime('%Y-%m-%d').to_list()
-    prices = df['Close'].to_dict()
-    volumes = df['Volume'].to_dict()
+    prices = df['Close'].to_list()
+    volumes = df['Volume'].to_list()
     return dates, prices, volumes
 
 
