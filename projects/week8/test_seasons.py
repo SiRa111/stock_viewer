@@ -1,15 +1,24 @@
 from datetime import date
-from seasons import minutes_since_birth, number_to_words
+from seasons import get_minutes_since_birth, minutes_to_words
 
-def test_minutes_since_birth():
-    today = date(2000, 1, 1)
-    birth = date(1999, 1, 1)
-    assert minutes_since_birth(birth, today) == 525600
+def test_get_minutes_since_birth():
+    test_date = date.today()
+    minutes = get_minutes_since_birth(test_date)
+    assert minutes == 1440
 
-    birth = date(1995, 1, 1)
-    assert minutes_since_birth(birth, today) == 2629440
+    test_date = date.fromordinal(date.today().toordinal() - 2)
+    minutes = get_minutes_since_birth(test_date)
+    assert minutes == 2880
 
-def test_number_to_words():
-    assert number_to_words(525600).startswith("Five hundred")
-    assert number_to_words(1051200).startswith("One million")
-    assert number_to_words(2629440).startswith("Two million")
+def test_minutes_to_words():
+    assert minutes_to_words(1440) == "One thousand, four hundred forty"
+    assert minutes_to_words(1) == "One"
+    assert minutes_to_words(525600) == "Five hundred twenty-five thousand, six hundred"
+    assert minutes_to_words(0) == "Zero"
+
+def test_combined_functions():
+    test_date = date.today()
+    minutes = get_minutes_since_birth(test_date)
+    words = minutes_to_words(minutes)
+    assert isinstance(words, str)
+    assert "minutes" not in words
