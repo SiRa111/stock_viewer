@@ -34,7 +34,12 @@ def create_stock_animation(dates, prices, volumes, symbol, region):
         frames=[go.Frame(data=[go.Scatter(x=dates[:k+1], y=prices[:k+1], mode='lines+markers')],
                          name=str(k)) for k in range(1, len(dates))]
     )
-    fig.show()
+
+    # Export to HTML
+    filename = f"{symbol}_stock_animation.html"
+    fig.write_html(filename)
+    print(f"Animation saved to {filename}. Open it in a browser to view the video.")
+
 
 def main():
     print("Welcome to Stock Animator!")
