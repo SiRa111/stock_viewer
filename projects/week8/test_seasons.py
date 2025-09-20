@@ -4,6 +4,10 @@ from seasons import get_minutes_since_birth, minutes_to_words
 def test_get_minutes_since_birth():
     test_date = date.today()
     minutes = get_minutes_since_birth(test_date)
+    assert minutes == 0
+
+    test_date = date.fromordinal(date.today().toordinal() - 1)
+    minutes = get_minutes_since_birth(test_date)
     assert minutes == 1440
 
     test_date = date.fromordinal(date.today().toordinal() - 2)
