@@ -1,13 +1,12 @@
-
 class Jar:
     def __init__(self, capacity=12):
         if not isinstance(capacity, int) or capacity < 0:
-            raise ValueError("Capacity must be a non-negative integer")
+            raise ValueError
         self._capacity = capacity
         self._cookies = 0
 
     def __str__(self):
-        return str(self._cookies)
+        return "🍪" * self._cookies
 
     def deposit(self, n):
         if n < 0 or self._cookies + n > self._capacity:
