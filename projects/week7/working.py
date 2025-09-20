@@ -1,37 +1,48 @@
 import re
 
 def convert(s):
-    match = re.search(r'([1-9]|1[0-2]):?([0-5]\d)?\s+(AM|PM)\s+to\s+([1-9]|1[0-2]):?([0-5]\d)?\s+(AM|PM)', s, re.IGNORECASE)
-
-    if match:
-        hour1, min1, period1, hour2, min2, period2 = match.groups()
-
-        hour1 = int(hour1)
-        hour2 = int(hour2)
-
-        if period1.lower() == 'pm' and hour1 != 12:
-            hour1 += 12
-        elif period1.lower() == 'am' and hour1 == 12:
-            hour1 = 0
-
-        if period2.lower() == 'pm' and hour2 != 12:
-            hour2 += 12
-        elif period2.lower() == 'am' and hour2 == 12:
-            hour2 = 0
-
-        if not min1:
-            min1 = "00"
-        if not min2:
-            min2 = "00"
-
-
-        hour1 = f"{hour1:02}"
-        hour2 = f"{hour2:02}"
-
-        return f"{hour1}:{min1} to {hour2}:{min2}"
-
-    else:
+    # Regex with anchors and strict matching
+    pattern = r"^([1-9]|1[0-2]):?([0-5]\d)? (AM|PM) to ([1-9]|1[0-2]):?([0-5]\d)? (AM|PM)$"
+    match = re.match(pattern, s)
+    if not match:
         raise ValueError("Invalid time format")
+
+    h1, m1, p1, h2, m2, p2 = match.groups()
+
+    # Default minutes to "00" if missing
+    m1 = m1 if m1 else "00"
+    m2 = m2 if m2 else "00"
+
+    h1 = int(h1)
+    h2 = int(h2)
+    m1 = int(m1)
+    m2 = int(m2)
+
+    # Validate ranges
+    if not (1 <= h1 <= 12) or not (1 <= h2 <= 12):
+        raise ValueError("Invalid hour")
+    if not (0 <= m1 < 60) or not (0 <= m2 < 60):
+        raise ValueError("Invalid minute")
+
+    # Convert to 24-hour format
+    h1 = to_24(h1, p1)
+    h2 = to_24(h2, p2)
+
+    return f"{h1:02}:{m1:02} to {h2:02}:{m2:02}"
+
+
+def to_24(hour, period):
+    if period == "AM":
+        if hour == 12:
+            return 0
+        return hour
+    elif period == "PM":
+        if hour != 12:
+            return hour + 12
+        return hour
+    else:
+        raise ValueError("Invalid period")
+
 
 if __name__ == "__main__":
     print(convert(input("Hours: ")))
