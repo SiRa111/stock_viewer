@@ -1,4 +1,4 @@
-# project.py
+
 
 def main():
     region = input("Enter your region (US/India): ").strip().lower()
