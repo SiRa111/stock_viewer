@@ -1,111 +1,58 @@
+import yfinance as yf
+import plotly.graph_objects as go
+from datetime import datetime
 
-
-def main():
-    region = input("Enter your region (US/India): ").strip().lower()
-
-    if region == "us":
-        symbol = input("Enter US stock ticker (e.g., AAPL): ").upper()
-        start_date = input("Start date (YYYY-MM-DD): ")
-        end_date = input("End date (YYYY-MM-DD): ")
-        data = fetch_us_stock_data(symbol, start_date, end_date)
-
-    elif region == "india":
-        symbol = input("Enter NSE stock symbol (e.g., RELIANCE): ").upper()
-        start_date = input("Start date (YYYY-MM-DD): ")
-        end_date = input("End date (YYYY-MM-DD): ")
-        data = fetch_indian_stock_data(symbol, start_date, end_date)
-
-    else:
-        print("Invalid region. Please enter US or India.")
-        return
-
-    price_points, volume_points = process_stock_data(data)
-    create_stock_animation(price_points, volume_points, symbol, region)
-
-
-def fetch_us_stock_data(symbol, start_date, end_date):
-    """Fetch US stock data using yfinance."""
-    import yfinance as yf
+def fetch_stock_data(symbol: str, start_date: str, end_date: str):
+    if symbol.upper() in ["NSE", "INDIA"]:
+        symbol = symbol + ".NS"
     df = yf.download(symbol, start=start_date, end=end_date)
     if df.empty:
         raise ValueError(f"No data found for {symbol}")
     return df.reset_index()
 
+def prepare_chart_data(df):
+    dates = df['Date'].dt.strftime('%Y-%m-%d').tolist()
+    prices = df['Close'].tolist()
+    volumes = df['Volume'].tolist()
+    return dates, prices, volumes
 
-def fetch_indian_stock_data(symbol, start_date, end_date):
-    """Fetch Indian stock data using Yahoo Finance."""
-    import yfinance as yf
-    symbol_yf = f"{symbol}.NS"  # NSE stocks have .NS suffix
-    df = yf.download(symbol_yf, start=start_date, end=end_date)
-    if df.empty:
-        raise ValueError(f"No data found for {symbol}")
-    return df.reset_index()
+def create_stock_animation(dates, prices, volumes, symbol, region):
+    fig = go.Figure(
+        data=[go.Scatter(x=[dates[0]], y=[prices[0]], mode='lines+markers', name='Price')],
+        layout=go.Layout(
+            title=f"{symbol} Stock Price ({region})",
+            xaxis_title="Date",
+            yaxis_title="Price",
+            updatemenus=[dict(type="buttons",
+                              buttons=[dict(label="Play",
+                                            method="animate",
+                                            args=[None, {"frame": {"duration": 100, "redraw": True},
+                                                         "fromcurrent": True}])])]
+        ),
+        frames=[go.Frame(data=[go.Scatter(x=dates[:k+1], y=prices[:k+1], mode='lines+markers')],
+                         name=str(k)) for k in range(1, len(dates))]
+    )
+    fig.show()
 
-
-def process_stock_data(df):
-    """Convert stock DataFrame to points suitable for Manim plotting."""
-    price_points = [(i, row['Close']) for i, row in df.iterrows()]
-    volume_points = [(i, row['Volume']) for i, row in df.iterrows()]
-    return price_points, volume_points
-
-
-def create_stock_animation(price_points, volume_points, symbol, region):
-    """Use Manim to create a smooth animated stock chart video."""
-    from manim import Scene, Axes, VMobject, Dot, Rectangle, Text, config, tempconfig, linear, smooth
-    import numpy as np
-    from scipy.interpolate import CubicSpline
-
-    class StockChart(Scene):
-        def construct(self):
-            axes = Axes(
-                x_range=[0, len(price_points), max(1, len(price_points)//10)],
-                y_range=[min([p[1] for p in price_points])*0.95,
-                         max([p[1] for p in price_points])*1.05, 10],
-                x_length=10, y_length=5
-            )
-            self.add(axes)
-
-            # Smooth price curve using CubicSpline
-            x = np.array([p[0] for p in price_points])
-            y = np.array([p[1] for p in price_points])
-            cs = CubicSpline(x, y)
-            xs_smooth = np.linspace(x[0], x[-1], 500)
-            ys_smooth = cs(xs_smooth)
-            points_smooth = [axes.coords_to_point(xi, yi) for xi, yi in zip(xs_smooth, ys_smooth)]
-
-            # Create VMobject path for smooth animation
-            path = VMobject(color=BLUE)
-            path.set_points_as_corners([points_smooth[0], points_smooth[1]])
-            self.add(path)
-
-            for i in range(2, len(points_smooth)):
-                path.add_points_as_corners([points_smooth[i]])
-                self.play(
-                    path.animate.set_points_as_corners(points_smooth[:i]),
-                    run_time=0.02,
-                    rate_func=linear
-                )
-
-            # Moving dot along the curve
-            dot = Dot(color=RED).move_to(points_smooth[0])
-            self.add(dot)
-            self.play(dot.animate.move_to(points_smooth[-1]), run_time=5, rate_func=smooth)
-
-            # Optional: volume bars
-            max_vol = max([v for _, v in volume_points])
-            for x_idx, vol in volume_points:
-                height = vol / max_vol * 2  # scale volume for visualization
-                bar = Rectangle(height=height, width=0.1, color=YELLOW).next_to(points_smooth[int(x_idx * len(points_smooth)/len(price_points))], DOWN, buff=0)
-                self.add(bar)
-
-            # Title
-            title = Text(f"{symbol} Stock Price ({region.upper()})").to_edge(UP)
-            self.add(title)
-
-    # Render the video
-    with tempconfig({"quality": "low_quality"}):
-        StockChart().render()
-
+def main():
+    print("Welcome to Stock Animator!")
+    region = input("Enter region (US or India): ").strip().lower()
+    symbol = input("Enter stock symbol: ").strip().upper()
+    start_date = input("Start date (YYYY-MM-DD): ").strip()
+    end_date = input("End date (YYYY-MM-DD): ").strip()
+    try:
+        datetime.strptime(start_date, "%Y-%m-%d")
+        datetime.strptime(end_date, "%Y-%m-%d")
+    except ValueError:
+        print("Invalid date format. Use YYYY-MM-DD.")
+        return
+    try:
+        df = fetch_stock_data(symbol, start_date, end_date)
+    except ValueError as e:
+        print(e)
+        return
+    dates, prices, volumes = prepare_chart_data(df)
+    create_stock_animation(dates, prices, volumes, symbol, region.capitalize())
 
 if __name__ == "__main__":
     main()
